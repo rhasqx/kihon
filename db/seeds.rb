@@ -31,7 +31,7 @@ csv.each do |row|
         row['updated_at'] = row['created_at']
     end
 
-    if row['created_at'] < Date.current
+    if row['created_at'] <= Date.current
         token = Token.create(row)
     end
 end
