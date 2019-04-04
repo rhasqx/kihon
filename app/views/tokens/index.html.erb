@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_tag tokens_path, :method => "get", :class => "search" do %>
+  <%= hidden_field_tag 'pos', @pos  %>
+  <%= hidden_field_tag 'date', @date  %>
+  <%= search_field_tag :search, params[:search], :required => false, :type => "search", :placeholder => "Suche..." %>
+  <label for="search">Suche</label>
+  <%= content_tag(:button, "Submit", type: "submit") %>
+  <%= link_to("&#9587;".html_safe, url_for(:date => @date, :pos => @pos), :class => "reset") %>
+<% end %>
+
+<nav class="pagination" role="navigation" aria-label="pager">
+  <% @poses.each do |pos| %>
+    <span class="page">
+    <% c = "filter"; c = "filter active" if pos == @pos %>
+    <%= link_to(pos, url_for(:pos => pos, :date => @date, :search => @search), :class => c) %>
+    </span>
+  <% end %>
+  <% c = "filter"; c = "filter active" if !@poses.include?(@pos) %>
+  <span class="page"><%= link_to("alle", url_for(:date => @date, :search => @search), :class => c) %></span>
+</nav>
+
+<nav class="pagination" role="navigation" aria-label="pager">
+  <% @dates.each do |date| %>
+    <% date = Date.strptime(date, "%Y-%m-%d") -%>
+    <span class="page">
+    <% c = "filter"; c = "filter active" if date.strftime("%Y-%m-%d") == @date %>
+    <%= link_to(date.strftime("%e.%-m."), url_for(:date => date.strftime("%Y-%m-%d"), :pos => @pos, :search => @search), :class => c) %>
+    </span>
+  <% end %>
+  <% c = "filter"; c = "filter active" if !@dates.include?(@date) %>
+  <span class="page"><%= link_to("alle", url_for(:pos => @pos, :search => @search), :class => c) %></span>
+</nav>
+
+<table class="token">
+  <thead>
+    <tr>
+      <th>Kanji</th>
+      <th>Hiragana</th>
+      <th>Katakana</th>
+      <th>Romaji</th>
+      <th>German</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tokens.each do |token| %>
+      <tr>
+        <td class="kanji"><%= link_to(token.kanji, token) unless token.kanji.nil? %></td>
+        <td class="hiragana"><%= link_to(token.hiragana, token) unless token.hiragana.nil? %></td>
+        <td class="katakana"><%= link_to(token.katakana, token) unless token.katakana.nil? %></td>
+        <td class="romaji"><%= link_to(token.romaji, token) unless token.romaji.nil? %></td>
+        <td class="german"><%= link_to(token.german, token) unless token.german.nil? %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @tokens %>

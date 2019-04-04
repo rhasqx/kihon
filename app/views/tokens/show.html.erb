@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<table class="token">
+  <thead>
+    <tr>
+      <th>Kanji</th>
+      <th>Hiragana</th>
+      <th>Katakana</th>
+      <th>Romaji</th>
+      <th>German</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td class="kanji"><%= link_to(@token.kanji, @token) unless @token.kanji.nil? %></td>
+        <td class="hiragana"><%= link_to(@token.hiragana, @token) unless @token.hiragana.nil? %></td>
+        <td class="katakana"><%= link_to(@token.katakana, @token) unless @token.katakana.nil? %></td>
+        <td class="romaji"><%= link_to(@token.romaji, @token) unless @token.romaji.nil? %></td>
+        <td class="german"><%= link_to(@token.german, @token) unless @token.german.nil? %></td>
+      </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Back', tokens_path, class: "btn" %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hiragana: MyText
+  katakana: MyText
+  kanji: MyText
+  romaji: MyText
+  german: 
+  pos: MyText
+
+two:
+  hiragana: MyText
+  katakana: MyText
+  kanji: MyText
+  romaji: MyText
+  german: 
+  pos: MyText

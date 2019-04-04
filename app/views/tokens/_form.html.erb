@@ -1,0 +1,47 @@
+<%= form_with(model: token, local: true) do |form| %>
+  <% if token.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(token.errors.count, "error") %> prohibited this token from being saved:</h2>
+
+      <ul>
+      <% token.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :hiragana %>
+    <%= form.text_area :hiragana %>
+  </div>
+
+  <div class="field">
+    <%= form.label :katakana %>
+    <%= form.text_area :katakana %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kanji %>
+    <%= form.text_area :kanji %>
+  </div>
+
+  <div class="field">
+    <%= form.label :romaji %>
+    <%= form.text_area :romaji %>
+  </div>
+
+  <div class="field">
+    <%= form.label :german %>
+    <%= form.text_area :german %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pos %>
+    <%= form.text_field :pos %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
