@@ -15,7 +15,6 @@ csv_text = File.read(Rails.root.join('lib', 'seeds', file))
 csv_text = headers.join(";")+"\r\n" + csv_text.gsub(/\A(.*\n){1}/,'')
 
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'UTF-8', col_sep: ';')
-i = 0
 csv.each do |row|
     row = row.to_hash
 
@@ -31,7 +30,8 @@ csv.each do |row|
         row['updated_at'] = row['created_at']
     end
 
-    if row['created_at'] < Date.current
+    temp = row
+    if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
         token = Token.create(row)
     end
 end
