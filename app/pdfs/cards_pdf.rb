@@ -58,6 +58,16 @@ class CardsPdf < Prawn::Document
     grid
     angle = side == :translation ? 180 : 0
     parts = tokens.each_slice(@nx).to_a
+
+    # fill with dummy data
+    1.upto(@ny.to_i - parts.size).each do |i|
+      dummy = []
+      1.upto(@nx.to_i).each do |i|
+        dummy.push []
+      end
+      parts.push dummy
+    end
+
     parts.reverse! if side == :translation
     parts.each_with_index do |tokens,j|
       j += 1
