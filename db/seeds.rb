@@ -33,6 +33,16 @@ csv.each do |row|
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
         token = Token.create(row)
+
+        aiff = "/tmp/tts.aiff"
+        mp3 = Rails.root.join("public", "assets", "tts", "#{token.id}.mp3")
+        if !File.file?(mp3)
+            text = token.hiragana || token.katakana || token.kanji || ""
+            if !text.empty?
+                cmd = "say -v Kyoko \"#{text}\" -o \"#{aiff}\" && ffmpeg -i \"#{aiff}\" -y -f mp3 -acodec libmp3lame -ab 192000 -ar 44100 \"#{mp3}\""
+                status = `#{cmd}`
+            end
+        end
     end
 end
 
