@@ -24,13 +24,14 @@
     <% @tokens.each do |token| %>
       <% created = token.created_at.strftime("%Y-%m-%d") -%>
       <% updated = token.updated_at.strftime("%Y-%m-%d") -%>
-      <% tooltip = ("created at: %s <br> updated at: %s" % [created, updated]).html_safe -%>
+      <% tooltip = ("%s: %s <br> %s: %s" % [t("created_at"), created, t("updated_at"), updated]).html_safe -%>
       <tr>
-        <td class="kanji"><%= link_to(token.kanji, token) unless token.kanji.nil? %></td>
-        <td class="hiragana"><%= link_to(token.hiragana, token) unless token.hiragana.nil? %></td>
-        <td class="katakana"><%= link_to(token.katakana, token) unless token.katakana.nil? %></td>
-        <td class="romaji"><%= link_to(token.romaji, token) unless token.romaji.nil? %></td>
-        <td class="german"><%= link_to(token.german, token) unless token.german.nil? %></td>
+        <% empty = '<span class="empty">–</span>'.html_safe -%>
+        <td class="kanji"><%= token.kanji.nil? ? empty : link_to(token.kanji, token) %></td>
+        <td class="hiragana"><%= token.hiragana.nil? ? empty : link_to(token.hiragana, token)  %></td>
+        <td class="katakana"><%= token.katakana.nil? ? empty : link_to(token.katakana, token) %></td>
+        <td class="romaji"><%= token.romaji.nil? ? empty : link_to(token.romaji, token) %></td>
+        <td class="german"><%= token.german.nil? ? empty : link_to(token.german, token) %></td>
         <td class="info hide-on-med-and-down"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></td>
       </tr>
     <% end %>
@@ -38,3 +39,9 @@
 </table>
 
 <%= render 'paginate' %>
+
+<br><br>
+
+<div class="container center">
+  <%= link_to '<i class="material-icons left">cloud_download</i> download cards.pdf'.html_safe, url_for(:date => @date, :pos => @pos, :search => @search, :format => :pdf), class: "waves-effect waves-light btn blue darken-1" %>
+</div>

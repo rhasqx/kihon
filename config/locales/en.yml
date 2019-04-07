@@ -34,3 +34,5 @@ en:
   all: "all"
   search: "search"
   german: "German"
+  created_at: "created at"
+  updated_at: "updated at"

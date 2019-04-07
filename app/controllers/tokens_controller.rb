@@ -21,7 +21,17 @@ class TokensController < ApplicationController
     @tokens = Token.all.search(@search)
     @tokens = @tokens.where(created_at: date.midnight..date.end_of_day).distinct if !@date.empty? and @dates.include?(@date)
     @tokens = @tokens.where(pos: @pos).distinct if !@pos.empty? and @poses.include?(@pos)
-    @tokens = @tokens.page(params[:page])
+    
+    respond_to do |format|
+      format.html do
+        @tokens = @tokens.page(params[:page])
+      end
+      format.pdf do
+        name   = "cards.pdf"
+        pdf = CardsPdf.new(@tokens)
+        send_data pdf.render, filename: name, type: "application/pdf", disposition: 'inline'
+      end
+    end
   end
 
   # GET /tokens/1
