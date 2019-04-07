@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "materialize/components/color-variables";
+
+$primary-color: #666666 !default;
+$link-color: #8A1818 !default;
+
+@import "materialize";
+
+p.footer {
+    margin: 4em auto;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+table.token {
+    td.info     { font-size: 0.7em; }
+    td.kanji    { font-size: 1.4em; }
+    td.hiragana { font-size: 1.4em; }
+    td.katakana { font-size: 1.4em; }
+    td.romaji   { font-size: 0.7em; }
+    td.german   { font-size: 1.0em; }
+
+    td.info {
+        @extend .grey-text;
+    }
+
+    .kanji    a { color: #1e3156; }
+    .hiragana a { color: #8A1818;}
+    .katakana a { color: #31353D; }
+    .romaji   a { color: #31353D; }
+    .german   a { color: #31353D; }
+}
+
+@media #{$small-and-down} {
+
+table.token {
+    td.info     { font-size: 0.7em; }
+    td.kanji    { font-size: 2.6em; }
+    td.hiragana { font-size: 1.8em; }
+    td.katakana { font-size: 1.8em; }
+    td.romaji   { font-size: 0.7em; }
+    td.german   { font-size: 1.0em; }
+
+    td.info     { padding: 0px 5px; }
+    td.kanji    { padding: 0px 5px; }
+    td.hiragana { padding: 0px 5px; }
+    td.katakana { padding: 0px 5px; }
+    td.romaji   { padding: 0px 5px; }
+    td.german   { padding: 0px 5px; }
+    
+    thead tr th, td:empty {
+        display: none;
+    }
+
+    tbody tr td {
+        display: block;
+        text-align: center;
+    }
+
+    tr::before, tr::after {
+        content: "";
+        display: block;
+        height: 1em;
+    }
+}
+
+} // @media #{$small-and-down}
+
+@media #{$medium-and-up} {
+
+table.token {
+    th.info,     td.info     {  }
+    th.kanji,    td.kanji    { padding: 15px 5px 15px 20px; }
+    th.hiragana, td.hiragana {  }
+    th.katakana, td.katakana {  }
+    th.romaji,   td.romaji   {  }
+    th.german,   td.german   { padding: 15px 20px 15px 5px; }
+}
+
+} // @media #{$medium-and-up}
