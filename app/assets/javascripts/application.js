@@ -15,3 +15,14 @@
 //= require turbolinks
 //= require materialize
 //= require_tree .
+
+document.addEventListener('DOMContentLoaded', function() {
+    var options = null;
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+
+    document.getElementById('close').onclick=function() {
+        document.getElementById('search').value = "";
+        document.getElementById('form-search').submit();
+    }
+});
