@@ -14,32 +14,51 @@
 
 @import "materialize/components/color-variables";
 
-$primary-color: #666666 !default;
+$primary-color: #252B2B !default;
 $link-color: #8A1818 !default;
 
 @import "materialize";
 
 p.footer {
-    margin: 4em auto;
+    margin: 7em auto 1em auto;
     text-align: center;
     font-size: 0.7em;
 }
 
+.pagination {
+    .gap {
+        line-height: 30px;
+        min-width: 30px;
+    }
+}
+
+#search {
+    color: white;
+}
+
+#search:focus:not(.browser-default) {
+    color: $primary-color;
+}
+
+#close {
+    color: grey;
+}
+
 table.token {
-    td.info     { font-size: 0.7em; }
-    td.kanji    { font-size: 1.4em; }
-    td.hiragana { font-size: 1.4em; }
-    td.katakana { font-size: 1.4em; }
-    td.romaji   { font-size: 0.7em; }
-    td.german   { font-size: 1.0em; }
+    td.info     { font-size: 0.8em; }
+    td.kanji    { font-size: 2.2em; }
+    td.hiragana { font-size: 1.8em; }
+    td.katakana { font-size: 1.8em; }
+    td.romaji   { font-size: 0.8em; }
+    td.german   { font-size: 1.2em; }
 
     td.info {
         @extend .grey-text;
     }
 
-    .kanji    a { color: #1e3156; }
+    .kanji    a { color: #0d3481; }
     .hiragana a { color: #8A1818;}
-    .katakana a { color: #31353D; }
+    .katakana a { color: #086d3a; }
     .romaji   a { color: #31353D; }
     .german   a { color: #31353D; }
 }
@@ -47,12 +66,12 @@ table.token {
 @media #{$small-and-down} {
 
 table.token {
-    td.info     { font-size: 0.7em; }
-    td.kanji    { font-size: 2.6em; }
-    td.hiragana { font-size: 1.8em; }
-    td.katakana { font-size: 1.8em; }
-    td.romaji   { font-size: 0.7em; }
-    td.german   { font-size: 1.0em; }
+    td.info     { font-size: 0.8em; }
+    td.kanji    { font-size: 3.4em; }
+    td.hiragana { font-size: 2.2em; }
+    td.katakana { font-size: 2.2em; }
+    td.romaji   { font-size: 0.8em; }
+    td.german   { font-size: 1.2em; }
 
     td.info     { padding: 0px 5px; }
     td.kanji    { padding: 0px 5px; }
@@ -61,8 +80,13 @@ table.token {
     td.romaji   { padding: 0px 5px; }
     td.german   { padding: 0px 5px; }
     
-    thead tr th, td:empty {
+    thead {
         display: none;
+        background-color: red;
+    }
+
+    tbody tr:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
 
     tbody tr td {

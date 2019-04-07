@@ -1,45 +1,8 @@
-<nav>
-  <div class="nav-wrapper">
-    <%= form_tag tokens_path, :method => "get", :class => "search" do %>
-      <%= hidden_field_tag 'pos', @pos  %>
-      <%= hidden_field_tag 'date', @date  %>
-      <div class="input-field">
-        <%= search_field_tag :search, params[:search], :required => true, :type => "search", :placeholder => "Suche..." %>
-        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-        <i class="material-icons">close</i>
-      </div>
-    <% end %>
-  </div>
-</nav>
+<%= render 'search' %>
 
+<br><br>
 
-
-<!--
-<nav class="pagination" role="navigation" aria-label="pager">
-  <% @poses.each do |pos| %>
-    <span class="page">
-    <% c = "filter"; c = "filter active" if pos == @pos %>
-    <%= link_to(pos, url_for(:pos => pos, :date => @date, :search => @search), :class => c) %>
-    </span>
-  <% end %>
-  <% c = "filter"; c = "filter active" if !@poses.include?(@pos) %>
-  <span class="page"><%= link_to("alle", url_for(:date => @date, :search => @search), :class => c) %></span>
-</nav>
-
-<nav class="pagination" role="navigation" aria-label="pager">
-  <% @dates.each do |date| %>
-    <% date = Date.strptime(date, "%Y-%m-%d") -%>
-    <span class="page">
-    <% c = "filter"; c = "filter active" if date.strftime("%Y-%m-%d") == @date %>
-    <%= link_to(date.strftime("%e.%-m."), url_for(:date => date.strftime("%Y-%m-%d"), :pos => @pos, :search => @search), :class => c) %>
-    </span>
-  <% end %>
-  <% c = "filter"; c = "filter active" if !@dates.include?(@date) %>
-  <span class="page"><%= link_to("alle", url_for(:pos => @pos, :search => @search), :class => c) %></span>
-</nav>
--->
-
-
+<%= render 'paginate' %>
 
 <table class="token">
   <thead>
@@ -55,18 +18,19 @@
 
   <tbody>
     <% @tokens.each do |token| %>
+      <% created = token.created_at.strftime("%Y-%m-%d") -%>
+      <% updated = token.updated_at.strftime("%Y-%m-%d") -%>
+      <% tooltip = ("created at: %s <br> updated at: %s" % [created, updated]).html_safe -%>
       <tr>
         <td class="kanji"><%= link_to(token.kanji, token) unless token.kanji.nil? %></td>
         <td class="hiragana"><%= link_to(token.hiragana, token) unless token.hiragana.nil? %></td>
         <td class="katakana"><%= link_to(token.katakana, token) unless token.katakana.nil? %></td>
         <td class="romaji"><%= link_to(token.romaji, token) unless token.romaji.nil? %></td>
         <td class="german"><%= link_to(token.german, token) unless token.german.nil? %></td>
-        <td class="info hide-on-med-and-down"><i class="material-icons" title="created: <%= token.created_at.strftime("%Y-%m-%d") %> / updated: <%= token.updated_at.strftime("%Y-%m-%d") %>">info_outline</i></td>
+        <td class="info hide-on-med-and-down"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<div class="container center">
-  <%= paginate @tokens %>
-</div>
+<%= render 'paginate' %>
