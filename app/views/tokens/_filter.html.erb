@@ -1,24 +1,22 @@
-<!--
-<nav class="pagination" role="navigation" aria-label="pager">
+<div class="container center">
+<ul class="pagination filter">
+  <li class="waves-effect <%= "active" if !@poses.include?(@pos) %>"><%= link_to(t("all"), url_for(:date => @date, :search => @search)) %></li>
   <% @poses.each do |pos| %>
-    <span class="page">
-    <% c = "filter"; c = "filter active" if pos == @pos %>
-    <%= link_to(pos, url_for(:pos => pos, :date => @date, :search => @search), :class => c) %>
-    </span>
+    <li class="waves-effect <%= "active" if pos == @pos %>">
+    <%= link_to(pos, url_for(:pos => pos, :date => @date, :search => @search)) %>
+    </li>
   <% end %>
-  <% c = "filter"; c = "filter active" if !@poses.include?(@pos) %>
-  <span class="page"><%= link_to("alle", url_for(:date => @date, :search => @search), :class => c) %></span>
-</nav>
+</ul>
+</div>
 
-<nav class="pagination" role="navigation" aria-label="pager">
+<div class="container center small">
+<ul class="pagination filter">
+  <li class="waves-effect <%= "active" if !@dates.include?(@date) %>"><%= link_to(t("all"), url_for(:pos => @pos, :search => @search)) %></li>
   <% @dates.each do |date| %>
     <% date = Date.strptime(date, "%Y-%m-%d") -%>
-    <span class="page">
-    <% c = "filter"; c = "filter active" if date.strftime("%Y-%m-%d") == @date %>
-    <%= link_to(date.strftime("%e.%-m."), url_for(:date => date.strftime("%Y-%m-%d"), :pos => @pos, :search => @search), :class => c) %>
-    </span>
+    <li class="waves-effect <%= "active" if date.strftime("%Y-%m-%d") == @date%>">
+      <%= link_to(date.strftime("%e.%-m."), url_for(:date => date.strftime("%Y-%m-%d"), :pos => @pos, :search => @search)) %>
+    </li>
   <% end %>
-  <% c = "filter"; c = "filter active" if !@dates.include?(@date) %>
-  <span class="page"><%= link_to("alle", url_for(:pos => @pos, :search => @search), :class => c) %></span>
-</nav>
--->
+</ul>
+</div>

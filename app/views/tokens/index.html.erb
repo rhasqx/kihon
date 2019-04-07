@@ -2,6 +2,10 @@
 
 <br><br>
 
+<%= render 'filter' %>
+
+<br><br>
+
 <%= render 'paginate' %>
 
 <table class="token">
@@ -11,7 +15,7 @@
       <th class="hiragana">Hiragana</th>
       <th class="katakana">Katakana</th>
       <th class="romaji">Romaji</th>
-      <th class="german">German</th>
+      <th class="german"><%= t("german") %></th>
       <th class="info"></th>
     </tr>
   </thead>

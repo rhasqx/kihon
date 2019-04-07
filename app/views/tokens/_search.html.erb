@@ -4,7 +4,7 @@
       <%= hidden_field_tag 'pos', @pos  %>
       <%= hidden_field_tag 'date', @date  %>
       <div class="input-field">
-        <%= search_field_tag :search, params[:search], :required => false, :type => "search", :placeholder => "Suche..." %>
+        <%= search_field_tag :search, params[:search], :required => false, :type => "search", :placeholder => (t("search").titleize + "...").html_safe %>
         <label class="label-icon" for="search"><i class="material-icons">search</i></label>
         <i class="material-icons" id="close">close</i>
       </div>
