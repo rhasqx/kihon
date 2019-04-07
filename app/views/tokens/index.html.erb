@@ -1,14 +1,20 @@
-<p id="notice"><%= notice %></p>
+<nav>
+  <div class="nav-wrapper">
+    <%= form_tag tokens_path, :method => "get", :class => "search" do %>
+      <%= hidden_field_tag 'pos', @pos  %>
+      <%= hidden_field_tag 'date', @date  %>
+      <div class="input-field">
+        <%= search_field_tag :search, params[:search], :required => true, :type => "search", :placeholder => "Suche..." %>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    <% end %>
+  </div>
+</nav>
 
-<%= form_tag tokens_path, :method => "get", :class => "search" do %>
-  <%= hidden_field_tag 'pos', @pos  %>
-  <%= hidden_field_tag 'date', @date  %>
-  <%= search_field_tag :search, params[:search], :required => false, :type => "search", :placeholder => "Suche..." %>
-  <label for="search">Suche</label>
-  <%= content_tag(:button, "Submit", type: "submit") %>
-  <%= link_to("&#9587;".html_safe, url_for(:date => @date, :pos => @pos), :class => "reset") %>
-<% end %>
 
+
+<!--
 <nav class="pagination" role="navigation" aria-label="pager">
   <% @poses.each do |pos| %>
     <span class="page">
@@ -31,15 +37,19 @@
   <% c = "filter"; c = "filter active" if !@dates.include?(@date) %>
   <span class="page"><%= link_to("alle", url_for(:pos => @pos, :search => @search), :class => c) %></span>
 </nav>
+-->
+
+
 
 <table class="token">
   <thead>
     <tr>
-      <th>Kanji</th>
-      <th>Hiragana</th>
-      <th>Katakana</th>
-      <th>Romaji</th>
-      <th>German</th>
+      <th class="kanji">Kanji</th>
+      <th class="hiragana">Hiragana</th>
+      <th class="katakana">Katakana</th>
+      <th class="romaji">Romaji</th>
+      <th class="german">German</th>
+      <th class="info"></th>
     </tr>
   </thead>
 
@@ -51,9 +61,12 @@
         <td class="katakana"><%= link_to(token.katakana, token) unless token.katakana.nil? %></td>
         <td class="romaji"><%= link_to(token.romaji, token) unless token.romaji.nil? %></td>
         <td class="german"><%= link_to(token.german, token) unless token.german.nil? %></td>
+        <td class="info hide-on-med-and-down"><i class="material-icons" title="created: <%= token.created_at.strftime("%Y-%m-%d") %> / updated: <%= token.updated_at.strftime("%Y-%m-%d") %>">info_outline</i></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= paginate @tokens %>
+<div class="container center">
+  <%= paginate @tokens %>
+</div>

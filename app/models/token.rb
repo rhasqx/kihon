@@ -1,6 +1,6 @@
 class Token < ApplicationRecord
     
-    paginates_per 50
+    paginates_per 20
 
     def readonly?
         File.exists?(Rails.root.join('readonly'))
