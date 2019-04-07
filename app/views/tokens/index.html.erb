@@ -16,6 +16,7 @@
       <th class="katakana">Katakana</th>
       <th class="romaji">Romaji</th>
       <th class="german"><%= t("german") %></th>
+      <th class="audio"></th>
       <th class="info"></th>
     </tr>
   </thead>
@@ -32,11 +33,25 @@
         <td class="katakana"><%= token.katakana.nil? ? empty : link_to(token.katakana, token) %></td>
         <td class="romaji"><%= token.romaji.nil? ? empty : link_to(token.romaji, token) %></td>
         <td class="german"><%= token.german.nil? ? empty : link_to(token.german, token) %></td>
-        <td class="info hide-on-med-and-down"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></td>
+        <td class="audio">
+          <% if File.file?(Rails.root.join("public", "assets", "tts", "#{token.id}.mp3") || "") %>
+          <audio id="<%= "audio_#{token.id}" %>">
+            <source src="<%= File.join("/", "assets", "tts", "#{token.id}.mp3") %>" type="audio/mpeg"></source>
+          </audio>
+          <a href="javascript:void(0)" class="waves-effect waves-light btn-flat" onclick="play_audio(<%= token.id %>)"><i id="btn_audio_<%= token.id %>" class="material-icons">play_circle_outline</i></a>
+          <% end %>
+        </td>
+        <td class="info hide-on-med-and-down"><a href="javascript:void(0)" class="waves-effect waves-light btn-flat"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></a></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<script>
+function play_audio(n) {
+  document.getElementById("audio_" + n).play();
+}
+</script>
 
 <%= render 'paginate' %>
 
