@@ -79,12 +79,17 @@ table.token {
     td.romaji   { font-size: 0.8em; }
     td.german   { font-size: 1.2em; }
 
+    td.audio    { padding: 0px 5px; }
     td.info     { padding: 0px 5px; }
     td.kanji    { padding: 0px 5px; }
     td.hiragana { padding: 0px 5px; }
     td.katakana { padding: 0px 5px; }
     td.romaji   { padding: 0px 5px; }
     td.german   { padding: 0px 5px; }
+
+    td.audio {
+        //float: right;
+    }
 
     span.empty { display: none; }
     
@@ -114,11 +119,14 @@ table.token {
 @media #{$medium-and-up} {
 
 table.token {
-    th.info,     td.info     {  }
-    th.kanji,    td.kanji    { padding: 15px 5px 15px 20px; }
-    th.hiragana, td.hiragana {  }
-    th.katakana, td.katakana {  }
-    th.romaji,   td.romaji   {  }
+    th.audio-kanji,    td.audio-kanji    { padding: 15px 5px 15px 20px; }
+    th.audio-hiragana, td.audio-hiragana { padding: 15px 5px 15px 20px; }
+    th.audio-katakana, td.audio-katakana { padding: 15px 5px 15px 20px; }
+    
+    th.kanji,    td.kanji    { }
+    th.hiragana, td.hiragana { }
+    th.katakana, td.katakana { }
+    th.romaji,   td.romaji   { }
     th.german,   td.german   { padding: 15px 20px 15px 5px; }
 }
 
