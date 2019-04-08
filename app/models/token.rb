@@ -1,6 +1,6 @@
 class Token < ApplicationRecord
     
-    paginates_per 20
+    paginates_per 16
 
     after_create :tts
     after_update :tts
