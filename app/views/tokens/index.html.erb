@@ -16,7 +16,6 @@
       <th class="katakana">Katakana</th>
       <th class="romaji">Romaji</th>
       <th class="german"><%= t("german") %></th>
-      <th class="audio"></th>
       <th class="info"></th>
     </tr>
   </thead>
@@ -27,19 +26,25 @@
       <% updated = token.updated_at.strftime("%Y-%m-%d") -%>
       <% tooltip = ("%s: %s <br> %s: %s" % [t("created_at"), created, t("updated_at"), updated]).html_safe -%>
       <tr>
-        <% empty = '<span class="empty">–</span>'.html_safe -%>
-        <td class="kanji"><%= token.kanji.nil? ? empty : link_to(token.kanji, token) %></td>
-        <td class="hiragana"><%= token.hiragana.nil? ? empty : link_to(token.hiragana, token)  %></td>
-        <td class="katakana"><%= token.katakana.nil? ? empty : link_to(token.katakana, token) %></td>
-        <td class="romaji"><%= token.romaji.nil? ? empty : link_to(token.romaji, token) %></td>
-        <td class="german"><%= token.german.nil? ? empty : link_to(token.german, token) %></td>
-        <td class="audio">
-          <% if File.file?(Rails.root.join("public", "assets", "tts", "#{token.id}.mp3") || "") %>
-          <audio id="<%= "audio_#{token.id}" %>">
-            <source src="<%= File.join("/", "assets", "tts", "#{token.id}.mp3") %>" type="audio/mpeg"></source>
-          </audio>
-          <a href="javascript:void(0)" class="waves-effect waves-light btn-flat" onclick="play_audio(<%= token.id %>)"><i id="btn_audio_<%= token.id %>" class="material-icons">play_circle_outline</i></a>
-          <% end %>
+        <% empty = '<span class="empty"></span>'.html_safe -%>
+        <td class="kanji">
+          <span><%= token.kanji.nil? ? empty : link_to(token.kanji, token) %></span>
+          <%= render 'audio', token: token, component: "kanji" %>
+        </td>
+        <td class="hiragana">
+          <span><%= token.hiragana.nil? ? empty : link_to(token.hiragana, token)  %></span>
+          <%= render 'audio', token: token, component: "hiragana" %>
+        </td>
+        <td class="katakana">
+          <span><%= token.katakana.nil? ? empty : link_to(token.katakana, token) %></span>
+          <%= render 'audio', token: token, component: "katakana" %>
+        </td>
+        <td class="romaji">
+          <span><%= token.romaji.nil? ? empty : link_to(token.romaji, token) %></span>
+          <%= render 'audio', token: token, component: "romaji" %>
+        </td>
+        <td class="german">
+          <span><%= token.german.nil? ? empty : link_to(token.german, token) %></span>
         </td>
         <td class="info hide-on-med-and-down"><a href="javascript:void(0)" class="waves-effect waves-light btn-flat"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></a></td>
       </tr>
@@ -48,8 +53,8 @@
 </table>
 
 <script>
-function play_audio(n) {
-  document.getElementById("audio_" + n).play();
+function play_audio(n, component) {
+  document.getElementById("audio_" + component + "_" + n).play();
 }
 </script>
 
