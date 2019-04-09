@@ -15,12 +15,13 @@ class TokensController < ApplicationController
     end
 
     #@tokens = Token.all
-    @poses = Token.select(:pos).order(:pos).map(&:pos).uniq
-    @dates = Token.select(:created_at).order(:created_at).map(&:created_at).uniq.map{|x|x.strftime "%Y-%m-%d"}.uniq
+    @poses = Token.select(:pos).map(&:pos).sort.uniq
+    @dates = Token.select(:created_at).map(&:created_at).sort.uniq.map{|x|x.strftime "%Y-%m-%d"}.sort.uniq
 
     @tokens = Token.all.search(@search)
     @tokens = @tokens.where(created_at: date.midnight..date.end_of_day).distinct if !@date.empty? and @dates.include?(@date)
     @tokens = @tokens.where(pos: @pos).distinct if !@pos.empty? and @poses.include?(@pos)
+    @tokens = @tokens.order(:created_at, :id)
     
     respond_to do |format|
       format.html do

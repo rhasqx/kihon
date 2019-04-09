@@ -14,10 +14,12 @@
 
 @import "materialize/components/color-variables";
 
-$primary-color: #252B2B !default;
+$primary-color: #263238 !default;
 $link-color: #8A1818 !default;
 
 @import "materialize";
+
+// ----------------------------------------------------------------------------
 
 p.footer {
     margin: 7em auto 1em auto;
@@ -25,12 +27,7 @@ p.footer {
     font-size: 0.7em;
 }
 
-.pagination {
-    .gap {
-        line-height: 30px;
-        min-width: 30px;
-    }
-}
+// ----------------------------------------------------------------------------
 
 #search {
     color: white;
@@ -44,90 +41,94 @@ p.footer {
     color: grey;
 }
 
+// ----------------------------------------------------------------------------
+
+.pagination {
+    .gap {
+        line-height: 30px;
+        min-width: 30px;
+    }
+}
+
+// ----------------------------------------------------------------------------
+
 .filter li a {
     font-size: 0.8rem;
 }
 
+// ----------------------------------------------------------------------------
+
 table.token {
-    td.info     { font-size: 0.8em; }
-    td.kanji    { font-size: 2.2em; }
-    td.hiragana { font-size: 1.8em; }
-    td.katakana { font-size: 1.8em; }
-    td.romaji   { font-size: 11px; }
-    td.german   { font-size: 1.2em; }
-
-    span.empty { font-size: 11px; }
-
-    td.info {
-        @extend .grey-text;
+    td.kanji {
+        font-size: 2.2em;
+        a {
+            color: #0d3481;
+        }
     }
 
-    .kanji    a { color: #0d3481; }
-    .hiragana a { color: #8A1818;}
-    .katakana a { color: #086d3a; }
-    .romaji   a { color: #31353D; }
-    .german   a { color: #31353D; }
+    td.hiragana {
+        font-size: 1.8em;
+        a {
+            color: #8A1818;
+        }
+    }
+
+    td.katakana {
+        font-size: 1.8em;
+        a {
+            color: #086d3a;
+        }
+    }
+
+    td.romaji {
+        font-size: 11px;
+        a {
+            color: #31353D;
+        }
+    }
+
+    td.german {
+        font-size: 1.2em;
+        a {
+            color: #31353D;
+        }
+    }
 }
+
+// ----------------------------------------------------------------------------
 
 @media #{$small-and-down} {
+    table.token {
+        td.kanji    { font-size: 3.4em; }
+        td.hiragana { font-size: 2.2em; }
+        td.katakana { font-size: 2.2em; }
+        td.romaji   { font-size: 0.8em; }
+        td.german   { font-size: 1.2em; }
 
-table.token {
-    td.info     { font-size: 0.8em; }
-    td.kanji    { font-size: 3.4em; }
-    td.hiragana { font-size: 2.2em; }
-    td.katakana { font-size: 2.2em; }
-    td.romaji   { font-size: 0.8em; }
-    td.german   { font-size: 1.2em; }
+        td.kanji,
+        td.hiragana,
+        td.katakana,
+        td.romaji,
+        td.german { padding: 0px 5px; }
 
-    td.audio    { padding: 0px 5px; }
-    td.info     { padding: 0px 5px; }
-    td.kanji    { padding: 0px 5px; }
-    td.hiragana { padding: 0px 5px; }
-    td.katakana { padding: 0px 5px; }
-    td.romaji   { padding: 0px 5px; }
-    td.german   { padding: 0px 5px; }
-
-    td.audio {
-        //float: right;
-    }
-
-    span.empty { display: none; }
+        td:empty,
+        thead { display: none; }
     
-    thead {
-        display: none;
-        background-color: red;
+        tbody tr:first-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.12);
+        }
+    
+        tbody tr td {
+            display: block;
+            text-align: center;
+        }
+    
+        tr::before, tr::after {
+            content: "";
+            display: block;
+            height: 1em;
+        }
     }
-
-    tbody tr:first-child {
-        border-top: 1px solid rgba(0, 0, 0, 0.12);
-    }
-
-    tbody tr td {
-        display: block;
-        text-align: center;
-    }
-
-    tr::before, tr::after {
-        content: "";
-        display: block;
-        height: 1em;
-    }
-}
-
 } // @media #{$small-and-down}
 
-@media #{$medium-and-up} {
-
-table.token {
-    th.audio-kanji,    td.audio-kanji    { padding: 15px 5px 15px 20px; }
-    th.audio-hiragana, td.audio-hiragana { padding: 15px 5px 15px 20px; }
-    th.audio-katakana, td.audio-katakana { padding: 15px 5px 15px 20px; }
-    
-    th.kanji,    td.kanji    { }
-    th.hiragana, td.hiragana { }
-    th.katakana, td.katakana { }
-    th.romaji,   td.romaji   { }
-    th.german,   td.german   { padding: 15px 20px 15px 5px; }
-}
-
-} // @media #{$medium-and-up}
+// ----------------------------------------------------------------------------

@@ -32,6 +32,7 @@
 en:
   hello: "Hello world"
   all: "all"
+  back: "back"
   search: "search"
   german: "German"
   created_at: "created at"

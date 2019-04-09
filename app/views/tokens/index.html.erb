@@ -11,76 +11,17 @@
 <table class="token">
   <thead>
     <tr>
-      <th class="audio"></th>
-      <th class="kanji">Kanji</th>
-      <th class="audio"></th>
-      <th class="hiragana">Hiragana</th>
-      <th class="audio"></th>
-      <th class="katakana">Katakana</th>
-      <th class="romaji">Romaji</th>
-      <th class="german"><%= t("german") %></th>
-      <th class="info" style="display:none"></th>
+      <%= render 'thead' %>
     </tr>
   </thead>
-
   <tbody>
     <% @tokens.each do |token| %>
-      <% created = token.created_at.strftime("%Y-%m-%d") -%>
-      <% updated = token.updated_at.strftime("%Y-%m-%d") -%>
-      <% tooltip = ("%s: %s <br> %s: %s" % [t("created_at"), created, t("updated_at"), updated]).html_safe -%>
       <tr>
-        <% empty = '<span class="empty"></span>'.html_safe -%>
-        <td class="audio audio-kanji">
-          <%= render('audio', token: token, component: "kanji") %>
-        </td>
-        <td class="kanji">
-          <span><%= token.kanji.nil? ? empty : link_to(token.kanji, token) %></span>
-        </td>
-        <td class="audio audio-hiragana">
-          <%= render('audio', token: token, component: "hiragana") %>
-        </td>
-        <td class="hiragana">
-          <span><%= token.hiragana.nil? ? empty : link_to(token.hiragana, token) %></span>
-        </td>
-        <td class="audio audio-katakana">
-          <%= render('audio', token: token, component: "katakana") %>
-        </td>
-        <td class="katakana">
-          <span><%= token.katakana.nil? ? empty : link_to(token.katakana, token) %></span>
-        </td>
-        <td class="romaji">
-          <span><%= token.romaji.nil? ? empty : link_to(token.romaji, token) %></span>
-        </td>
-        <td class="german">
-          <span><%= token.german.nil? ? empty : link_to(token.german, token) %></span>
-        </td>
-        <td class="info hide-on-med-and-down" style="display:none"><a href="javascript:void(0)" class="waves-effect waves-light btn-flat"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></a></td>
+        <%= render 'cells', token: token %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<script>
-function play_audio(n, component) {
-  var audio = document.getElementById("audio_" + component + "_" + n);
-  var btn = document.getElementById("btn_audio_" + component + "_" + n);
-
-  if (audio.paused) {
-    console.log("paused -> play");
-    btn.innerHTML = "pause";
-    audio.play();
-  } else {
-    console.log("else -> pause");
-    btn.innerHTML = "play_arrow";
-    audio.pause();
-  }
-
-  audio.onended = function() {
-    console.log("ended");
-    btn.innerHTML = "play_arrow";
-  };
-}
-</script>
 
 <%= render 'paginate' %>
 

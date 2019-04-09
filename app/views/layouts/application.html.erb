@@ -20,5 +20,26 @@
 
     <p class="footer"><%= link_to "github.com/rhasqx/kihon", "https://github.com/rhasqx/kihon" %></p>
 
+    <script>
+    function play_audio(n, component) {
+      var audio = document.getElementById("audio_" + component + "_" + n);
+      var btn = document.getElementById("btn_audio_" + component + "_" + n);
+    
+      if (audio.paused) {
+        console.log("paused -> play");
+        btn.innerHTML = "pause";
+        audio.play();
+      } else {
+        console.log("else -> pause");
+        btn.innerHTML = "play_arrow";
+        audio.pause();
+      }
+    
+      audio.onended = function() {
+        console.log("ended");
+        btn.innerHTML = "play_arrow";
+      };
+    }
+    </script>
   </body>
 </html>
