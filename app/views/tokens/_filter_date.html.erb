@@ -1,15 +1,3 @@
-<div class="container center">
-<ul class="pagination filter">
-  <li class="waves-effect <%= "active" if !@poses.include?(@pos) %>"><%= link_to(t("all"), url_for(:date => @date, :search => @search)) %></li>
-  <% @poses.each do |pos| %>
-    <li class="waves-effect <%= "active" if pos == @pos %>">
-      <%= link_to(pos, url_for(:pos => pos, :date => @date, :search => @search)) %>
-    </li>
-  <% end %>
-</ul>
-</div>
-
-<div class="container center">
 <ul class="pagination filter">
   <li class="waves-effect <%= "active" if !@dates.include?(@date) %>"><%= link_to(t("all"), url_for(:pos => @pos, :search => @search)) %></li>
   <% @dates.each do |date| %>
@@ -19,4 +7,3 @@
     </li>
   <% end %>
 </ul>
-</div>

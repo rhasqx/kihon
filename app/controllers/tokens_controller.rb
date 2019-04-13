@@ -5,21 +5,21 @@ class TokensController < ApplicationController
   # GET /tokens.json
   def index
     # filter params
-    begin
-      search = params[:search] || ""
-    rescue
-      search = ""
-    end
-    begin
-      pos = params[:pos] || ""
-    rescue
-      pos = ""
-    end
+    search = params[:search] || ""
+    pos = params[:pos] || ""
     begin
       date = Date.strptime(params[:date] || "", "%Y-%m-%d").strftime("%Y-%m-%d")
     rescue
       date = Date.current.strftime("%Y-%m-%d")
     end
+    perpage = params[:perpage].to_i
+    perpage = Kaminari.config.default_per_page if perpage < 1
+    perpage = [perpage, 500].min
+
+    @search = search
+    @pos = pos
+    @date = date
+    @perpage = perpage
 
     @poses = Token.all.map(&:pos).sort.uniq
 
@@ -38,11 +38,7 @@ class TokensController < ApplicationController
     respond_to do |format|
       format.html do
         @size = @tokens.size
-        @tokens = @tokens.page(params[:page])
-
-        @search = search
-        @pos = pos
-        @date = date
+        @tokens = @tokens.page(params[:page]).per(@perpage)
       end
       format.pdf do
         send_data CardsPdf.new(@tokens).render,

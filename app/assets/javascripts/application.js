@@ -16,13 +16,19 @@
 //= require materialize
 //= require_tree .
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function(){
     var options = null;
     var elems = document.querySelectorAll('.tooltipped');
     var instances = M.Tooltip.init(elems, options);
 
-    document.getElementById('close').onclick=function() {
-        document.getElementById('search').value = "";
-        document.getElementById('form-search').submit();
+    var searchClose = document.getElementById("close");
+    var searchInput = document.getElementById("search");
+    var searchForm = document.getElementById("form-search");
+    if (typeof(searchClose) != 'undefined' && searchClose != null)
+    {
+        searchClose.onclick=function() {
+            searchInput.value = "";
+            searchForm.submit();
+        }
     }
 });

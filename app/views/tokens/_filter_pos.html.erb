@@ -1,0 +1,8 @@
+<ul class="pagination filter">
+  <li class="waves-effect <%= "active" if !@poses.include?(@pos) %>"><%= link_to(t("all"), url_for(:date => @date, :search => @search)) %></li>
+  <% @poses.each do |pos| %>
+    <li class="waves-effect <%= "active" if pos == @pos %>">
+      <%= link_to(pos, url_for(:pos => pos, :date => @date, :search => @search)) %>
+    </li>
+  <% end %>
+</ul>
