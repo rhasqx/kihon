@@ -1,11 +1,6 @@
 <%= render 'search' %>
-
-<br><br>
-
 <%= render 'filter' %>
-
-<br><br>
-
+<br>
 <%= render 'paginate' %>
 
 <table class="token">
@@ -25,8 +20,10 @@
 
 <%= render 'paginate' %>
 
-<br><br>
+<br><br><br>
 
 <div class="container center">
-  <%= link_to '<i class="material-icons left">cloud_download</i> cards.pdf'.html_safe, url_for(:date => @date, :pos => @pos, :search => @search, :format => :pdf), class: "waves-effect waves-light btn blue darken-1" %>
+  <%= link_to (content_tag(:i, "picture_as_pdf", class: "material-icons left") + "#{@size} cards").html_safe, url_for(:date => @date, :pos => @pos, :search => @search, :format => :pdf), class: "waves-effect waves-light btn blue darken-1" %>
 </div>
+
+<br><br><br>

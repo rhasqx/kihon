@@ -6,6 +6,4 @@
     per_page:      number of items to fetch per page
     remote:        data-remote
 -%>
-<li class="prev">
-  <%= link_to_unless current_page.first?, content_tag(:i, "chevron_left", :class => "material-icons").html_safe, url, rel: 'prev', remote: remote %>
-</li>
+<li class="prev"><%= link_to_unless current_page.first?, content_tag(:i, "chevron_left", :class => "material-icons").html_safe, url, rel: 'prev', remote: remote %></li>

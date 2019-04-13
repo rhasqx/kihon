@@ -4,33 +4,51 @@ class TokensController < ApplicationController
   # GET /tokens
   # GET /tokens.json
   def index
-    @search = params[:search] || ""
-    @date = params[:date] || ""
-    @pos = params[:pos] || ""
-
+    # filter params
     begin
-      date = Date.strptime(@date, "%Y-%m-%d")
+      search = params[:search] || ""
     rescue
-      date = Date.current
+      search = ""
+    end
+    begin
+      pos = params[:pos] || ""
+    rescue
+      pos = ""
+    end
+    begin
+      date = Date.strptime(params[:date] || "", "%Y-%m-%d").strftime("%Y-%m-%d")
+    rescue
+      date = Date.current.strftime("%Y-%m-%d")
     end
 
-    #@tokens = Token.all
-    @poses = Token.select(:pos).map(&:pos).sort.uniq
-    @dates = Token.select(:created_at).map(&:created_at).sort.uniq.map{|x|x.strftime "%Y-%m-%d"}.sort.uniq
+    @poses = Token.all.map(&:pos).sort.uniq
 
-    @tokens = Token.all.search(@search)
-    @tokens = @tokens.where(created_at: date.midnight..date.end_of_day).distinct if !@date.empty? and @dates.include?(@date)
-    @tokens = @tokens.where(pos: @pos).distinct if !@pos.empty? and @poses.include?(@pos)
+    @dates = Token.all.map(&:created_at).map{|x|x.strftime "%Y-%m-%d"}.sort.uniq
+
+    @tokens = Token.all.search(search)
+    if !pos.empty? and @poses.include?(pos)
+      @tokens = @tokens.where(pos: pos)
+    end
+    if !date.empty? and @dates.include?(date)
+      x = Date.strptime(date, "%Y-%m-%d")
+      @tokens = @tokens.where(created_at: x.midnight..x.end_of_day)
+    end
     @tokens = @tokens.order(:created_at, :id)
-    
+
     respond_to do |format|
       format.html do
+        @size = @tokens.size
         @tokens = @tokens.page(params[:page])
+
+        @search = search
+        @pos = pos
+        @date = date
       end
       format.pdf do
-        name   = "cards.pdf"
-        pdf = CardsPdf.new(@tokens)
-        send_data pdf.render, filename: name, type: "application/pdf", disposition: 'inline'
+        send_data CardsPdf.new(@tokens).render,
+          filename: "cards.pdf",
+          type: "application/pdf",
+          disposition: 'inline'
       end
     end
   end
