@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'csv'
+require 'progress_bar'
 
 file = 'japanisch-a1-1.csv'
 headers = %w(created_at hiragana katakana kanji romaji german pos updated_at examen)
@@ -15,6 +16,7 @@ csv_text = File.read(Rails.root.join('lib', 'seeds', file))
 csv_text = headers.join(";")+"\r\n" + csv_text.gsub(/\A(.*\n){1}/,'')
 
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'UTF-8', col_sep: ';')
+bar = ProgressBar.new(csv.size, :percentage, :counter, :bar)
 csv.each do |row|
     row = row.to_hash
 
@@ -34,6 +36,8 @@ csv.each do |row|
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
         token = Token.create(row)
     end
+
+    bar.increment!
 end
 
 puts "There are now #{Token.count} rows in the tokens table."

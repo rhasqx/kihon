@@ -22,7 +22,7 @@ class Token < ApplicationRecord
           text = self.send(component) || ""
           if !text.empty?
               cmd = "say -v Kyoko \"#{text}\" -o \"#{aiff}\" && ffmpeg -i \"#{aiff}\" -y -f mp3 -acodec libmp3lame -ab 192000 -ar 44100 \"#{mp3}\""
-              status = `#{cmd}`
+              status = `#{cmd} >/dev/null 2>&1`
           end
         end
       end
