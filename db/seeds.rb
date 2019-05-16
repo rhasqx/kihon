@@ -9,7 +9,7 @@
 require 'csv'
 
 file = 'japanisch-a1-1.csv'
-headers = %w(created_at hiragana katakana kanji romaji german pos updated_at)
+headers = %w(created_at hiragana katakana kanji romaji german pos updated_at examen)
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', file))
 csv_text = headers.join(";")+"\r\n" + csv_text.gsub(/\A(.*\n){1}/,'')
