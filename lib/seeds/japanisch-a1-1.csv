@@ -254,7 +254,7 @@ Datum;Hiragana;Katakana;Kanji;Romaji;Deutsch;Typ;Update;Examen
 2019-05-09;いいえ、（わたしは）げんきではありません。;;;iee, watashiwa gennki dewa arimasenn;Nein, es geht mir nicht gut.;Satz;;
 2019-05-09;わたしは、びようきです。;;;watashiwa byouki desu;Ich bin krank.;Satz;;
 2019-05-09;おだいじに！;;;odaijini;Gute Besserung!;Satz;;
-2019-05-09;（わたしの）誕生日は,☐月☐日です。;;;(watashiwa tannjyoubiwa,) ☐ gatu ☐ niti desu;Mein Geburtstag ist am ☐ ☐.;Satz;;
+2019-05-09;（わたしの）誕生日は,☐月☐日です。;;;(watashino tannjyoubiwa,) ☐ gatu ☐ niti desu;Mein Geburtstag ist am ☐ ☐.;Satz;2019-05-16;
 ;;;;;;;;
 ;;;;;;;;
 ;;;;;;;;
