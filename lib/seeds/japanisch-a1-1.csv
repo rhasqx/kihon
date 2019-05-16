@@ -221,7 +221,7 @@ Datum;Hiragana;Katakana;Kanji;Romaji;Deutsch;Typ;Update;Examen
 2019-05-02;うみ;;;umi;See;Substantiv;;1
 2019-05-02;ゆき;;;yuki;Schnee;Substantiv;;1
 2019-05-02;あめ;;;ame;Regen;Substantiv;;1
-2019-05-02;よろしう　おねがい　します。;;;yorosiku onegai shimasu;Vielen Dank.;Satz;;1
+2019-05-02;よろしく　おねがいします。;;;yoroshiku onegaishimasu;Vielen Dank.;Satz;2019-05-16;1
 2019-05-02;;;一万;ichimann;10000;Zahl;;1
 2019-05-02;;;二万;nimann;20000;Zahl;;1
 2019-05-02;;;十万;jyumann;100000;Zahl;;
