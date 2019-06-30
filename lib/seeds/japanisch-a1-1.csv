@@ -1,358 +1,358 @@
-Nr;Datum;Hiragana;Katakana;Kanji;Romaji;Deutsch;Typ;Update;Examen
-1;2019-02-21;あ;;;;a;Buchstabe;;
-1;2019-02-21;い;;;;i;Buchstabe;;
-1;2019-02-21;う;;;;u;Buchstabe;;
-1;2019-02-21;え;;;;e;Buchstabe;;
-1;2019-02-21;お;;;;o;Buchstabe;;
-1;2019-02-21;あい;;;ai;Liebe;Substantiv;;1
-1;2019-02-21;いえ;;;ie;Haus;Substantiv;;1
-1;2019-02-21;うえ;;;ue;oben;Adverb;;1
-1;2019-02-21;あお;;;au;blau;Adjektiv;;1
-1;2019-02-21;はい;;;hai;ja;Antwortpartikel;;
-1;2019-02-21;いいえ;;;iie;nein;Antwortpartikel;;
-1;2019-02-21;じゅぎうょ;;;jyugyou;Unterricht;Substantiv;;
-1;2019-02-21;にほんごのもじ;;;nihongo no moji;Japanische Buchstaben;Substantiv;;
-1;2019-02-21;おたのしみ;;;otanosimi;Vergnügen;Substantiv;;
-1;2019-02-21;せんせい;;;senssei;Lehrer(in);Substantiv;;
-1;2019-02-21;せいと;;;seito;Schüler(in);Substantiv;;
-1;2019-02-21;あいさつ ;;;aisatsu;Grüße;Substantiv;;
-1;2019-02-21;はじめまして;;;hajimemashite;Darf ich mich vorstellen?;Satz;;
-1;2019-02-21;（わたしわ、）☐ です。;;;(watashiwa,) ☐ desu;Ich heiße ☐.;Satz;;
-1;2019-02-21;（どうぞ）よろしく （おねがいします）。;;（どうぞ）よろしく （お願いします）。;(douzo) yoroshiku (onegaishimasu);Es freut mich, Sie kennen zu lernen! Angenehm! / Sehr efreut!;Satz;2019-06-30;
-1;2019-02-21;これから、じゅぎうょうをはじめましよう。;;;korekara, jyugyou o hajimemasyou;Sollen wir mit dem Unterricht anfangen?;Satz;;
-1;2019-02-21;みなさん、おちやをのみましようか。;;;minasann, ochya o nomimasyouka;Lasst uns Tee trinken.;Satz;2019-03-23;
-1;2019-02-21;おちや;;茶;ochya;Tee;Substantiv;;
-1;2019-02-21;はい、そうですね。;;;hai, soudesune;Ja, gerne!;Satz;;
-1;2019-02-21;そうですね;;;soudesune;gerne;Adverb;;
-1;2019-02-21;きようは、これでおわりです。;;;kyouwa, kore de owaridesu;Für heute sind wir fertig.;Satz;;
-1;2019-02-21;ありがとう　ございました;;;arigatou gozaimashita;Vielen Dank.;Satz;;
-1;2019-02-21;さようなら;;;sayounara;Auf wiedersehen.;Satz;;
-1;2019-02-21;かき;;;kaki;Kaki;Substantiv;;1
-1;2019-02-21;き;;;ki;Baum;Substantiv;;1
-1;2019-02-21;かく;;;kaku;schreiben;Verb;;1
-1;2019-02-21;け;;;ke;Haar;Substantiv;;1
-1;2019-02-21;こ（ども）;;;ko (domo);Kind;Substantiv;;1
-2;2019-02-28;か;;;;ka;Buchstabe;;
-2;2019-02-28;き;;;;ki;Buchstabe;;
-2;2019-02-28;く;;;;ku;Buchstabe;;
-2;2019-02-28;け;;;;ke;Buchstabe;;
-2;2019-02-28;こ;;;;ko;Buchstabe;;
-2;2019-02-28;;メモ;;memo;Memorandum;Substantiv;;
-2;2019-02-28;わたしば、あなたをあいしています。;;;watashiwa anata o aisiteimasu;Ich liebe dich.;Satz;;
-2;2019-02-28;わかりましたか。;;;wakarimashitaka;Haben Sie mich verstanden?;Satz;;
-3;2019-03-14;さ;;;;sa;Buchstabe;;
-3;2019-03-14;し;;;;shi;Buchstabe;;
-3;2019-03-14;す;;;;su;Buchstabe;;
-3;2019-03-14;せ;;;;se;Buchstabe;;
-3;2019-03-14;そ;;;;so;Buchstabe;;
-3;2019-03-14;すばらしい;;;subarashii;wunderbar;Adjektiv;2019-06-20;
-3;2019-03-14;おはようございます;;;ohayougozaimasu;Guten Morgen!;Satz;;
-3;2019-03-14;こんにちは;;;konnichiwa;Guten Tag!;Satz;;
-3;2019-03-14;こんばんは;;;konnbannwa;Guten Abend!;Satz;;
-3;2019-03-14;;テスト;;tesuto;Test;Substantiv;;
-3;2019-03-14;いち;;一;ichi;1;Zahl;;1
-3;2019-03-14;に;;二;ni;2;Zahl;;1
-3;2019-03-14;さん;;三;sann;3;Zahl;;1
-3;2019-03-14;よん　（し）;;四;yonn (shi);4;Zahl;;1
-3;2019-03-14;ご;;五;go;5;Zahl;;1
-3;2019-03-14;ろく;;六;roku;6;Zahl;;1
-3;2019-03-14;しち　（なな）;;七;shichi (nana);7;Zahl;;1
-3;2019-03-14;はち;;八;hachi;8;Zahl;;1
-3;2019-03-14;きゅう;;九;kyuu;9;Zahl;;1
-3;2019-03-14;じゅう;;十;jyuu;10;Zahl;;1
-3;2019-03-14;おいしいですか。;;;oishiidesuka;Schmeckt es?;Satz;;
-3;2019-03-14;はい、（とても）おいしいです。;;;hai, (totemo) oishii desu;Ja, es schmeckt (sehr) gut.;Satz;;
-3;2019-03-14;いいえ、おいしくありません。;;;iee, oishiku arimasenn;Nein, es schmeckt nicht gut.;Satz;;
-3;2019-03-14;じこしようかい;;;jikosoukai;Selbsteinführung;Substantiv;;
-3;2019-03-14;（わたしわ、）☐ にすんでいます。;;;(watashiwa,) ☐ ni sunndeimasu;Ich wohne in ☐.;Satz;;
-3;2019-03-14;うた;;;uta;Gesang;Substantiv;;
-3;2019-03-14;あさあ;;;asa;Morgen;Substantiv;;1
-3;2019-03-14;（お）かし;;;(o)kashi;Süßigkeiten;Substantiv;;1
-3;2019-03-14;（お）すし;;寿司;(o)sushi;Sushi;Substantiv;2019-03-28;1
-3;2019-03-14;せかい;;;sekai;Welt;Substantiv;;1
-3;2019-03-14;あそこ;;;asoko;dort drüben;Adverb;;1
-3;2019-03-14;そこ;;;soko;dort;Adverb;;1
-3;2019-03-14;ここ;;;koko;hier;Adverb;;1
-4;2019-03-21;た;;;;ta;Buchstabe;;
-4;2019-03-21;ち;;;;chi;Buchstabe;;
-4;2019-03-21;つ;;;;tsu;Buchstabe;;
-4;2019-03-21;て;;;;te;Buchstabe;;
-4;2019-03-21;と;;;;to;Buchstabe;;
-4;2019-03-21;じゅういち;;十一;jyuuichi;11;Zahl;;1
-4;2019-03-21;じゅうに;;十二;jyuuni;12;Zahl;;
-4;2019-03-21;じゅうさん;;十三;jyuusann;13;Zahl;;
-4;2019-03-21;じゅうよん　（じゅうし）;;十四;jyuuyonn (jyuushi);14;Zahl;;
-4;2019-03-21;じゅうご;;十五;jyuugo;15;Zahl;;
-4;2019-03-21;じゅうろく;;十六;jyuuroku;16;Zahl;;
-4;2019-03-21;じゅうしち　（じゅうなな）;;十七;jyuushichi (jyuunana);17;Zahl;;
-4;2019-03-21;じゅうはち;;十八;jyuuhachi;18;Zahl;;
-4;2019-03-21;じゅうきゅう;;十九;jyuukyuu;19;Zahl;;
-4;2019-03-21;にじゅう;;二十;nijyuu;20;Zahl;;1
-4;2019-03-21;した;;;shita;unten;Adverb;;1
-4;2019-03-21;ち;;;chi;Blut;Substantiv;;1
-4;2019-03-21;つけい;;;tsukei;Schreibtisch;Substantiv;;1
-4;2019-03-21;いす;;;isu;Stuhl;Substantiv;;1
-4;2019-03-21;て;;;te;Hand;Substantiv;;1
-4;2019-03-21;あし;;;ashi;Fuß;Substantiv;;1
-4;2019-03-21;とけい;;;tokei;Uhr;Substantiv;2019-03-27;1
-4;2019-03-21;わたしのしゅいは、☐です。;;;watashino syumi wa, ☐ desu;Mein Hobby ist ☐.;Satz;;
-4;2019-03-21;わたしのしゅいは、☐と☐です。;;;watashino syumi wa, ☐ to ☐ desu;Mein Hobby ist ☐ und ☐.;Satz;;
-4;2019-03-21;はい、（とても）（よく）わかりました。;;;hai, (totemo) (yoku) wakarimashita;Ja, ich habe (sehr) (gut) verstanden.;Satz;;
-4;2019-03-21;いいえ、（ぜんぜん）　わかりません。;;;iee, (zennzenn) wakarimasenn;Nein, ich habe (gar) nicht verstanden.;Satz;;
-4;2019-03-21;すぽーつ;;;spo-tu;Sport;Substantiv;;
-4;2019-03-21;けんどう;;;kenndou;Kendo;Substantiv;;
-4;2019-03-21;じょぎんぐ;;;jyoginngu;Jogging;Substantiv;;
-4;2019-03-21;さんぽ;;;sannpo;Spaziergang;Substantiv;;
-4;2019-03-21;りようり;;;ryouri;kochen;Verb;;
-4;2019-03-21;どくしよ;;;dokusyo;Buch lesen;Verb;;
-4;2019-03-21;まんがぼんをよむこと;;;manngabonn o yomukoto;Manga lesen;Verb;;
-4;2019-03-21;おんがくかんしよう;;;onngakukannsyou;Musik hören;Verb;;
-4;2019-03-21;にわしごと;;;niwashigoto;im Garten arbeiten;Verb;;
-4;2019-03-21;さいくりんぐ;;;ge-mu;Game/Spiel;Substantiv;;
-4;2019-03-21;にほんごがくしゆう;;;nihonngo gakusyuu;Japanisch lernen;Verb;;
-4;2019-03-21;しゃしん;;写真;shashinn;Fotografie;Substantiv;;
-5;2019-03-28;な;;;;na;Buchstabe;;
-5;2019-03-28;に;;;;ni;Buchstabe;;
-5;2019-03-28;ぬ;;;;nu;Buchstabe;;
-5;2019-03-28;ね;;;;ne;Buchstabe;;
-5;2019-03-28;の;;;;no;Buchstabe;;
-5;2019-03-28;あなた;;;anata;Du / Sie;Personalpronomen;2019-03-31;1
-5;2019-03-28;わたし;;;watasi;Ich;Personalpronomen;2019-03-31;1
-5;2019-03-28;にく;;肉;niku;Fleisch;Substantiv;;1
-5;2019-03-28;いぬ;;犬;inu;Hund;Substantiv;;1
-5;2019-03-28;ねこ;;猫;neko;Katze;Substantiv;;1
-5;2019-03-28;のり;;海苔;nori;Nori;Substantiv;;1
-5;2019-03-28;にじゅういち;;二十一;nijyuuichi;21;Zahl;;
-5;2019-03-28;にじゅうに;;二十二;nijyuuni;22;Zahl;;
-5;2019-03-28;にじゅうさん;;二十三;nijyuusann;23;Zahl;;
-5;2019-03-28;にじゅうよん　（にじゅうし）;;二十四;nijyuuyonn (nijyuushi);24;Zahl;;
-5;2019-03-28;にじゅうご;;二十五;nijyuugo;25;Zahl;;
-5;2019-03-28;にじゅうろく;;二十六;nijyuuroku;26;Zahl;;
-5;2019-03-28;にじゅうしち　（にじゅうなな）;;二十七;nijyuushichi (nijyuunana);27;Zahl;;
-5;2019-03-28;にじゅうはち;;二十八;nijyuuhachi;28;Zahl;;
-5;2019-03-28;にじゅうきゅう;;二十九;nijyuukyuu;29;Zahl;;
-5;2019-03-28;さんじゅう;;三十;sannjyuu;30;Zahl;;
-5;2019-03-28;わたしのすきなたべものは、☐です。;;;watashino sukinatabemono wa ☐ desu;Mein Lieblingsessen ist ☐.;Satz;2019-04-11;
-5;2019-03-28;あたまが　よい　（いい）。;;;atamaga yoi (ii);klug;Adjektiv;;
-5;2019-03-28;ぴざ;;;piza;Pizza;Substantiv;;
-5;2019-03-28;めんるい;;;mennrui;Nudelgericht;Substantiv;;
-5;2019-03-28;けばぶ;;;kebabu;Kebap;Substantiv;;
-5;2019-03-28;さかな;;;sakana;Fisch;Substantiv;;
-5;2019-03-28;やさい;;;yasai;Gemüse;Substantiv;;
-5;2019-03-28;くだもの;;;kudamono;Obst;Substantiv;;
-5;2019-03-28;あまいもの;;;amaimono;Süßigkeiten;Substantiv;;
-5;2019-03-28;あいす;;;aisu;Eis;Substantiv;;
-5;2019-03-28;ちゅうかりょうり;;;chuukaryouri;chinesisches Gericht;Substantiv;;
-5;2019-03-28;いんどようり;;;inndoryouri;indisches Gericht;Substantiv;;
-5;2019-03-28;からいもの;;;karaimono;scharfes Essen;Substantiv;;
-5;2019-03-28;はんバーがー;;;hannba-ga-;Hamburger;Substantiv;;
-5;2019-03-28;ふらいどぽてと;;;huraidopoteteo;Pommes Frites;Substantiv;;
-5;2019-03-28;いたりようり;;;itariaryouri;italienisches Gericht;Substantiv;;
-6;2019-04-04;は;;;;ha;Buchstabe;;
-6;2019-04-04;ひ;;;;hi;Buchstabe;;
-6;2019-04-04;ふ;;;;fu;Buchstabe;;
-6;2019-04-04;へ;;;;he;Buchstabe;;
-6;2019-04-04;ほ;;;;ho;Buchstabe;;
-6;2019-04-04;ひゃく;;百;hyaku;100;Zahl;;1
-6;2019-04-04;ひゃくいち;;百一;hyakuichi;101;Zahl;;
-6;2019-04-04;ひゃくに;;百二;hyakuni;102;Zahl;;
-6;2019-04-04;ひゃくさん;;百三;hyakusann;103;Zahl;;
-6;2019-04-04;ひゃくよん　（ひゃくし）;;百四;hyakuyonn (hyakushi);104;Zahl;;
-6;2019-04-04;ひゃくご;;百五;hyakugo;105;Zahl;;
-6;2019-04-04;ひゃくろく;;百六;hyakuroku;106;Zahl;;
-6;2019-04-04;ひゃくしち　（ひゃくなな）;;百七;hyakushichi (hyakunana);107;Zahl;;
-6;2019-04-04;ひゃくはち;;百八;hyakuhachi;108;Zahl;;
-6;2019-04-04;ひゃくきゅう;;百九;hyakukyuu;109;Zahl;;
-6;2019-04-04;ひゃくじゅう;;百十;hyakujyuu;110;Zahl;;
-6;2019-04-04;は;;歯;ha;Zahn;Substantiv;;1
-6;2019-04-04;は;;葉;ha;Blatt;Substantiv;;1
-6;2019-04-04;ひ;;火;hi;Feuer;Substantiv;;1
-6;2019-04-04;ひ;;日;hi;Tag;Substantiv;;1
-6;2019-04-04;とうふ;;豆腐;tofu;Tofu;Substantiv;;1
-6;2019-04-04;へいわ;;平和;heiwa;Frieden;Substantiv;;1
-6;2019-04-04;ほんとう;;本当;hontou;echt;Adjektiv;;1
-6;2019-04-04;わたしのすきなのみものは、☐です。;;好きな飲み物;watashino sukinanomimono wa ☐ desu;Mein Lieblingsgetränk ist ☐.;Satz;2019-04-11;
-6;2019-04-04;すきなのみもの;;;sukinanomimono;Lieblingsgetränk;Substantiv;;
-6;2019-04-04;みず;;水;mizu;Wasser;Substantiv;;
-6;2019-04-04;たんさんすい;;;tannsannsui;Sprudel;Substantiv;;
-6;2019-04-04;こーひー;;;ko-hi-;Kaffee;Substantiv;;
-6;2019-04-04;おれんじじゆーす;;;orennjijyu-su;Orangensaft;Substantiv;;
-6;2019-04-04;りんごじゆーす;;;rinngojyu-su;Apfelsaft;Substantiv;;
-6;2019-04-04;びーる;;;bi-ru;Bier;Substantiv;;
-6;2019-04-04;わいん;;;wain;Wein;Substantiv;;
-6;2019-04-04;さけ;;酒;sake;Sake;Substantiv;;
-6;2019-04-04;こーら;;;ko-ra;Cola;Substantiv;;
-6;2019-04-04;ぎゅうにゅう;;;gyuunyuu;Milch;Substantiv;;
-6;2019-04-04;こにやなく;;;koniyanaku;Kognak;Substantiv;;
-7;2019-04-11;ま;;;;ma;Buchstabe;;
-7;2019-04-11;み;;;;mi;Buchstabe;;
-7;2019-04-11;む;;;;mu;Buchstabe;;
-7;2019-04-11;め;;;;me;Buchstabe;;
-7;2019-04-11;も;;;;mo;Buchstabe;;
-7;2019-04-11;せん;;千;senn;1000;Zahl;2019-05-15;1
-7;2019-04-11;せんいち;;千一;sennichi;1001;Zahl;;1
-7;2019-04-11;せんに;;千二;sennni;1002;Zahl;;
-7;2019-04-11;せんさん;;千三;sennsann;1003;Zahl;;
-7;2019-04-11;せんよん　（せんし）;;千四;sennyonn (sennshi);1004;Zahl;;
-7;2019-04-11;せんご;;千五;senngo;1005;Zahl;;
-7;2019-04-11;;;千九百九十九;sennkyuuhyakukyuujyuukyuu;1999;Zahl;;1
-7;2019-04-11;;;二千;nisenn;2000;Zahl;;1
-7;2019-04-11;;;三千;sannzenn;3000;Zahl;;
-7;2019-04-11;;;四千;yonnsenn;4000;Zahl;;
-7;2019-04-11;わたしのすきなあいすくりーむは、☐です。;;;watashino sukina aisukuri-mu wa ☐ desu;Mein Lieblingseis ist ☐.;Satz;;
-7;2019-04-11;すきなあいすくりーむ;好きなアイスクリーム;;sukina aisukuri-mu;Lieblingseis;Substantiv;;
-7;2019-04-11;ばにら;バニラ;;banira;Vanille;Substantiv;;
-7;2019-04-11;ちよこれーと;チョコレート;;tyokore-to;Schokolade;Substantiv;;
-7;2019-04-11;いちご;イチゴ;;ichigo;Erdbeere;Substantiv;;
-7;2019-04-11;らずべりー;ラズベリー;;razuberi-;Himbeere;Substantiv;;
-7;2019-04-11;なっっ;ナッツ;;nattu;Nuss;Substantiv;;
-7;2019-04-11;よーぐると;ヨーグルト;;yo-guruto;Joghurt;Substantiv;;
-7;2019-04-11;まつちゃ;;抹茶;maccha;Matcha;Substantiv;;
-7;2019-04-11;まんごー;マンゴー;;manngo;Mango;Substantiv;;
-7;2019-04-11;たまご;;;tamago;Ei;Substantiv;;1
-7;2019-04-11;みみ;;;mimi;Ohr;Substantiv;;1
-7;2019-04-11;むね;;;mune;Brust;Substantiv;;1
-7;2019-04-11;め;;;me;Auge;Substantiv;;1
-8;2019-05-02;もも;;;momo;Pfirisch;Substantiv;;1
-8;2019-05-02;や;;;;ya;Buchstabe;;
-8;2019-05-02;ゆ;;;;yu;Buchstabe;;
-8;2019-05-02;よ;;;;yo;Buchstabe;;
-8;2019-05-02;やま;;;yama;Berg;Substantiv;;1
-8;2019-05-02;うみ;;;umi;See;Substantiv;;1
-8;2019-05-02;ゆき;;;yuki;Schnee;Substantiv;;1
-8;2019-05-02;あめ;;;ame;Regen;Substantiv;;1
-8;2019-05-02;よろしく　おねがいします。;;;yoroshiku onegaishimasu;Vielen Dank.;Satz;2019-05-16;1
-8;2019-05-02;;;一万;ichimann;10000;Zahl;;1
-8;2019-05-02;;;二万;nimann;20000;Zahl;;1
-8;2019-05-02;;;十万;jyumann;100000;Zahl;;
-8;2019-05-02;;;百万;hyakumann;1000000;Zahl;;
-8;2019-05-02;;;千万;sennmann;10000000;Zahl;;
-8;2019-05-02;わたしのすきなくだものは、☐です。;;;watashino sukina kudamono wa ☐ desu;Meine Lieblingsfrucht ist ☐.;Satz;;
-8;2019-05-02;りんご;;;rinngo;Apfel;Substantiv;;
-8;2019-05-02;ぶらつくべりー;フラツクベリー;;bulakkuberi-;Brombeere;Substantiv;;
-8;2019-05-02;おれんじ;オレンジ;;orennji;Organge;Substantiv;;
-8;2019-05-02;なし;;;nashi;Birne;Substantiv;;
-8;2019-05-02;ばなな;バナナ;;banana;Banane;Substantiv;;
-8;2019-05-02;ぶどう;;;budou;Traube;Substantiv;;
-8;2019-05-02;あんず;;;annzu;Aprikose;Substantiv;;
-8;2019-05-02;れもん;レモン;;lemonn;Zitrone;Substantiv;;
-8;2019-05-02;すいか;;;suika;Wassermelone;Substantiv;;
-8;2019-05-02;めろん;メロン;;meronn;Melone;Substantiv;;
-8;2019-05-02;ぱいなつふる;パイナップル;;painappuru;Ananas;Substantiv;;
-9;2019-05-09;ら;;;;ra;Buchstabe;;
-9;2019-05-09;り;;;;ri;Buchstabe;;
-9;2019-05-09;る;;;;ru;Buchstabe;;
-9;2019-05-09;れ;;;;re;Buchstabe;;
-9;2019-05-09;ろ;;;;ro;Buchstabe;;
-9;2019-05-09;らーめん;;;ra-menn;Ramen;Substantiv;;1
-9;2019-05-09;おりがみ;;;origami;Origami;Substantiv;;1
-9;2019-05-09;する;;;suru;machen;Verb;;1
-9;2019-05-09;なにする？;;;nanisuru;Was machen wir?;Satz;;1
-9;2019-05-09;れいぞうこ;;;reizouko;Kühlschrank;Substantiv;;1
-9;2019-05-09;おげんきですか。;;;ogennkidesuka;Wie geht es dir? / Wie geht es Ihnen?;Satz;;1
-9;2019-05-09;はい、（わたしは）（とても）げんきです。;;;hai, watashiwa (totemo) gennki desu;Ja, es geht mir (sehr) gut.;Satz;;
-9;2019-05-09;いいえ、（わたしは）げんきではありません。;;;iee, watashiwa gennki dewa arimasenn;Nein, es geht mir nicht gut.;Satz;;
-9;2019-05-09;わたしは、びようきです。;;;watashiwa byouki desu;Ich bin krank.;Satz;;
-9;2019-05-09;おだいじに！;;;odaijini;Gute Besserung!;Satz;;
-9;2019-05-09;（わたしの）誕生日は,☐月☐日です。;;;(watashino tannjyoubiwa,) ☐ gatu ☐ niti desu;Mein Geburtstag ist am ☐ ☐.;Satz;2019-05-16;
-10;2019-05-16;わ;;;;wa;Buchstabe;;
-10;2019-05-16;を;;;;wo;Buchstabe;;
-10;2019-05-16;ん;;;;n;Buchstabe;;
-10;2019-05-16;これをください。;;;korewokudasai;Geben Sie mir bitte das!;Satz;;
-10;2019-05-16;わたしのすきないろは、☐です。;;;watashino sukina iro wa ☐ desu;Meine Lieblingsfarbe ist ☐.;Satz;;
-10;2019-05-16;しろ;;白;shiro;weiß;Adjektiv;;
-10;2019-05-16;きいろ;;黄色;kiiro;gelb;Adjektiv;;
-10;2019-05-16;おれんじ;オレンジ;;orennji;orange;Adjektiv;;
-10;2019-05-16;あか;;赤;aka;rot;Adjektiv;;
-10;2019-05-16;ぴんく;ピンク;;pinnku;rosa;Adjektiv;;
-10;2019-05-16;むらさき;;紫;murasaki;lila;Adjektiv;;
-10;2019-05-16;あお;;青;ao;blau;Adjektiv;;
-10;2019-05-16;こん;;紺;konn;nachtlbau;Adjektiv;;
-10;2019-05-16;みどり;;緑;midori;grün;Adjektiv;;
-10;2019-05-16;はいいろ;;灰色;haiiro;grau;Adjektiv;;
-10;2019-05-16;ちやいろ;;茶色;chyairo;braun;Adjektiv;;
-10;2019-05-16;べーじゆ;ベージュ;;be-jyu;beige;Adjektiv;;
-10;2019-05-16;くろ;;黒;kuro;schwarz;Adjektiv;;
-10;2019-05-16;;;一兆;ichyou;1000000000000;Zahl;;
-10;2019-05-16;;;十兆;jyucchyou;10000000000000;Zahl;;
-10;2019-05-16;;;百兆;hyakuyou;100000000000000;Zahl;;
-10;2019-05-16;;;千兆;sennchyou;1000000000000000;Zahl;;
-11;2019-05-23;が;;;;ga;Buchstabe;;
-11;2019-05-23;ぎ;;;;gi;Buchstabe;;
-11;2019-05-23;ぐ;;;;gu;Buchstabe;;
-11;2019-05-23;げ;;;;ge;Buchstabe;;
-11;2019-05-23;ご;;;;go;Buchstabe;;
-11;2019-05-23;ざ;;;;za;Buchstabe;;
-11;2019-05-23;じ;;;;(z) ji;Buchstabe;;
-11;2019-05-23;ず;;;;zu;Buchstabe;;
-11;2019-05-23;ぜ;;;;ze;Buchstabe;;
-11;2019-05-23;ぞ;;;;zo;Buchstabe;;
-11;2019-05-23;だ;;;;da;Buchstabe;;
-11;2019-05-23;ぢ;;;;(d) ji;Buchstabe;;
-11;2019-05-23;づ;;;;(d) zu;Buchstabe;;
-11;2019-05-23;で;;;;de;Buchstabe;;
-11;2019-05-23;ど;;;;do;Buchstabe;;
-11;2019-05-23;ば;;;;ba;Buchstabe;;
-11;2019-05-23;び;;;;bi;Buchstabe;;
-11;2019-05-23;ぶ;;;;bu;Buchstabe;;
-11;2019-05-23;べ;;;;be;Buchstabe;;
-11;2019-05-23;ぼ;;;;bo;Buchstabe;;
-11;2019-05-23;ぱ;;;;pa;Buchstabe;;
-11;2019-05-23;ぴ;;;;pi;Buchstabe;;
-11;2019-05-23;ぷ;;;;pu;Buchstabe;;
-11;2019-05-23;ぺ;;;;pe;Buchstabe;;
-11;2019-05-23;ぽ;;;;po;Buchstabe;;
-12;2019-06-06;きや;;;;kya;Buchstabe;;
-12;2019-06-06;きゆ;;;;kyu;Buchstabe;;
-12;2019-06-06;きよ;;;;kyo;Buchstabe;;
-12;2019-06-06;しや;;;;sya;Buchstabe;;
-12;2019-06-06;しゆ;;;;syu;Buchstabe;;
-12;2019-06-06;しよ;;;;syo;Buchstabe;;
-12;2019-06-06;ちや;;;;tya;Buchstabe;;
-12;2019-06-06;ちゆ;;;;tyu;Buchstabe;;
-12;2019-06-06;ちよ;;;;tyo;Buchstabe;;
-12;2019-06-06;にや;;;;nya;Buchstabe;;
-12;2019-06-06;にゆ;;;;nyu;Buchstabe;;
-12;2019-06-06;によ;;;;nyo;Buchstabe;;
-12;2019-06-06;ひや;;;;hya;Buchstabe;;
-12;2019-06-06;ひゆ;;;;hyu;Buchstabe;;
-12;2019-06-06;ひよ;;;;hyo;Buchstabe;;
-12;2019-06-06;みや;;;;mya;Buchstabe;;
-12;2019-06-06;みゆ;;;;myu;Buchstabe;;
-12;2019-06-06;みよ;;;;myo;Buchstabe;;
-12;2019-06-06;りや;;;;rya;Buchstabe;;
-12;2019-06-06;りゆ;;;;ryu;Buchstabe;;
-12;2019-06-06;りよ;;;;ryo;Buchstabe;;
-12;2019-06-06;ぎや;;;;gya;Buchstabe;;
-12;2019-06-06;ぎゆ;;;;gyu;Buchstabe;;
-12;2019-06-06;ぎよ;;;;gyo;Buchstabe;;
-12;2019-06-06;じや;;;;zya;Buchstabe;;
-12;2019-06-06;じゆ;;;;zyu;Buchstabe;;
-12;2019-06-06;じよ;;;;zyo;Buchstabe;;
-12;2019-06-06;ぎや;;;;zya;Buchstabe;;
-12;2019-06-06;ぎゆ;;;;zyu;Buchstabe;;
-12;2019-06-06;ぎよ;;;;zyo;Buchstabe;;
-12;2019-06-06;びや;;;;bya;Buchstabe;;
-12;2019-06-06;びゆ;;;;byu;Buchstabe;;
-12;2019-06-06;びよ;;;;byo;Buchstabe;;
-12;2019-06-06;ぴや;;;;pya;Buchstabe;;
-12;2019-06-06;ぴゆ;;;;pyu;Buchstabe;;
-12;2019-06-06;ぴよ;;;;pyo;Buchstabe;;
-13;2019-06-27;やま;;山;yama;Berg;Substantiv;;
-13;2019-06-27;うみ;;海;umi;See;Substantiv;;
-13;2019-06-27;ゆき;;雪;yuki;Schnee;Substantiv;;
-13;2019-06-27;あめ;;雨;ame;Regen;Substantiv;;
-13;2019-06-27;げつようび;;月よう日;getuyoubi;Montag;Substantiv;;
-13;2019-06-27;かようび;;火よう日;kayoubi;Dienstag;Substantiv;;
-13;2019-06-27;すいようび;;水よう日;suiyoubi;Mittwoch;Substantiv;;
-13;2019-06-27;もくようび;;木よう日;mokuyoubi;Donnerstag;Substantiv;;
-13;2019-06-27;きんようび;;金よう日;kinnyoubi;Freitag;Substantiv;;
-13;2019-06-27;どようび;;土よう日;doyoubi;Samstag;Substantiv;;
-13;2019-06-27;にちようび;;日よう日;nichiyoubi;Sonntag;Substantiv;;
-13;2019-06-27;げつ;;月;tsuki;Mond;Substantiv;;
-13;2019-06-27;か;;火;hi;Feuer;Substantiv;;
-13;2019-06-27;すい;;水;mizu;Wasser;Substantiv;;
-13;2019-06-27;もく;;木;ki;Baum;Substantiv;;
-13;2019-06-27;きん;;金;kin;Gold / Geld;Substantiv;;
-13;2019-06-27;ど;;土;tsuchi;Erde;Substantiv;;
-13;2019-06-27;にち;;日;hi;Tag / Sonne;Substantiv;;
+Datum;Hiragana;Katakana;Kanji;Romaji;Deutsch;Typ;Update;Examen;Nr
+2019-02-21;あ;;;;a;Buchstabe;;;1
+2019-02-21;い;;;;i;Buchstabe;;;1
+2019-02-21;う;;;;u;Buchstabe;;;1
+2019-02-21;え;;;;e;Buchstabe;;;1
+2019-02-21;お;;;;o;Buchstabe;;;1
+2019-02-21;あい;;;ai;Liebe;Substantiv;;1;1
+2019-02-21;いえ;;;ie;Haus;Substantiv;;1;1
+2019-02-21;うえ;;;ue;oben;Adverb;;1;1
+2019-02-21;あお;;;au;blau;Adjektiv;;1;1
+2019-02-21;はい;;;hai;ja;Antwortpartikel;;;1
+2019-02-21;いいえ;;;iie;nein;Antwortpartikel;;;1
+2019-02-21;じゅぎうょ;;;jyugyou;Unterricht;Substantiv;;;1
+2019-02-21;にほんごのもじ;;;nihongo no moji;Japanische Buchstaben;Substantiv;;;1
+2019-02-21;おたのしみ;;;otanosimi;Vergnügen;Substantiv;;;1
+2019-02-21;せんせい;;;senssei;Lehrer(in);Substantiv;;;1
+2019-02-21;せいと;;;seito;Schüler(in);Substantiv;;;1
+2019-02-21;あいさつ ;;;aisatsu;Grüße;Substantiv;;;1
+2019-02-21;はじめまして;;;hajimemashite;Darf ich mich vorstellen?;Satz;;;1
+2019-02-21;（わたしわ、）☐ です。;;;(watashiwa,) ☐ desu;Ich heiße ☐.;Satz;;;1
+2019-02-21;（どうぞ）よろしく （おねがいします）。;;（どうぞ）よろしく （お願いします）。;(douzo) yoroshiku (onegaishimasu);Es freut mich, Sie kennen zu lernen! Angenehm! / Sehr efreut!;Satz;2019-06-30;;1
+2019-02-21;これから、じゅぎうょうをはじめましよう。;;;korekara, jyugyou o hajimemasyou;Sollen wir mit dem Unterricht anfangen?;Satz;;;1
+2019-02-21;みなさん、おちやをのみましようか。;;;minasann, ochya o nomimasyouka;Lasst uns Tee trinken.;Satz;2019-03-23;;1
+2019-02-21;おちや;;茶;ochya;Tee;Substantiv;;;1
+2019-02-21;はい、そうですね。;;;hai, soudesune;Ja, gerne!;Satz;;;1
+2019-02-21;そうですね;;;soudesune;gerne;Adverb;;;1
+2019-02-21;きようは、これでおわりです。;;;kyouwa, kore de owaridesu;Für heute sind wir fertig.;Satz;;;1
+2019-02-21;ありがとう　ございました;;;arigatou gozaimashita;Vielen Dank.;Satz;;;1
+2019-02-21;さようなら;;;sayounara;Auf wiedersehen.;Satz;;;1
+2019-02-21;かき;;;kaki;Kaki;Substantiv;;1;1
+2019-02-21;き;;;ki;Baum;Substantiv;;1;1
+2019-02-21;かく;;;kaku;schreiben;Verb;;1;1
+2019-02-21;け;;;ke;Haar;Substantiv;;1;1
+2019-02-21;こ（ども）;;;ko (domo);Kind;Substantiv;;1;1
+2019-02-28;か;;;;ka;Buchstabe;;;2
+2019-02-28;き;;;;ki;Buchstabe;;;2
+2019-02-28;く;;;;ku;Buchstabe;;;2
+2019-02-28;け;;;;ke;Buchstabe;;;2
+2019-02-28;こ;;;;ko;Buchstabe;;;2
+2019-02-28;;メモ;;memo;Memorandum;Substantiv;;;2
+2019-02-28;わたしば、あなたをあいしています。;;;watashiwa anata o aisiteimasu;Ich liebe dich.;Satz;;;2
+2019-02-28;わかりましたか。;;;wakarimashitaka;Haben Sie mich verstanden?;Satz;;;2
+2019-03-14;さ;;;;sa;Buchstabe;;;3
+2019-03-14;し;;;;shi;Buchstabe;;;3
+2019-03-14;す;;;;su;Buchstabe;;;3
+2019-03-14;せ;;;;se;Buchstabe;;;3
+2019-03-14;そ;;;;so;Buchstabe;;;3
+2019-03-14;すばらしい;;;subarashii;wunderbar;Adjektiv;2019-06-20;;3
+2019-03-14;おはようございます;;;ohayougozaimasu;Guten Morgen!;Satz;;;3
+2019-03-14;こんにちは;;;konnichiwa;Guten Tag!;Satz;;;3
+2019-03-14;こんばんは;;;konnbannwa;Guten Abend!;Satz;;;3
+2019-03-14;;テスト;;tesuto;Test;Substantiv;;;3
+2019-03-14;いち;;一;ichi;1;Zahl;;1;3
+2019-03-14;に;;二;ni;2;Zahl;;1;3
+2019-03-14;さん;;三;sann;3;Zahl;;1;3
+2019-03-14;よん　（し）;;四;yonn (shi);4;Zahl;;1;3
+2019-03-14;ご;;五;go;5;Zahl;;1;3
+2019-03-14;ろく;;六;roku;6;Zahl;;1;3
+2019-03-14;しち　（なな）;;七;shichi (nana);7;Zahl;;1;3
+2019-03-14;はち;;八;hachi;8;Zahl;;1;3
+2019-03-14;きゅう;;九;kyuu;9;Zahl;;1;3
+2019-03-14;じゅう;;十;jyuu;10;Zahl;;1;3
+2019-03-14;おいしいですか。;;;oishiidesuka;Schmeckt es?;Satz;;;3
+2019-03-14;はい、（とても）おいしいです。;;;hai, (totemo) oishii desu;Ja, es schmeckt (sehr) gut.;Satz;;;3
+2019-03-14;いいえ、おいしくありません。;;;iee, oishiku arimasenn;Nein, es schmeckt nicht gut.;Satz;;;3
+2019-03-14;じこしようかい;;;jikosoukai;Selbsteinführung;Substantiv;;;3
+2019-03-14;（わたしわ、）☐ にすんでいます。;;;(watashiwa,) ☐ ni sunndeimasu;Ich wohne in ☐.;Satz;;;3
+2019-03-14;うた;;;uta;Gesang;Substantiv;;;3
+2019-03-14;あさあ;;;asa;Morgen;Substantiv;;1;3
+2019-03-14;（お）かし;;;(o)kashi;Süßigkeiten;Substantiv;;1;3
+2019-03-14;（お）すし;;寿司;(o)sushi;Sushi;Substantiv;2019-03-28;1;3
+2019-03-14;せかい;;;sekai;Welt;Substantiv;;1;3
+2019-03-14;あそこ;;;asoko;dort drüben;Adverb;;1;3
+2019-03-14;そこ;;;soko;dort;Adverb;;1;3
+2019-03-14;ここ;;;koko;hier;Adverb;;1;3
+2019-03-21;た;;;;ta;Buchstabe;;;4
+2019-03-21;ち;;;;chi;Buchstabe;;;4
+2019-03-21;つ;;;;tsu;Buchstabe;;;4
+2019-03-21;て;;;;te;Buchstabe;;;4
+2019-03-21;と;;;;to;Buchstabe;;;4
+2019-03-21;じゅういち;;十一;jyuuichi;11;Zahl;;1;4
+2019-03-21;じゅうに;;十二;jyuuni;12;Zahl;;;4
+2019-03-21;じゅうさん;;十三;jyuusann;13;Zahl;;;4
+2019-03-21;じゅうよん　（じゅうし）;;十四;jyuuyonn (jyuushi);14;Zahl;;;4
+2019-03-21;じゅうご;;十五;jyuugo;15;Zahl;;;4
+2019-03-21;じゅうろく;;十六;jyuuroku;16;Zahl;;;4
+2019-03-21;じゅうしち　（じゅうなな）;;十七;jyuushichi (jyuunana);17;Zahl;;;4
+2019-03-21;じゅうはち;;十八;jyuuhachi;18;Zahl;;;4
+2019-03-21;じゅうきゅう;;十九;jyuukyuu;19;Zahl;;;4
+2019-03-21;にじゅう;;二十;nijyuu;20;Zahl;;1;4
+2019-03-21;した;;;shita;unten;Adverb;;1;4
+2019-03-21;ち;;;chi;Blut;Substantiv;;1;4
+2019-03-21;つけい;;;tsukei;Schreibtisch;Substantiv;;1;4
+2019-03-21;いす;;;isu;Stuhl;Substantiv;;1;4
+2019-03-21;て;;;te;Hand;Substantiv;;1;4
+2019-03-21;あし;;;ashi;Fuß;Substantiv;;1;4
+2019-03-21;とけい;;;tokei;Uhr;Substantiv;2019-03-27;1;4
+2019-03-21;わたしのしゅいは、☐です。;;;watashino syumi wa, ☐ desu;Mein Hobby ist ☐.;Satz;;;4
+2019-03-21;わたしのしゅいは、☐と☐です。;;;watashino syumi wa, ☐ to ☐ desu;Mein Hobby ist ☐ und ☐.;Satz;;;4
+2019-03-21;はい、（とても）（よく）わかりました。;;;hai, (totemo) (yoku) wakarimashita;Ja, ich habe (sehr) (gut) verstanden.;Satz;;;4
+2019-03-21;いいえ、（ぜんぜん）　わかりません。;;;iee, (zennzenn) wakarimasenn;Nein, ich habe (gar) nicht verstanden.;Satz;;;4
+2019-03-21;すぽーつ;;;spo-tu;Sport;Substantiv;;;4
+2019-03-21;けんどう;;;kenndou;Kendo;Substantiv;;;4
+2019-03-21;じょぎんぐ;;;jyoginngu;Jogging;Substantiv;;;4
+2019-03-21;さんぽ;;;sannpo;Spaziergang;Substantiv;;;4
+2019-03-21;りようり;;;ryouri;kochen;Verb;;;4
+2019-03-21;どくしよ;;;dokusyo;Buch lesen;Verb;;;4
+2019-03-21;まんがぼんをよむこと;;;manngabonn o yomukoto;Manga lesen;Verb;;;4
+2019-03-21;おんがくかんしよう;;;onngakukannsyou;Musik hören;Verb;;;4
+2019-03-21;にわしごと;;;niwashigoto;im Garten arbeiten;Verb;;;4
+2019-03-21;さいくりんぐ;;;ge-mu;Game/Spiel;Substantiv;;;4
+2019-03-21;にほんごがくしゆう;;;nihonngo gakusyuu;Japanisch lernen;Verb;;;4
+2019-03-21;しゃしん;;写真;shashinn;Fotografie;Substantiv;;;4
+2019-03-28;な;;;;na;Buchstabe;;;5
+2019-03-28;に;;;;ni;Buchstabe;;;5
+2019-03-28;ぬ;;;;nu;Buchstabe;;;5
+2019-03-28;ね;;;;ne;Buchstabe;;;5
+2019-03-28;の;;;;no;Buchstabe;;;5
+2019-03-28;あなた;;;anata;Du / Sie;Personalpronomen;2019-03-31;1;5
+2019-03-28;わたし;;;watasi;Ich;Personalpronomen;2019-03-31;1;5
+2019-03-28;にく;;肉;niku;Fleisch;Substantiv;;1;5
+2019-03-28;いぬ;;犬;inu;Hund;Substantiv;;1;5
+2019-03-28;ねこ;;猫;neko;Katze;Substantiv;;1;5
+2019-03-28;のり;;海苔;nori;Nori;Substantiv;;1;5
+2019-03-28;にじゅういち;;二十一;nijyuuichi;21;Zahl;;;5
+2019-03-28;にじゅうに;;二十二;nijyuuni;22;Zahl;;;5
+2019-03-28;にじゅうさん;;二十三;nijyuusann;23;Zahl;;;5
+2019-03-28;にじゅうよん　（にじゅうし）;;二十四;nijyuuyonn (nijyuushi);24;Zahl;;;5
+2019-03-28;にじゅうご;;二十五;nijyuugo;25;Zahl;;;5
+2019-03-28;にじゅうろく;;二十六;nijyuuroku;26;Zahl;;;5
+2019-03-28;にじゅうしち　（にじゅうなな）;;二十七;nijyuushichi (nijyuunana);27;Zahl;;;5
+2019-03-28;にじゅうはち;;二十八;nijyuuhachi;28;Zahl;;;5
+2019-03-28;にじゅうきゅう;;二十九;nijyuukyuu;29;Zahl;;;5
+2019-03-28;さんじゅう;;三十;sannjyuu;30;Zahl;;;5
+2019-03-28;わたしのすきなたべものは、☐です。;;;watashino sukinatabemono wa ☐ desu;Mein Lieblingsessen ist ☐.;Satz;2019-04-11;;5
+2019-03-28;あたまが　よい　（いい）。;;;atamaga yoi (ii);klug;Adjektiv;;;5
+2019-03-28;ぴざ;;;piza;Pizza;Substantiv;;;5
+2019-03-28;めんるい;;;mennrui;Nudelgericht;Substantiv;;;5
+2019-03-28;けばぶ;;;kebabu;Kebap;Substantiv;;;5
+2019-03-28;さかな;;;sakana;Fisch;Substantiv;;;5
+2019-03-28;やさい;;;yasai;Gemüse;Substantiv;;;5
+2019-03-28;くだもの;;;kudamono;Obst;Substantiv;;;5
+2019-03-28;あまいもの;;;amaimono;Süßigkeiten;Substantiv;;;5
+2019-03-28;あいす;;;aisu;Eis;Substantiv;;;5
+2019-03-28;ちゅうかりょうり;;;chuukaryouri;chinesisches Gericht;Substantiv;;;5
+2019-03-28;いんどようり;;;inndoryouri;indisches Gericht;Substantiv;;;5
+2019-03-28;からいもの;;;karaimono;scharfes Essen;Substantiv;;;5
+2019-03-28;はんバーがー;;;hannba-ga-;Hamburger;Substantiv;;;5
+2019-03-28;ふらいどぽてと;;;huraidopoteteo;Pommes Frites;Substantiv;;;5
+2019-03-28;いたりようり;;;itariaryouri;italienisches Gericht;Substantiv;;;5
+2019-04-04;は;;;;ha;Buchstabe;;;6
+2019-04-04;ひ;;;;hi;Buchstabe;;;6
+2019-04-04;ふ;;;;fu;Buchstabe;;;6
+2019-04-04;へ;;;;he;Buchstabe;;;6
+2019-04-04;ほ;;;;ho;Buchstabe;;;6
+2019-04-04;ひゃく;;百;hyaku;100;Zahl;;1;6
+2019-04-04;ひゃくいち;;百一;hyakuichi;101;Zahl;;;6
+2019-04-04;ひゃくに;;百二;hyakuni;102;Zahl;;;6
+2019-04-04;ひゃくさん;;百三;hyakusann;103;Zahl;;;6
+2019-04-04;ひゃくよん　（ひゃくし）;;百四;hyakuyonn (hyakushi);104;Zahl;;;6
+2019-04-04;ひゃくご;;百五;hyakugo;105;Zahl;;;6
+2019-04-04;ひゃくろく;;百六;hyakuroku;106;Zahl;;;6
+2019-04-04;ひゃくしち　（ひゃくなな）;;百七;hyakushichi (hyakunana);107;Zahl;;;6
+2019-04-04;ひゃくはち;;百八;hyakuhachi;108;Zahl;;;6
+2019-04-04;ひゃくきゅう;;百九;hyakukyuu;109;Zahl;;;6
+2019-04-04;ひゃくじゅう;;百十;hyakujyuu;110;Zahl;;;6
+2019-04-04;は;;歯;ha;Zahn;Substantiv;;1;6
+2019-04-04;は;;葉;ha;Blatt;Substantiv;;1;6
+2019-04-04;ひ;;火;hi;Feuer;Substantiv;;1;6
+2019-04-04;ひ;;日;hi;Tag;Substantiv;;1;6
+2019-04-04;とうふ;;豆腐;tofu;Tofu;Substantiv;;1;6
+2019-04-04;へいわ;;平和;heiwa;Frieden;Substantiv;;1;6
+2019-04-04;ほんとう;;本当;hontou;echt;Adjektiv;;1;6
+2019-04-04;わたしのすきなのみものは、☐です。;;好きな飲み物;watashino sukinanomimono wa ☐ desu;Mein Lieblingsgetränk ist ☐.;Satz;2019-04-11;;6
+2019-04-04;すきなのみもの;;;sukinanomimono;Lieblingsgetränk;Substantiv;;;6
+2019-04-04;みず;;水;mizu;Wasser;Substantiv;;;6
+2019-04-04;たんさんすい;;;tannsannsui;Sprudel;Substantiv;;;6
+2019-04-04;こーひー;;;ko-hi-;Kaffee;Substantiv;;;6
+2019-04-04;おれんじじゆーす;;;orennjijyu-su;Orangensaft;Substantiv;;;6
+2019-04-04;りんごじゆーす;;;rinngojyu-su;Apfelsaft;Substantiv;;;6
+2019-04-04;びーる;;;bi-ru;Bier;Substantiv;;;6
+2019-04-04;わいん;;;wain;Wein;Substantiv;;;6
+2019-04-04;さけ;;酒;sake;Sake;Substantiv;;;6
+2019-04-04;こーら;;;ko-ra;Cola;Substantiv;;;6
+2019-04-04;ぎゅうにゅう;;;gyuunyuu;Milch;Substantiv;;;6
+2019-04-04;こにやなく;;;koniyanaku;Kognak;Substantiv;;;6
+2019-04-11;ま;;;;ma;Buchstabe;;;7
+2019-04-11;み;;;;mi;Buchstabe;;;7
+2019-04-11;む;;;;mu;Buchstabe;;;7
+2019-04-11;め;;;;me;Buchstabe;;;7
+2019-04-11;も;;;;mo;Buchstabe;;;7
+2019-04-11;せん;;千;senn;1000;Zahl;2019-05-15;1;7
+2019-04-11;せんいち;;千一;sennichi;1001;Zahl;;1;7
+2019-04-11;せんに;;千二;sennni;1002;Zahl;;;7
+2019-04-11;せんさん;;千三;sennsann;1003;Zahl;;;7
+2019-04-11;せんよん　（せんし）;;千四;sennyonn (sennshi);1004;Zahl;;;7
+2019-04-11;せんご;;千五;senngo;1005;Zahl;;;7
+2019-04-11;;;千九百九十九;sennkyuuhyakukyuujyuukyuu;1999;Zahl;;1;7
+2019-04-11;;;二千;nisenn;2000;Zahl;;1;7
+2019-04-11;;;三千;sannzenn;3000;Zahl;;;7
+2019-04-11;;;四千;yonnsenn;4000;Zahl;;;7
+2019-04-11;わたしのすきなあいすくりーむは、☐です。;;;watashino sukina aisukuri-mu wa ☐ desu;Mein Lieblingseis ist ☐.;Satz;;;7
+2019-04-11;すきなあいすくりーむ;好きなアイスクリーム;;sukina aisukuri-mu;Lieblingseis;Substantiv;;;7
+2019-04-11;ばにら;バニラ;;banira;Vanille;Substantiv;;;7
+2019-04-11;ちよこれーと;チョコレート;;tyokore-to;Schokolade;Substantiv;;;7
+2019-04-11;いちご;イチゴ;;ichigo;Erdbeere;Substantiv;;;7
+2019-04-11;らずべりー;ラズベリー;;razuberi-;Himbeere;Substantiv;;;7
+2019-04-11;なっっ;ナッツ;;nattu;Nuss;Substantiv;;;7
+2019-04-11;よーぐると;ヨーグルト;;yo-guruto;Joghurt;Substantiv;;;7
+2019-04-11;まつちゃ;;抹茶;maccha;Matcha;Substantiv;;;7
+2019-04-11;まんごー;マンゴー;;manngo;Mango;Substantiv;;;7
+2019-04-11;たまご;;;tamago;Ei;Substantiv;;1;7
+2019-04-11;みみ;;;mimi;Ohr;Substantiv;;1;7
+2019-04-11;むね;;;mune;Brust;Substantiv;;1;7
+2019-04-11;め;;;me;Auge;Substantiv;;1;7
+2019-05-02;もも;;;momo;Pfirisch;Substantiv;;1;8
+2019-05-02;や;;;;ya;Buchstabe;;;8
+2019-05-02;ゆ;;;;yu;Buchstabe;;;8
+2019-05-02;よ;;;;yo;Buchstabe;;;8
+2019-05-02;やま;;;yama;Berg;Substantiv;;1;8
+2019-05-02;うみ;;;umi;See;Substantiv;;1;8
+2019-05-02;ゆき;;;yuki;Schnee;Substantiv;;1;8
+2019-05-02;あめ;;;ame;Regen;Substantiv;;1;8
+2019-05-02;よろしく　おねがいします。;;;yoroshiku onegaishimasu;Vielen Dank.;Satz;2019-05-16;1;8
+2019-05-02;;;一万;ichimann;10000;Zahl;;1;8
+2019-05-02;;;二万;nimann;20000;Zahl;;1;8
+2019-05-02;;;十万;jyumann;100000;Zahl;;;8
+2019-05-02;;;百万;hyakumann;1000000;Zahl;;;8
+2019-05-02;;;千万;sennmann;10000000;Zahl;;;8
+2019-05-02;わたしのすきなくだものは、☐です。;;;watashino sukina kudamono wa ☐ desu;Meine Lieblingsfrucht ist ☐.;Satz;;;8
+2019-05-02;りんご;;;rinngo;Apfel;Substantiv;;;8
+2019-05-02;ぶらつくべりー;フラツクベリー;;bulakkuberi-;Brombeere;Substantiv;;;8
+2019-05-02;おれんじ;オレンジ;;orennji;Organge;Substantiv;;;8
+2019-05-02;なし;;;nashi;Birne;Substantiv;;;8
+2019-05-02;ばなな;バナナ;;banana;Banane;Substantiv;;;8
+2019-05-02;ぶどう;;;budou;Traube;Substantiv;;;8
+2019-05-02;あんず;;;annzu;Aprikose;Substantiv;;;8
+2019-05-02;れもん;レモン;;lemonn;Zitrone;Substantiv;;;8
+2019-05-02;すいか;;;suika;Wassermelone;Substantiv;;;8
+2019-05-02;めろん;メロン;;meronn;Melone;Substantiv;;;8
+2019-05-02;ぱいなつふる;パイナップル;;painappuru;Ananas;Substantiv;;;8
+2019-05-09;ら;;;;ra;Buchstabe;;;9
+2019-05-09;り;;;;ri;Buchstabe;;;9
+2019-05-09;る;;;;ru;Buchstabe;;;9
+2019-05-09;れ;;;;re;Buchstabe;;;9
+2019-05-09;ろ;;;;ro;Buchstabe;;;9
+2019-05-09;らーめん;;;ra-menn;Ramen;Substantiv;;1;9
+2019-05-09;おりがみ;;;origami;Origami;Substantiv;;1;9
+2019-05-09;する;;;suru;machen;Verb;;1;9
+2019-05-09;なにする？;;;nanisuru;Was machen wir?;Satz;;1;9
+2019-05-09;れいぞうこ;;;reizouko;Kühlschrank;Substantiv;;1;9
+2019-05-09;おげんきですか。;;;ogennkidesuka;Wie geht es dir? / Wie geht es Ihnen?;Satz;;1;9
+2019-05-09;はい、（わたしは）（とても）げんきです。;;;hai, watashiwa (totemo) gennki desu;Ja, es geht mir (sehr) gut.;Satz;;;9
+2019-05-09;いいえ、（わたしは）げんきではありません。;;;iee, watashiwa gennki dewa arimasenn;Nein, es geht mir nicht gut.;Satz;;;9
+2019-05-09;わたしは、びようきです。;;;watashiwa byouki desu;Ich bin krank.;Satz;;;9
+2019-05-09;おだいじに！;;;odaijini;Gute Besserung!;Satz;;;9
+2019-05-09;（わたしの）誕生日は,☐月☐日です。;;;(watashino tannjyoubiwa,) ☐ gatu ☐ niti desu;Mein Geburtstag ist am ☐ ☐.;Satz;2019-05-16;;9
+2019-05-16;わ;;;;wa;Buchstabe;;;10
+2019-05-16;を;;;;wo;Buchstabe;;;10
+2019-05-16;ん;;;;n;Buchstabe;;;10
+2019-05-16;これをください。;;;korewokudasai;Geben Sie mir bitte das!;Satz;;;10
+2019-05-16;わたしのすきないろは、☐です。;;;watashino sukina iro wa ☐ desu;Meine Lieblingsfarbe ist ☐.;Satz;;;10
+2019-05-16;しろ;;白;shiro;weiß;Adjektiv;;;10
+2019-05-16;きいろ;;黄色;kiiro;gelb;Adjektiv;;;10
+2019-05-16;おれんじ;オレンジ;;orennji;orange;Adjektiv;;;10
+2019-05-16;あか;;赤;aka;rot;Adjektiv;;;10
+2019-05-16;ぴんく;ピンク;;pinnku;rosa;Adjektiv;;;10
+2019-05-16;むらさき;;紫;murasaki;lila;Adjektiv;;;10
+2019-05-16;あお;;青;ao;blau;Adjektiv;;;10
+2019-05-16;こん;;紺;konn;nachtlbau;Adjektiv;;;10
+2019-05-16;みどり;;緑;midori;grün;Adjektiv;;;10
+2019-05-16;はいいろ;;灰色;haiiro;grau;Adjektiv;;;10
+2019-05-16;ちやいろ;;茶色;chyairo;braun;Adjektiv;;;10
+2019-05-16;べーじゆ;ベージュ;;be-jyu;beige;Adjektiv;;;10
+2019-05-16;くろ;;黒;kuro;schwarz;Adjektiv;;;10
+2019-05-16;;;一兆;ichyou;1000000000000;Zahl;;;10
+2019-05-16;;;十兆;jyucchyou;10000000000000;Zahl;;;10
+2019-05-16;;;百兆;hyakuyou;100000000000000;Zahl;;;10
+2019-05-16;;;千兆;sennchyou;1000000000000000;Zahl;;;10
+2019-05-23;が;;;;ga;Buchstabe;;;11
+2019-05-23;ぎ;;;;gi;Buchstabe;;;11
+2019-05-23;ぐ;;;;gu;Buchstabe;;;11
+2019-05-23;げ;;;;ge;Buchstabe;;;11
+2019-05-23;ご;;;;go;Buchstabe;;;11
+2019-05-23;ざ;;;;za;Buchstabe;;;11
+2019-05-23;じ;;;;(z) ji;Buchstabe;;;11
+2019-05-23;ず;;;;zu;Buchstabe;;;11
+2019-05-23;ぜ;;;;ze;Buchstabe;;;11
+2019-05-23;ぞ;;;;zo;Buchstabe;;;11
+2019-05-23;だ;;;;da;Buchstabe;;;11
+2019-05-23;ぢ;;;;(d) ji;Buchstabe;;;11
+2019-05-23;づ;;;;(d) zu;Buchstabe;;;11
+2019-05-23;で;;;;de;Buchstabe;;;11
+2019-05-23;ど;;;;do;Buchstabe;;;11
+2019-05-23;ば;;;;ba;Buchstabe;;;11
+2019-05-23;び;;;;bi;Buchstabe;;;11
+2019-05-23;ぶ;;;;bu;Buchstabe;;;11
+2019-05-23;べ;;;;be;Buchstabe;;;11
+2019-05-23;ぼ;;;;bo;Buchstabe;;;11
+2019-05-23;ぱ;;;;pa;Buchstabe;;;11
+2019-05-23;ぴ;;;;pi;Buchstabe;;;11
+2019-05-23;ぷ;;;;pu;Buchstabe;;;11
+2019-05-23;ぺ;;;;pe;Buchstabe;;;11
+2019-05-23;ぽ;;;;po;Buchstabe;;;11
+2019-06-06;きや;;;;kya;Buchstabe;;;12
+2019-06-06;きゆ;;;;kyu;Buchstabe;;;12
+2019-06-06;きよ;;;;kyo;Buchstabe;;;12
+2019-06-06;しや;;;;sya;Buchstabe;;;12
+2019-06-06;しゆ;;;;syu;Buchstabe;;;12
+2019-06-06;しよ;;;;syo;Buchstabe;;;12
+2019-06-06;ちや;;;;tya;Buchstabe;;;12
+2019-06-06;ちゆ;;;;tyu;Buchstabe;;;12
+2019-06-06;ちよ;;;;tyo;Buchstabe;;;12
+2019-06-06;にや;;;;nya;Buchstabe;;;12
+2019-06-06;にゆ;;;;nyu;Buchstabe;;;12
+2019-06-06;によ;;;;nyo;Buchstabe;;;12
+2019-06-06;ひや;;;;hya;Buchstabe;;;12
+2019-06-06;ひゆ;;;;hyu;Buchstabe;;;12
+2019-06-06;ひよ;;;;hyo;Buchstabe;;;12
+2019-06-06;みや;;;;mya;Buchstabe;;;12
+2019-06-06;みゆ;;;;myu;Buchstabe;;;12
+2019-06-06;みよ;;;;myo;Buchstabe;;;12
+2019-06-06;りや;;;;rya;Buchstabe;;;12
+2019-06-06;りゆ;;;;ryu;Buchstabe;;;12
+2019-06-06;りよ;;;;ryo;Buchstabe;;;12
+2019-06-06;ぎや;;;;gya;Buchstabe;;;12
+2019-06-06;ぎゆ;;;;gyu;Buchstabe;;;12
+2019-06-06;ぎよ;;;;gyo;Buchstabe;;;12
+2019-06-06;じや;;;;zya;Buchstabe;;;12
+2019-06-06;じゆ;;;;zyu;Buchstabe;;;12
+2019-06-06;じよ;;;;zyo;Buchstabe;;;12
+2019-06-06;ぎや;;;;zya;Buchstabe;;;12
+2019-06-06;ぎゆ;;;;zyu;Buchstabe;;;12
+2019-06-06;ぎよ;;;;zyo;Buchstabe;;;12
+2019-06-06;びや;;;;bya;Buchstabe;;;12
+2019-06-06;びゆ;;;;byu;Buchstabe;;;12
+2019-06-06;びよ;;;;byo;Buchstabe;;;12
+2019-06-06;ぴや;;;;pya;Buchstabe;;;12
+2019-06-06;ぴゆ;;;;pyu;Buchstabe;;;12
+2019-06-06;ぴよ;;;;pyo;Buchstabe;;;12
+2019-06-27;やま;;山;yama;Berg;Substantiv;;;13
+2019-06-27;うみ;;海;umi;See;Substantiv;;;13
+2019-06-27;ゆき;;雪;yuki;Schnee;Substantiv;;;13
+2019-06-27;あめ;;雨;ame;Regen;Substantiv;;;13
+2019-06-27;げつようび;;月よう日;getuyoubi;Montag;Substantiv;;;13
+2019-06-27;かようび;;火よう日;kayoubi;Dienstag;Substantiv;;;13
+2019-06-27;すいようび;;水よう日;suiyoubi;Mittwoch;Substantiv;;;13
+2019-06-27;もくようび;;木よう日;mokuyoubi;Donnerstag;Substantiv;;;13
+2019-06-27;きんようび;;金よう日;kinnyoubi;Freitag;Substantiv;;;13
+2019-06-27;どようび;;土よう日;doyoubi;Samstag;Substantiv;;;13
+2019-06-27;にちようび;;日よう日;nichiyoubi;Sonntag;Substantiv;;;13
+2019-06-27;げつ;;月;tsuki;Mond;Substantiv;;;13
+2019-06-27;か;;火;hi;Feuer;Substantiv;;;13
+2019-06-27;すい;;水;mizu;Wasser;Substantiv;;;13
+2019-06-27;もく;;木;ki;Baum;Substantiv;;;13
+2019-06-27;きん;;金;kin;Gold / Geld;Substantiv;;;13
+2019-06-27;ど;;土;tsuchi;Erde;Substantiv;;;13
+2019-06-27;にち;;日;hi;Tag / Sonne;Substantiv;;;13

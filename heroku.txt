@@ -1,0 +1,6 @@
+rake db:migrate
+rake db:reset
+
+git push
+git push heroku master
+heroku pg:reset DATABASE_URL --confirm kihon; heroku run rake db:schema:load db:migrate db:seed
