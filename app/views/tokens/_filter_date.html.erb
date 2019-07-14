@@ -1,0 +1,9 @@
+<ul class="pagination filter">
+  <li class="waves-effect <%= "active" if !@dates.include?(@date) %>"><%= link_to(t("all"), url_for(:pos => @pos, :search => @search)) %></li>
+  <% @dates.each do |date| %>
+    <% date = Date.strptime(date, "%Y-%m-%d") -%>
+    <li class="waves-effect <%= "active" if date.strftime("%Y-%m-%d") == @date%>">
+      <%= link_to(date.strftime("%e.%-m."), url_for(:date => date.strftime("%Y-%m-%d"), :pos => @pos, :search => @search)) %>
+    </li>
+  <% end %>
+</ul>

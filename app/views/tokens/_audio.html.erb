@@ -1,0 +1,6 @@
+<% if token.send(component) and File.file?(Rails.root.join("public", "assets", "tts", component, "#{token.id}.mp3") || "") %>
+<audio id="<%= "audio_#{component}_#{token.id}" %>">
+  <source src="<%= File.join("/", "assets", "tts", component, "#{token.id}.mp3") %>" type="audio/mpeg"></source>
+</audio>
+<a href="javascript:void(0)" class="waves-effect waves-light btn btn-small btn-floating blue-grey darken-4 white-text" onclick="play_audio(<%= token.id %>, '<%= component %>')"><i id="btn_audio_<%= component %>_<%= token.id %>" class="material-icons">play_arrow</i></a>
+<% end %>

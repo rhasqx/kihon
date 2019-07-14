@@ -29,10 +29,14 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+de:
   hello: "Hello world"
   all: "alle"
+  back: "zurück"
   search: "Suche"
   german: "Deutsch"
   created_at: "erstellt"
   updated_at: "aktualisiert"
+  views:
+    pagination:
+      truncate: "..."

@@ -1,62 +1,38 @@
 <%= render 'search' %>
 
-<br><br>
+<div class="container center">
+  <%= render 'filter_date' %>
+</div>
 
-<%= render 'filter' %>
+<div class="container center">
+  <%= render 'filter_pos' %>
+</div>
 
-<br><br>
+<br>
 
 <%= render 'paginate' %>
 
 <table class="token">
   <thead>
     <tr>
-      <th class="kanji">Kanji</th>
-      <th class="hiragana">Hiragana</th>
-      <th class="katakana">Katakana</th>
-      <th class="romaji">Romaji</th>
-      <th class="german"><%= t("german") %></th>
-      <th class="audio"></th>
-      <th class="info"></th>
+      <%= render 'thead' %>
     </tr>
   </thead>
-
   <tbody>
     <% @tokens.each do |token| %>
-      <% created = token.created_at.strftime("%Y-%m-%d") -%>
-      <% updated = token.updated_at.strftime("%Y-%m-%d") -%>
-      <% tooltip = ("%s: %s <br> %s: %s" % [t("created_at"), created, t("updated_at"), updated]).html_safe -%>
       <tr>
-        <% empty = '<span class="empty">–</span>'.html_safe -%>
-        <td class="kanji"><%= token.kanji.nil? ? empty : link_to(token.kanji, token) %></td>
-        <td class="hiragana"><%= token.hiragana.nil? ? empty : link_to(token.hiragana, token)  %></td>
-        <td class="katakana"><%= token.katakana.nil? ? empty : link_to(token.katakana, token) %></td>
-        <td class="romaji"><%= token.romaji.nil? ? empty : link_to(token.romaji, token) %></td>
-        <td class="german"><%= token.german.nil? ? empty : link_to(token.german, token) %></td>
-        <td class="audio">
-          <% if File.file?(Rails.root.join("public", "assets", "tts", "#{token.id}.mp3") || "") %>
-          <audio id="<%= "audio_#{token.id}" %>">
-            <source src="<%= File.join("/", "assets", "tts", "#{token.id}.mp3") %>" type="audio/mpeg"></source>
-          </audio>
-          <a href="javascript:void(0)" class="waves-effect waves-light btn-flat" onclick="play_audio(<%= token.id %>)"><i id="btn_audio_<%= token.id %>" class="material-icons">play_circle_outline</i></a>
-          <% end %>
-        </td>
-        <td class="info hide-on-med-and-down"><a href="javascript:void(0)" class="waves-effect waves-light btn-flat"><i class="material-icons tooltipped" data-position="left" data-tooltip="<%= tooltip %>" title="<%= tooltip %>">info_outline</i></a></td>
+        <%= render 'cells', token: token %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<script>
-function play_audio(n) {
-  document.getElementById("audio_" + n).play();
-}
-</script>
-
 <%= render 'paginate' %>
 
-<br><br>
+<br><br><br>
 
 <div class="container center">
-  <%= link_to '<i class="material-icons left">cloud_download</i> download cards.pdf'.html_safe, url_for(:date => @date, :pos => @pos, :search => @search, :format => :pdf), class: "waves-effect waves-light btn blue darken-1" %>
+  <%= link_to (content_tag(:i, "picture_as_pdf", class: "material-icons left") + "#{@size} cards").html_safe, url_for(:date => @date, :pos => @pos, :search => @search, :format => :pdf), class: "waves-effect waves-light btn blue darken-1" %>
 </div>
+
+<br><br><br>

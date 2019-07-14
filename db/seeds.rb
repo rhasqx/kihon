@@ -7,14 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'csv'
+require 'progress_bar'
 
 file = 'japanisch-a1-1.csv'
-headers = %w(created_at hiragana katakana kanji romaji german pos updated_at)
+headers = %w(number created_at hiragana katakana kanji romaji german pos updated_at)
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', file))
 csv_text = headers.join(";")+"\r\n" + csv_text.gsub(/\A(.*\n){1}/,'')
 
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'UTF-8', col_sep: ';')
+bar = ProgressBar.new(csv.size, :percentage, :counter, :bar)
 csv.each do |row|
     row = row.to_hash
 
@@ -33,17 +35,9 @@ csv.each do |row|
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
         token = Token.create(row)
-
-        aiff = "/tmp/tts.aiff"
-        mp3 = Rails.root.join("public", "assets", "tts", "#{token.id}.mp3")
-        if !File.file?(mp3)
-            text = token.hiragana || token.katakana || token.kanji || ""
-            if !text.empty?
-                cmd = "say -v Kyoko \"#{text}\" -o \"#{aiff}\" && ffmpeg -i \"#{aiff}\" -y -f mp3 -acodec libmp3lame -ab 192000 -ar 44100 \"#{mp3}\""
-                status = `#{cmd}`
-            end
-        end
     end
+
+    bar.increment!
 end
 
 puts "There are now #{Token.count} rows in the tokens table."
