@@ -1,0 +1,19 @@
+<table class="letters">
+  <thead>
+    <tr>
+      <% @headerH.each do |header| %>
+        <th><%= header %></th>
+      <% end %>
+    </tr>
+  <thead>
+  <tbody>
+  <% @letters.each_with_index do |group, j| %>
+      <tr>
+        <% group.each_with_index do |letter, i| %>
+          <td><span><%= variant=="hiragana" ? letter.hiragana : letter.katakana %></span></td>
+        <% end %>
+        <th class="header"><%= @headerV[j] %></th>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
