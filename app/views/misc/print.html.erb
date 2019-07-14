@@ -1,0 +1,47 @@
+<div class="print">
+
+<% @sentences.each do |token| %>
+    <hr />
+    <div class="token">
+        <%= content_tag(:p, token.kanji, class: "kanji") %>
+        <%= content_tag(:p, token.hiragana, class: "hiragana") %>
+        <%= content_tag(:p, token.katakana, class: "katakana") %>
+        <%= content_tag(:p, token.romaji, class: "romaji") %>
+        <%= content_tag(:p, token.german, class: "german") %>
+    </div>
+<% end %>
+
+<% @tokens.each do |token| %>
+    <hr />
+    <div class="token">
+        <%= content_tag(:p, token.kanji, class: "kanji") %>
+        <%= content_tag(:p, token.hiragana, class: "hiragana") %>
+        <%= content_tag(:p, token.katakana, class: "katakana") %>
+        <%= content_tag(:p, token.romaji, class: "romaji") %>
+        <%= content_tag(:p, token.german, class: "german") %>
+    </div>
+<% end %>
+
+<hr />
+
+<!--
+<table class="token">
+  <tbody>
+    <% @tokens.each do |token| %>
+      <tr>
+        <td>
+            <%= content_tag(:p, token.kanji, class: "kanji") %>
+            <%= content_tag(:p, token.hiragana, class: "hiragana") %>
+            <%= content_tag(:p, token.katakana, class: "katakana") %>
+            <%= content_tag(:p, token.romaji, class: "romaji") %>
+        </td>
+        <td>
+            <%= content_tag(:p, token.german, class: "german") %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+-->
+
+</div>

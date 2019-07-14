@@ -53,7 +53,7 @@ table.token {
     td.kanji    { font-size: 2.2em; }
     td.hiragana { font-size: 1.8em; }
     td.katakana { font-size: 1.8em; }
-    td.romaji   { font-size: 11px; }
+    td.romaji   { font-size: 11px;  }
     td.german   { font-size: 1.2em; }
 
     span.empty { font-size: 11px; }
@@ -63,7 +63,7 @@ table.token {
     }
 
     .kanji    a { color: #0d3481; }
-    .hiragana a { color: #8A1818;}
+    .hiragana a { color: #8A1818; }
     .katakana a { color: #086d3a; }
     .romaji   a { color: #31353D; }
     .german   a { color: #31353D; }
@@ -123,3 +123,100 @@ table.token {
 }
 
 } // @media #{$medium-and-up}
+
+
+
+
+div.print {
+    font-size: 9pt;
+
+    .kanji    { color: #0d3481; }
+    .hiragana { color: #8A1818; }
+    .katakana { color: #086d3a; }
+    .romaji   { color: #31353D; }
+    .german   { color: #31353D; }
+
+    .kanji    { font-size: 1.3em; }
+    .hiragana { font-size: 1.1em; }
+    .katakana { font-size: 1.1em; }
+    .romaji   { font-size: 0.7em; }
+    .german   { font-size: 0.8em; }
+
+    p {
+        margin: 0pt 1pt 1pt 1pt;
+        padding: 0px;
+    }
+
+    div.token {
+        page-break-inside: avoid !important;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    table.token {
+        tr, td {
+            page-break-inside: avoid !important;
+        }
+        td {
+            margin: 0px;
+            padding: 0px;
+        }
+        td:first-child {
+            text-align: left;
+        }
+        td:last-child {
+            text-align: right;
+        }
+    }
+    
+    hr {
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+
+
+
+
+    text-align: center;
+
+    div.token,
+    table.token tr {
+        display: inline-block;
+        padding: 0pt 16pt 16pt 0pt;
+    }
+    table.token tr {
+        padding-right: 48pt;
+    }
+
+    table.token {
+        td:first-child {
+            padding-right: 4pt;
+        }
+        td:last-child {
+            padding-left: 4pt;
+        }
+    }
+
+    table.token td,
+    table.token td p { 
+        text-align: center;
+    }
+
+    table.token tr,
+    table.token td {
+        border: 0;
+    }
+
+    hr {
+        display: none;
+    }
+} // print
+
+@media print {
+    p.footer {
+        display: none;
+    }
+}
