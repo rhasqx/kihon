@@ -2,7 +2,9 @@
 
 Kihon is a *Ruby on Rails* project for my [Japanese course](https://www.vhs-heilbronn.de/programm/nr/K410A110/bereich/details/) at [VHS Heilbronn](https://vhs-heilbronn.de).
 
-![Kihon](https://github.com/rhasqx/kihon/blob/master/kihon.jpg)
+![Kihon cards](https://github.com/rhasqx/kihon/blob/master/kihon.jpg)
+
+![Kihon screenshot](https://github.com/rhasqx/kihon/blob/master/kihon.png)
 
 # Features
 
