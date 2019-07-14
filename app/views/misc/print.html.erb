@@ -1,5 +1,13 @@
 <div class="print">
 
+<h1>Hiragana</h1>
+<%= render 'letters', variant: 'hiragana' %>
+<br class="spacer">
+
+<h1>Katakana</h1>
+<%= render 'letters', variant: 'katakana' %>
+<br class="page-break">
+
 <% @sentences.each do |token| %>
   <%= render 'token', token: token %>
 <% end %>
@@ -7,7 +15,5 @@
 <% @tokens.each do |token| %>
   <%= render 'token', token: token %>
 <% end %>
-
-<hr />
 
 </div>
