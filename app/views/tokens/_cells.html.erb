@@ -1,10 +1,10 @@
-<td class="audio audio-kanji"><%= render('audio', token: token, component: "kanji") %></td>
-<td class="kanji"><%= link_to(token.kanji, token, :class => 'kanji') if token.kanji %></td>
-<td class="audio audio-hiragana"><%= render('audio', token: token, component: "hiragana") %></td>
-<td class="hiragana"><%= link_to(token.hiragana, token, :class => 'hiragana') if token.hiragana %></td>
-<td class="audio audio-katakana"><%= render('audio', token: token, component: "katakana") %></td>
-<td class="katakana"><%= link_to(token.katakana, token, :class => 'katakana') if token.katakana %></td>
-<td class="audio audio-romaji"><%= render('audio', token: token, component: "romaji") %></td>
-<td class="romaji"><%= link_to(token.romaji, token, :class => 'romaji') if token.romaji %></td>
-<td class="audio audio-german"><%= render('audio', token: token, component: "german") %></td>
-<td class="german"><%= link_to(token.german, token, :class => 'german') if token.german %></td>
+<td class="audio audio-kanji"><%= render("audio", token: token, component: "kanji") %></td>
+<td class="kanji"><%= link_to(token.kanji, token, :class => "kanji") if token.kanji %></td>
+<td class="audio audio-hiragana"><%= render("audio", token: token, component: "hiragana") %></td>
+<td class="hiragana"><%= link_to(token.hiragana, token, :class => "hiragana") if token.hiragana %></td>
+<td class="audio audio-katakana"><%= render("audio", token: token, component: "katakana") %></td>
+<td class="katakana"><%= link_to(token.katakana, token, :class => "katakana") if token.katakana %></td>
+<td class="audio audio-romaji"><%= render("audio", token: token, component: "romaji") %></td>
+<td class="romaji"><%= link_to(token.romaji, token, :class => "romaji") %></td>
+<td class="audio audio-german"><%= render("audio", token: token, component: "german") %></td>
+<td class="german"><%= link_to(token.german, token, :class => "german") if token.german %></td>

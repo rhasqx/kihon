@@ -111,6 +111,6 @@ class TokensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def token_params
-      params.require(:token).permit(:hiragana, :katakana, :kanji, :romaji, :german, :pos)
+      params.require(:token).permit(:hiragana, :katakana, :kanji, :german, :pos)
     end
 end

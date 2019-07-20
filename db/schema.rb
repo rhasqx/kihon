@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_30_134748) do
+ActiveRecord::Schema.define(version: 2019_07_20_090544) do
 
   create_table "tokens", force: :cascade do |t|
     t.text "hiragana"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_06_30_134748) do
     t.datetime "updated_at", null: false
     t.boolean "examen"
     t.decimal "number"
+    t.string "course"
   end
 
 end

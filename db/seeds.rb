@@ -10,7 +10,7 @@ require 'csv'
 require 'progress_bar'
 
 file = 'japanisch-a1-1.csv'
-headers = %w(number created_at hiragana katakana kanji romaji german pos updated_at)
+headers = %w(course number created_at hiragana katakana kanji german pos updated_at)
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', file))
 csv_text = headers.join(";")+"\r\n" + csv_text.gsub(/\A(.*\n){1}/,'')
@@ -31,6 +31,8 @@ csv.each do |row|
     rescue
         row['updated_at'] = row['created_at']
     end
+
+    row['romaji'] = [row['hiragana'], row['katakana'], ""].reject(&:nil?).first.romaji.gsub(/,/,", ")
 
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
