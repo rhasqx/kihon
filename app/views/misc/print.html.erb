@@ -1,19 +1,31 @@
-<div class="print">
+<div class="container print">
 
 <h1>Hiragana</h1>
-<%= render 'letters', variant: 'hiragana' %>
+<%= render "letters", variant: "hiragana" %>
+
 <br class="spacer">
 
 <h1>Katakana</h1>
-<%= render 'letters', variant: 'katakana' %>
+<%= render "letters", variant: "katakana" %>
+
 <br class="page-break">
 
+<h1>Sätze</h1>
+
 <% @sentences.each do |token| %>
-  <%= render 'token', token: token %>
+  <%= render "token", token: token %>
 <% end %>
 
+<h1>Vokabeln</h1>
+
 <% @tokens.each do |token| %>
-  <%= render 'token', token: token %>
+  <%= render "token", token: token %>
+<% end %>
+
+<h1>Zahlen</h1>
+
+<% @numbers.each do |token| %>
+  <%= render "token", token: token %>
 <% end %>
 
 </div>
