@@ -106,18 +106,18 @@ A1.1;0;2019-02-21;びよ;ビョ;;byo;Buchstabe;2019-07-07
 A1.1;0;2019-02-21;ぴや;ピャ;;pya;Buchstabe;2019-07-07
 A1.1;0;2019-02-21;ぴゆ;ピュ;;pyu;Buchstabe;2019-07-07
 A1.1;0;2019-02-21;ぴよ;ピョ;;pyo;Buchstabe;2019-07-07
-A1.1;1;2019-02-21;あい;;;Liebe;Substantiv;
-A1.1;1;2019-02-21;いえ;;;Haus;Substantiv;
+A1.1;1;2019-02-21;あい;;愛;Liebe;Substantiv;2019-07-20
+A1.1;1;2019-02-21;いえ;;家;Haus;Substantiv;2019-07-20
 A1.1;1;2019-02-21;うえ;;;oben;Adverb;
 A1.1;1;2019-02-21;あお;;;blau;Adjektiv;
 A1.1;1;2019-02-21;はい;;;ja;Antwortpartikel;
 A1.1;1;2019-02-21;いいえ;;;nein;Antwortpartikel;
-A1.1;1;2019-02-21;じゅぎうょ;;;Unterricht;Substantiv;
-A1.1;1;2019-02-21;にほんごの もじ;;;Japanische Buchstaben;Substantiv;
-A1.1;1;2019-02-21;おたのしみ;;;Vergnügen;Substantiv;
-A1.1;1;2019-02-21;せんせい;;;Lehrer(in);Substantiv;
-A1.1;1;2019-02-21;せいと;;;Schüler(in);Substantiv;
-A1.1;1;2019-02-21;あいさつ ;;;Grüße;Substantiv;
+A1.1;1;2019-02-21;じゅぎうょ;;授業;Unterricht;Substantiv;2019-07-20
+A1.1;1;2019-02-21;にほんごの もじ;;日本語 文字;Japanische Buchstaben;Substantiv;2019-07-20
+A1.1;1;2019-02-21;おたのしみ;;楽しみ;Vergnügen / Freude;Substantiv;2019-07-20
+A1.1;1;2019-02-21;せんせい;;先生;Lehrer(in);Substantiv;2019-07-20
+A1.1;1;2019-02-21;せいと;;生徒;Schüler(in);Substantiv;2019-07-20
+A1.1;1;2019-02-21;あいさつ ;;;Gruß;Substantiv;2019-07-20
 A1.1;1;2019-02-21;はじめまして？;;;Darf ich mich vorstellen?;Satz;2019-07-20
 A1.1;1;2019-02-21;(わたしわ、) ☐ です。;;;Ich heiße ☐ .;Satz;2019-07-20
 A1.1;1;2019-02-21;(どうぞ) よろしく (おねがいします)。;;(どうぞ)よろしく (お願いします)。;Es freut mich, Sie kennen zu lernen! Angenehm! / Sehr efreut!;Satz;2019-07-20
@@ -193,6 +193,7 @@ A1.1;4;2019-03-21;けんどう;;剣道;Kendō;Substantiv;2019-07-20
 A1.1;4;2019-03-21;じょぎんぐ;ジョギング;;Jogging;Substantiv;
 A1.1;4;2019-03-21;さんぽ;;散歩;Spaziergang;Substantiv;
 A1.1;4;2019-03-21;りようり する;;料理する;kochen;Verb;
+A1.1;4;2019-03-21;ほん;;本;Buch;Substantiv;2019-07-20
 A1.1;4;2019-03-21;どくしよ;;;Buch lesen;Verb;
 A1.1;4;2019-03-21;まんが;;漫画;Manga;Substantiv;2019-07-20
 A1.1;4;2019-03-21;まんが ぼんをよむこと;;;Manga lesen;Verb;
@@ -330,9 +331,11 @@ A1.1;9;2019-05-09;はい、(わたしは) (とても) げんきです。;;はい
 A1.1;9;2019-05-09;いいえ、(わたしは) げんきではありません。;;いいえ、体調が悪いです。;Nein, es geht mir nicht gut.;Satz;2019-07-20
 A1.1;9;2019-05-09;わたしは、びようきです。;;私は、病気です。;Ich bin krank.;Satz;2019-07-20
 A1.1;9;2019-05-09;おだいじに！;;お大事に!;Gute Besserung!;Satz;2019-07-20
-A1.1;9;2019-05-09;(わたしの)誕生日は, ☐ 月 ☐ 日です。;;;Mein Geburtstag ist am ☐  ☐ .;Satz;2019-05-16
+A1.1;9;2019-05-09;たんじょうび;;誕生日;Geburtstag;Substantiv;2019-07-20
+A1.1;9;2019-05-09;(わたしの) たんじょうび は、　☐ 月 ☐ 日です。;;(わたしの) 誕生日 は、 ☐ 月 ☐ 日です。;Mein Geburtstag ist am ☐  ☐ .;Satz;2019-07-20
 A1.1;10;2019-05-16;これをください。;;;Geben Sie mir bitte das!;Satz;
-A1.1;10;2019-05-16;わたしのすきないろは、 ☐ です。;;;Meine Lieblingsfarbe ist ☐ .;Satz;
+A1.1;10;2019-05-16;いろ;;色;Farbe;Substantiv;2019-07-20
+A1.1;10;2019-05-16;わたしのすきないろは、 ☐ です。;;わたしのすきな色は、 ☐ です。;Meine Lieblingsfarbe ist ☐ .;Satz;2019-07-20
 A1.1;10;2019-05-16;しろ;;白い;weiß;Adjektiv;2019-07-20
 A1.1;10;2019-05-16;きいろ;;黄色;gelb;Adjektiv;2019-07-20
 A1.1;10;2019-05-16;おれんじ;オレンジ;オレンジ色の;orange;Adjektiv;2019-07-20
