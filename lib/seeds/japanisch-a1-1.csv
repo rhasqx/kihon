@@ -292,49 +292,50 @@ A1.1;7;2019-04-11;なっっ;ナッツ;;Nuss;Substantiv;
 A1.1;7;2019-04-11;よーぐると;ヨーグルト;;Joghurt;Substantiv;
 A1.1;7;2019-04-11;まつちゃ;;抹茶;Matcha;Substantiv;
 A1.1;7;2019-04-11;まんごー;マンゴー;;Mango;Substantiv;
-A1.1;7;2019-04-11;たまご;;;Ei;Substantiv;
-A1.1;7;2019-04-11;みみ;;;Ohr;Substantiv;
-A1.1;7;2019-04-11;むね;;;Brust;Substantiv;
-A1.1;7;2019-04-11;め;;;Auge;Substantiv;
-A1.1;8;2019-05-02;もも;;;Pfirisch;Substantiv;
-A1.1;8;2019-05-02;やま;;;Berg;Substantiv;
-A1.1;8;2019-05-02;うみ;;;See;Substantiv;
-A1.1;8;2019-05-02;ゆき;;;Schnee;Substantiv;
-A1.1;8;2019-05-02;あめ;;;Regen;Substantiv;
+A1.1;7;2019-04-11;たまご;;卵;Ei;Substantiv;2019-07-20
+A1.1;7;2019-04-11;みみ;;耳;Ohr;Substantiv;2019-07-20
+A1.1;7;2019-04-11;むね;;胸;Brust;Substantiv;2019-07-20
+A1.1;7;2019-04-11;め;;目;Auge;Substantiv;2019-07-20
+A1.1;8;2019-05-02;もも;;桃;Pfirisch;Substantiv;2019-07-20
+A1.1;8;2019-05-02;やま;;山;Berg;Substantiv;2019-07-20
+A1.1;8;2019-05-02;うみ;;海;Meer / die See;Substantiv;2019-07-20
+A1.1;8;2019-05-02;ゆき;;雪;Schnee;Substantiv;2019-07-20
+A1.1;8;2019-05-02;あめ;;雨;Regen;Substantiv;2019-07-20
 A1.1;8;2019-05-02;よろしく　おねがいします。;;;Vielen Dank.;Satz;2019-05-16
 A1.1;8;2019-05-02;;;一万;10000;Zahl;
 A1.1;8;2019-05-02;;;二万;20000;Zahl;
 A1.1;8;2019-05-02;;;十万;100000;Zahl;
 A1.1;8;2019-05-02;;;百万;1000000;Zahl;
 A1.1;8;2019-05-02;;;千万;10000000;Zahl;
+A1.1;8;2019-05-02;くだもの;;果物;Frucht;Substantiv;2019-07-20
 A1.1;8;2019-05-02;わたしのすきなくだものは、 ☐ です。;;;Meine Lieblingsfrucht ist ☐ .;Satz;
-A1.1;8;2019-05-02;りんご;;;Apfel;Substantiv;
-A1.1;8;2019-05-02;ぶらつくべりー;フラツクベリー;;Brombeere;Substantiv;
-A1.1;8;2019-05-02;おれんじ;オレンジ;;Organge;Substantiv;
-A1.1;8;2019-05-02;なし;;;Birne;Substantiv;
-A1.1;8;2019-05-02;ばなな;バナナ;;Banane;Substantiv;
-A1.1;8;2019-05-02;ぶどう;;;Traube;Substantiv;
-A1.1;8;2019-05-02;あんず;;;Aprikose;Substantiv;
-A1.1;8;2019-05-02;れもん;レモン;;Zitrone;Substantiv;
-A1.1;8;2019-05-02;すいか;;;Wassermelone;Substantiv;
-A1.1;8;2019-05-02;めろん;メロン;;Melone;Substantiv;
-A1.1;8;2019-05-02;ぱいなつふる;パイナップル;;Ananas;Substantiv;
+A1.1;8;2019-05-02;りんご;;;Apfel;Substantiv;2019-07-20
+A1.1;8;2019-05-02;ぶらつくべりー;フラツクベリー;;Brombeere;Substantiv;2019-07-20
+A1.1;8;2019-05-02;おれんじ;オレンジ;;Orange;Substantiv;2019-07-20
+A1.1;8;2019-05-02;なし;ナシ;;Birne;Substantiv;2019-07-20
+A1.1;8;2019-05-02;ばなな;バナナ;;Banane;Substantiv;2019-07-20
+A1.1;8;2019-05-02;ぶどう;ブドウ;;Traube;Substantiv;2019-07-20
+A1.1;8;2019-05-02;あんず;アンズ;;Aprikose;Substantiv;2019-07-20
+A1.1;8;2019-05-02;れもん;レモン;;Zitrone;Substantiv;2019-07-20
+A1.1;8;2019-05-02;すいか;スイカ;;Wassermelone;Substantiv;2019-07-20
+A1.1;8;2019-05-02;めろん;メロン;;Melone;Substantiv;2019-07-20
+A1.1;8;2019-05-02;ぱいなつふる;パイナップル;;Ananas;Substantiv;2019-07-20
 A1.1;9;2019-05-09;らーめん;ラーメン;拉麺;Ramen;Substantiv;2019-07-20
-A1.1;9;2019-05-09;おりがみ;;;Origami;Substantiv;
+A1.1;9;2019-05-09;おりがみ;;折り紙;Origami;Substantiv;2019-07-20
 A1.1;9;2019-05-09;する;;;machen;Verb;
 A1.1;9;2019-05-09;なにする？;;;Was machen wir?;Satz;
-A1.1;9;2019-05-09;れいぞうこ;;;Kühlschrank;Substantiv;
-A1.1;9;2019-05-09;おげんきですか。;;;Wie geht es dir? / Wie geht es Ihnen?;Satz;
-A1.1;9;2019-05-09;はい、(わたしは)(とても)げんきです。;;;Ja, es geht mir (sehr) gut.;Satz;
-A1.1;9;2019-05-09;いいえ、(わたしは)げんきではありません。;;;Nein, es geht mir nicht gut.;Satz;
-A1.1;9;2019-05-09;わたしは、びようきです。;;;Ich bin krank.;Satz;
-A1.1;9;2019-05-09;おだいじに！;;;Gute Besserung!;Satz;
+A1.1;9;2019-05-09;れいぞうこ;;冷蔵庫;Kühlschrank;Substantiv;2019-07-20
+A1.1;9;2019-05-09;おげんきですか。;;お元気ですか。;Wie geht es dir? / Wie geht es Ihnen?;Satz;2019-07-20
+A1.1;9;2019-05-09;はい、(わたしは) (とても) げんきです。;;はい、私は（とても）元気です。;Ja, es geht mir (sehr) gut.;Satz;2019-07-20
+A1.1;9;2019-05-09;いいえ、(わたしは) げんきではありません。;;いいえ、体調が悪いです。;Nein, es geht mir nicht gut.;Satz;2019-07-20
+A1.1;9;2019-05-09;わたしは、びようきです。;;私は、病気です。;Ich bin krank.;Satz;2019-07-20
+A1.1;9;2019-05-09;おだいじに！;;お大事に!;Gute Besserung!;Satz;2019-07-20
 A1.1;9;2019-05-09;(わたしの)誕生日は, ☐ 月 ☐ 日です。;;;Mein Geburtstag ist am ☐  ☐ .;Satz;2019-05-16
 A1.1;10;2019-05-16;これをください。;;;Geben Sie mir bitte das!;Satz;
 A1.1;10;2019-05-16;わたしのすきないろは、 ☐ です。;;;Meine Lieblingsfarbe ist ☐ .;Satz;
-A1.1;10;2019-05-16;しろ;;白;weiß;Adjektiv;
-A1.1;10;2019-05-16;きいろ;;黄色;gelb;Adjektiv;
-A1.1;10;2019-05-16;おれんじ;オレンジ;;orange;Adjektiv;
+A1.1;10;2019-05-16;しろ;;白い;weiß;Adjektiv;2019-07-20
+A1.1;10;2019-05-16;きいろ;;黄色;gelb;Adjektiv;2019-07-20
+A1.1;10;2019-05-16;おれんじ;オレンジ;オレンジ色の;orange;Adjektiv;2019-07-20
 A1.1;10;2019-05-16;あか;;赤;rot;Adjektiv;
 A1.1;10;2019-05-16;ぴんく;ピンク;;rosa;Adjektiv;
 A1.1;10;2019-05-16;むらさき;;紫;lila;Adjektiv;
@@ -349,10 +350,6 @@ A1.1;10;2019-05-16;;;一兆;1000000000000;Zahl;
 A1.1;10;2019-05-16;;;十兆;10000000000000;Zahl;
 A1.1;10;2019-05-16;;;百兆;100000000000000;Zahl;
 A1.1;10;2019-05-16;;;千兆;1000000000000000;Zahl;
-A1.1;13;2019-06-27;やま;;山;Berg;Substantiv;
-A1.1;13;2019-06-27;うみ;;海;See;Substantiv;
-A1.1;13;2019-06-27;ゆき;;雪;Schnee;Substantiv;
-A1.1;13;2019-06-27;あめ;;雨;Regen;Substantiv;
 A1.1;13;2019-06-27;げつようび;;月よう日;Montag;Substantiv;
 A1.1;13;2019-06-27;かようび;;火よう日;Dienstag;Substantiv;
 A1.1;13;2019-06-27;すいようび;;水よう日;Mittwoch;Substantiv;
@@ -360,7 +357,7 @@ A1.1;13;2019-06-27;もくようび;;木よう日;Donnerstag;Substantiv;
 A1.1;13;2019-06-27;きんようび;;金よう日;Freitag;Substantiv;
 A1.1;13;2019-06-27;どようび;;土よう日;Samstag;Substantiv;
 A1.1;13;2019-06-27;にちようび;;日よう日;Sonntag;Substantiv;
-A1.1;13;2019-06-27;げつ;;月;Mond;Substantiv;
+A1.1;13;2019-06-27;げつ;;月;Mond / Monat;Substantiv;
 A1.1;13;2019-06-27;か;;火;Feuer;Substantiv;
 A1.1;13;2019-06-27;すい;;水;Wasser;Substantiv;
 A1.1;13;2019-06-27;もく;;木;Baum;Substantiv;
