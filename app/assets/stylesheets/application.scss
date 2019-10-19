@@ -149,12 +149,71 @@ table.letters {
     }
 }
 
+// ----------------------------------------------------------------------------
 
+path {
+    fill: #000;
+}
+
+path.stroke {
+    fill: none;
+    fill-opacity: 0.75;
+    fill-rule: evenodd;
+    stroke: #aaa;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+    marker-end: url("#Arrow1Mend");
+}
+
+path.arrow {
+    font-size: 1em;
+    fill-rule: evenodd;
+    fill: #aaa;
+    stroke: #aaa;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    marker-start: none;
+}
+
+path.rule {
+    fill: none;
+    fill-opacity: 0.75;
+    fill-rule: evenodd;
+    stroke: #000;
+    stroke-width: 0em;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 0.1;
+}
+
+text.number {
+    font-size: 0.5em;
+    fill: #aaa;
+}
+
+defs marker {
+    overflow: visible;
+}
+
+#gWI,
+#gWE {
+    display: none;
+}
+
+// ----------------------------------------------------------------------------
 
 div.print {
     text-align: center;
     font-size: 10pt;
     line-height: 10pt;
+
+    h1 {
+        color: #333;
+        font-size: 22pt;
+        line-height: 28pt;
+    }
 
     hr {
         border: 0;
