@@ -9,7 +9,7 @@
 require 'csv'
 require 'progress_bar'
 
-file = 'japanisch-a1-1.csv'
+file = 'nihonngo.csv'
 headers = %w(course number created_at hiragana katakana kanji german pos updated_at)
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', file))
