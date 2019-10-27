@@ -36,6 +36,7 @@ csv.each do |row|
 
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
+        row.delete "key"
         token = Token.create(row)
     end
 
