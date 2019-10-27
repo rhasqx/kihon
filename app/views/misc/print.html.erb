@@ -1,12 +1,12 @@
 <div class="container print">
 
 <h1>Hiragana</h1>
-<%= render "letters", variant: "hiragana" %>
+<%= render "strokes", variant: "hiragana" %>
 
 <br class="spacer">
 
 <h1>Katakana</h1>
-<%= render "letters", variant: "katakana" %>
+<%= render "strokes", variant: "katakana" %>
 
 <br class="page-break">
 
@@ -29,3 +29,22 @@
 <% end %>
 
 </div>
+
+<script>
+function hook() {
+  var i;
+  var hiraganaHeight = document.getElementById("svg-hiragana").getBoundingClientRect().height;
+  var strokes = document.getElementsByClassName("strokes-v");
+  var labels = document.getElementsByClassName("label-v");
+  for (i = 0; i < strokes.length; i++) {
+    strokes[i].style.height = hiraganaHeight;
+  }
+  for (i = 0; i < labels.length; i++) {
+    document.getElementById("log").innerHTML = Math.floor(hiraganaHeight / 5.0) + " /// " + x.length;
+    labels[i].style.height = Math.floor(hiraganaHeight / 5.0);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", hook());
+window.addEventListener("resize", hook());
+</script>
