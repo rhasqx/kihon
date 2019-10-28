@@ -88,3 +88,18 @@ end
 #######################################
 
 puts "There are now #{Token.count} rows in the tokens table."
+
+#######################################
+
+# translation -> todo!
+=begin
+Token.all.each_with_index do |token, i|
+    if token["german"].empty?
+        cmd = "trans -s en -t de -b \"#{token["english"]}\""
+        translation = `#{cmd} 2>/dev/null`.strip
+        token["german"] = translation
+        token.save
+        print "[#{i}] ", token["english"], " -> ", translation, "\n"
+    end
+end
+=end
