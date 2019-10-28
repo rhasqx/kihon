@@ -62,8 +62,19 @@ table.token {
     a.katakana { font-size: 1.8em; }
     a.romaji   { font-size: 11px;  }
     
+    td {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    th,
     td.info {
         @extend .grey-text;
+    }
+    
+    th,
+    td {
+        text-align: center;
     }
 }
 

@@ -1,6 +1,6 @@
 class Token < ApplicationRecord
-    after_create :tts
-    after_update :tts
+    #after_create :tts
+    #after_update :tts
 
     def readonly?
         File.exists?(Rails.root.join('readonly'))
