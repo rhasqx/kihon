@@ -6,33 +6,32 @@ class TokensController < ApplicationController
   def index
     # filter params
     search = params[:search] || ""
-    pos = params[:pos] || ""
-    begin
-      date = Date.strptime(params[:date] || "", "%Y-%m-%d").strftime("%Y-%m-%d")
-    rescue
-      date = Date.current.strftime("%Y-%m-%d")
-    end
+    #pos = params[:pos] || ""
+    #begin
+    #  date = Date.strptime(params[:date] || "", "%Y-%m-%d").strftime("%Y-%m-%d")
+    #rescue
+    #  date = Date.current.strftime("%Y-%m-%d")
+    #end
     perpage = params[:perpage].to_i
     perpage = Kaminari.config.default_per_page if perpage < 1
     perpage = [perpage, 500].min
 
     @search = search
-    @pos = pos
-    @date = date
+    #@pos = pos
+    #@date = date
     @perpage = perpage
 
-    @poses = Token.all.map(&:pos).sort.uniq
-
-    @dates = Token.all.map(&:created_at).map{|x|x.strftime "%Y-%m-%d"}.sort.uniq
+    #@poses = Token.all.map(&:pos).sort.uniq
+    #@dates = Token.all.map(&:created_at).map{|x|x.strftime "%Y-%m-%d"}.sort.uniq
 
     @tokens = Token.all.search(search)
-    if !pos.empty? and @poses.include?(pos)
-      @tokens = @tokens.where(pos: pos)
-    end
-    if !date.empty? and @dates.include?(date)
-      x = Date.strptime(date, "%Y-%m-%d")
-      @tokens = @tokens.where(created_at: x.midnight..x.end_of_day)
-    end
+    #if !pos.empty? and @poses.include?(pos)
+    #  @tokens = @tokens.where(pos: pos)
+    #end
+    #if !date.empty? and @dates.include?(date)
+    #  x = Date.strptime(date, "%Y-%m-%d")
+    #  @tokens = @tokens.where(created_at: x.midnight..x.end_of_day)
+    #end
     @tokens = @tokens.order(:created_at, :id)
 
     respond_to do |format|
