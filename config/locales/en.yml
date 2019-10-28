@@ -35,6 +35,13 @@ en:
   back: "back"
   search: "search"
   german: "German"
+  english: "English"
+  japanese: "Japanese"
+  hiragana: "Hiragana"
+  katakana: "Katakana"
+  kanji: "Kanji"
+  kana: "Kana"
+  translation: "Translation"
   created_at: "created at"
   updated_at: "updated at"
   views:

@@ -27,21 +27,19 @@ csv.each do |row|
     row["kanji"] ||= ""
     row["hiragana"] ||= ""
     row["katakana"] ||= ""
+    row["romaji"] ||= ""
     row["pos"] ||= ""
     row["english"] ||= ""
     row["german"] ||= ""
 
-    row.delete "level"
-    row.delete "kana"
-
-    #row["romaji"] = [row["hiragana"], row["katakana"], ""].reject(&:empty?).reject(&:nil?).first.romaji.gsub(/,/,", ")
-    row["romaji"] ||= ""
-    tmp = [row["hiragana"], row["katakana"], ""].reject(&:empty?).first
-    row["romaji"] = tmp unless tmp.nil?
-    row["romaji"] = row["romaji"].romaji.gsub(/,/,", ")
+    row["hiragana"] = row["kana"] if row["kana"].contains_hiragana?
+    row["katakana"] = row["kana"] if row["kana"].contains_katakana?
+    row["romaji"] = [row["hiragana"], row["katakana"], row["kana"], row["kanji"], ""].reject(&:empty?).first.romaji.gsub(/,/,", ")
 
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
+        row.delete "level"
+        row.delete "kana"
         token = Token.create(row)
     end
 
@@ -76,10 +74,7 @@ csv.each do |row|
         row["updated_at"] = row["created_at"]
     end
 
-    row["romaji"] ||= ""
-    tmp = [row["hiragana"], row["katakana"], ""].reject(&:empty?).first
-    row["romaji"] = tmp unless tmp.nil?
-    row["romaji"] = row["romaji"].romaji.gsub(/,/,", ")
+    row["romaji"] = [row["hiragana"], row["katakana"], row["kanji"], ""].reject(&:empty?).first.romaji.gsub(/,/,", ")
 
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
