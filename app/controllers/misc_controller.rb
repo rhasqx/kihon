@@ -22,6 +22,7 @@ class MiscController < ApplicationController
 
     @sentences = Token.where(:pos => 'Satz').order(created_at: 'ASC')
     @numbers = Token.where(:pos => 'Zahl').order(created_at: 'ASC')
-    @tokens = Token.where(:pos => @poses).order(pos: 'ASC', created_at: 'ASC')
+    @tokens = Token.where(:pos => @poses).where.not(course: 'JLPT').order(pos: 'ASC', created_at: 'ASC')
+    @jlpt_n5 = Token.where(:pos => @poses).where(course: 'JLPT').order(pos: 'ASC', created_at: 'ASC')
   end
 end

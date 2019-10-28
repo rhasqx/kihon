@@ -10,7 +10,7 @@
 
 <br class="page-break">
 
-<h1>Sätze</h1>
+<h1 style="page-break-before:always;">Sätze</h1>
 
 <% @sentences.each do |token| %>
   <%= render "token", token: token %>
@@ -25,6 +25,12 @@
 <h1>Zahlen</h1>
 
 <% @numbers.each do |token| %>
+  <%= render "token", token: token %>
+<% end %>
+
+<h1 style="page-break-before:always;">JLPT N5</h1>
+
+<% @jlpt_n5.each do |token| %>
   <%= render "token", token: token %>
 <% end %>
 
