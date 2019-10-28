@@ -24,6 +24,7 @@ span.hiragana, a.hiragana { color: #8A1818; }
 span.katakana, a.katakana { color: #086d3a; }
 span.romaji,   a.romaji   { color: #31353D; }
 span.german,   a.german   { color: #31353D; }
+span.english,  a.english  { color: #31353D; }
 
 p.footer {
     margin: 7em auto 1em auto;
@@ -55,15 +56,12 @@ p.footer {
 }
 
 table.token {
-    td.info     { font-size: 0.8em; }
-    td.kanji    { font-size: 2.2em; }
-    td.hiragana { font-size: 1.8em; }
-    td.katakana { font-size: 1.8em; }
-    td.romaji   { font-size: 11px;  }
-    td.german   { font-size: 1.2em; }
-
-    span.empty { font-size: 11px; }
-
+    a.info     { font-size: 0.8em; }
+    a.kanji    { font-size: 2.2em; }
+    a.hiragana { font-size: 1.8em; }
+    a.katakana { font-size: 1.8em; }
+    a.romaji   { font-size: 11px;  }
+    
     td.info {
         @extend .grey-text;
     }
@@ -72,21 +70,11 @@ table.token {
 @media #{$small-and-down} {
 
 table.token {
-    td.info     { font-size: 0.8em; }
-    td.kanji    { font-size: 3.4em; }
-    td.hiragana { font-size: 2.2em; }
-    td.katakana { font-size: 2.2em; }
-    td.romaji   { font-size: 0.8em; }
-    td.german   { font-size: 1.2em; }
-
-    td.info     { padding: 0px 5px; }
-    td.kanji    { padding: 0px 5px; }
-    td.hiragana { padding: 0px 5px; }
-    td.katakana { padding: 0px 5px; }
-    td.romaji   { padding: 0px 5px; }
-    td.german   { padding: 0px 5px; }
-
-    span.empty { display: none; }
+    a.info     { font-size: 0.8em; }
+    a.kanji    { font-size: 3.4em; }
+    a.hiragana { font-size: 2.2em; }
+    a.katakana { font-size: 2.2em; }
+    a.romaji   { font-size: 0.8em; }
     
     thead {
         display: none;
@@ -114,12 +102,8 @@ table.token {
 @media #{$medium-and-up} {
 
 table.token {
-    th.info,     td.info     {  }
-    th.kanji,    td.kanji    { padding: 15px 5px 15px 20px; }
-    th.hiragana, td.hiragana {  }
-    th.katakana, td.katakana {  }
-    th.romaji,   td.romaji   {  }
-    th.german,   td.german   { padding: 15px 20px 15px 5px; }
+    th.japanese    { min-width: 45%; }
+    th.translation { min-width: 45%; }
 }
 
 } // @media #{$medium-and-up}
@@ -235,6 +219,7 @@ div.print {
     .katakana { font-size: 16pt; line-height: 20pt; }
     .romaji   { font-size:  8pt; line-height: 10pt; }
     .german   { font-size: 10pt; line-height: 14pt; }
+    .english  { font-size: 10pt; line-height: 14pt; }
 
     div.token {
         display: inline-block;
