@@ -2,7 +2,7 @@
 
 <br>
 
-<%= render 'paginate' %>
+<%= paginate @tokens, views_prefix: 'kaminari_top' %>
 
 <table class="token">
   <thead>
@@ -19,7 +19,7 @@
   </tbody>
 </table>
 
-<%= render 'paginate' %>
+<%= paginate @tokens, views_prefix: 'kaminari_bottom' %>
 
 <br><br><br>
 

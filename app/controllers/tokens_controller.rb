@@ -1,4 +1,5 @@
 class TokensController < ApplicationController
+  before_action :set_pos
   before_action :set_token, only: [:show, :edit, :update, :destroy]
 
   # GET /tokens
@@ -32,7 +33,7 @@ class TokensController < ApplicationController
     #  x = Date.strptime(date, "%Y-%m-%d")
     #  @tokens = @tokens.where(created_at: x.midnight..x.end_of_day)
     #end
-    @tokens = @tokens.order(:created_at, :id)
+    @tokens = @tokens.order(:course, :number, :pos, :hiragana, :katakana, :kanji, :created_at, :id)
 
     respond_to do |format|
       format.html do
@@ -106,6 +107,12 @@ class TokensController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_token
       @token = Token.find(params[:id])
+    end
+
+    def set_pos
+      jp = ["名", "代", "動I", "動II", "動III", "形", "形動", "副", "連体", "接", "感", "助動", "助", "頭", "尾", "連"]
+      en = ["noun", "pronoun", "Type I verb", "Type II verb", "Type III verb", "adjective", "adjectival noun", "adverb", "attribute", "conjunction", "interjection", "auxiliary", "particle", "prefix", "suffix", "compound"]
+      @pos = [jp, en].transpose.to_h
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
