@@ -1,7 +1,10 @@
 <td class="info">
     <p class="course_and_number">
-        <% badge_color = "blue"%>
-        <% badge_color = "red" if token.course == "JLPT" %>
+        <%
+            badge_color = "grey"
+            badge_color = "red" if token.course == "JLPT"
+            badge_color = "blue" if token.course.match /A\d\.\d/
+        %>
         <%= content_tag(:span, token.course, :class => "new badge "+badge_color, "data-badge-caption" => "") %>
         <%= content_tag(:span, token.number, :class => "new badge grey", "data-badge-caption" => "") %>
     </p>
@@ -13,8 +16,11 @@
     <p class="romaji"><%= link_to(token.romaji, token, :class => "romaji") %></p>
 </td>
 <td class="translation">
-    <% badge_de = content_tag(:span, "DE", :class => "new badge grey", "data-badge-caption" => "") %>
-    <% badge_en = content_tag(:span, "EN", :class => "new badge grey", "data-badge-caption" => "") %>
+    <% # badge_de = content_tag(:span, "DE", :class => "new badge grey", "data-badge-caption" => "") %>
+    <% # badge_en = content_tag(:span, "EN", :class => "new badge grey", "data-badge-caption" => "") %>
     <p class="german"><%= link_to(token.german, token, :class => "german") unless token.german.empty? %></p>
     <p class="english"><%= link_to(token.english, token, :class => "english") unless token.english.empty? %></p>
+</td>
+<td class="pos">
+    <p class="pos"><%= content_tag(:span, token.pos, :title => @pos[token.pos]) %></p>
 </td>

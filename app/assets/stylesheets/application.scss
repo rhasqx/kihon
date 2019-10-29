@@ -26,6 +26,10 @@ span.romaji,   a.romaji   { color: #31353D; }
 span.german,   a.german   { color: #31353D; }
 span.english,  a.english  { color: #31353D; }
 
+.small li a {
+    font-size: 0.7em;
+}
+
 p.footer {
     margin: 7em auto 1em auto;
     text-align: center;
@@ -37,6 +41,16 @@ p.footer {
         line-height: 30px;
         min-width: 30px;
     }
+}
+
+.pagination-pager {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    li.first { float: left; }
+    li.prev { float: left; }
+    li.next { float: right; }
+    li.last { float: right; }
 }
 
 #search {
@@ -67,6 +81,7 @@ table.token {
         padding-bottom: 0;
     }
 
+    p.pos,
     th,
     td.info {
         @extend .grey-text;
@@ -105,6 +120,11 @@ table.token {
         content: "";
         display: block;
         height: 1em;
+    }
+
+    td.pos,
+    th.pos {
+        display: none;
     }
 }
 
