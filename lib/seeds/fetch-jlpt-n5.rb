@@ -18,6 +18,7 @@
 =end
 
 # Usage: ruby fetch-jlpt-n5.rb > JLPT-N5.csv
+# Vocabulary source: https://en.wikibooks.org/wiki/JLPT_Guide
 
 require "nokogiri"
 require "open-uri"
@@ -37,7 +38,7 @@ jp = ["名", "代", "動I", "動II", "動III", "形", "形動", "副", "連体",
 en = ["noun", "pronoun", "Type I verb", "Type II verb", "Type III verb", "adjective", "adjectival noun", "adverb", "attribute", "conjunction", "interjection", "auxiliary", "particle", "prefix", "suffix", "compound"]
 pos = [jp, en].transpose.to_h
 
-puts %w(number kana kanji pos english hiragana katakana level).join(";")
+puts "\""+%w(number kana kanji pos english hiragana katakana level).join("\";\"")+"\""
 urls.each do |url|
     doc = Nokogiri::HTML(open(url))
     doc.css("table").each do |table|
@@ -49,10 +50,10 @@ urls.each do |url|
             columns = [%w(number kana kanji pos english), columns].transpose.to_h
             
             columns["number"] = columns["number"].strip.to_i
-            columns["kana"] = columns["kana"].gsub(/;/,",").strip
-            columns["kanji"] = columns["kanji"].gsub(/;/,",").gsub(/[【】]/,"").strip
-            columns["pos"] = columns["pos"].gsub(/;/,",").gsub(/[()]/,"").strip
-            columns["english"] = columns["english"].gsub(/;/,",").gsub(/\//, " / ").strip.gsub(/\"/, "\\\"").strip
+            columns["kana"] = columns["kana"].strip
+            columns["kanji"] = columns["kanji"].gsub(/[【】]/,"").strip
+            columns["pos"] = columns["pos"].gsub(/[()]/,"").strip
+            columns["english"] = columns["english"].gsub(/\"/, "'").gsub(/\//, " / ").strip
 
             columns["hiragana"] = ""
             columns["hiragana"] = columns["kana"] if columns["kana"].hiragana?
@@ -62,7 +63,7 @@ urls.each do |url|
 
             columns["level"] = level
 
-            puts columns.values.join(";")
+            puts "\""+columns.values.join("\";\"")+"\""
         end
     end
 end

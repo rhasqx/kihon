@@ -237,6 +237,7 @@ div.print {
 
     div.token {
         page-break-inside: avoid !important;
+        max-width: 25%;
     }
 
     p {

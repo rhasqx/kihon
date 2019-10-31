@@ -33,7 +33,7 @@ class TokensController < ApplicationController
     #  x = Date.strptime(date, "%Y-%m-%d")
     #  @tokens = @tokens.where(created_at: x.midnight..x.end_of_day)
     #end
-    @tokens = @tokens.order(:course, :number, :pos, :hiragana, :katakana, :kanji, :created_at, :id)
+    @tokens = @tokens.joins(:token_order).order('tokens.course, tokens.number, token_orders.weight, tokens.created_at')
 
     respond_to do |format|
       format.html do

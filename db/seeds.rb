@@ -11,6 +11,13 @@ require "progress_bar"
 
 #######################################
 
+tokenorders = %w(文字 名 連 形 形動 動 動I 動II 動III 副 代 連体 接 感 助動 助 頭 尾 数 文).push ""
+tokenorders.each_with_index do |name, index|
+    TokenOrder.create(name: name, weight: index)
+end
+
+#######################################
+
 file = "JLPT-N5.csv"
 csv_text = File.read(Rails.root.join("lib", "seeds", file))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "UTF-8", col_sep: ";", liberal_parsing: true)

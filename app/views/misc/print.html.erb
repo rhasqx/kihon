@@ -10,21 +10,9 @@
 
 <br class="page-break">
 
-<h1 style="page-break-before:always;">Sätze</h1>
-
-<% @sentences.each do |token| %>
-  <%= render "token", token: token %>
-<% end %>
-
-<h1>Vokabeln</h1>
+<h1 style="page-break-before:always;">Vokabeln</h1>
 
 <% @tokens.each do |token| %>
-  <%= render "token", token: token %>
-<% end %>
-
-<h1>Zahlen</h1>
-
-<% @numbers.each do |token| %>
   <%= render "token", token: token %>
 <% end %>
 
