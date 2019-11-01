@@ -11,7 +11,7 @@ require "progress_bar"
 
 #######################################
 
-tokenorders = %w(文字 名 連 形 形動 動 動I 動II 動III 副 代 連体 接 感 助動 助 頭 尾 数 文).push ""
+tokenorders = %w(文字 名 連 形 形動 動 動I 動II 動III 副 代 連体 接 感 助動 助 頭 尾 数 文 nil)
 tokenorders.each_with_index do |name, index|
     TokenOrder.create(name: name, weight: index)
 end
@@ -35,9 +35,9 @@ csv.each do |row|
     row["hiragana"] ||= ""
     row["katakana"] ||= ""
     row["romaji"] ||= ""
-    row["pos"] ||= ""
     row["english"] ||= ""
     row["german"] ||= ""
+    row["pos"] ||= ""
 
     row["hiragana"] = row["kana"] if row["kana"].contains_hiragana?
     row["katakana"] = row["kana"] if row["kana"].contains_katakana?
@@ -47,6 +47,7 @@ csv.each do |row|
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
         row.delete "level"
         row.delete "kana"
+        row["pos"] = "nil" if row["pos"].empty?
         token = Token.create(row)
     end
 
@@ -65,9 +66,9 @@ csv.each do |row|
     row["kanji"] ||= ""
     row["hiragana"] ||= ""
     row["katakana"] ||= ""
-    row["pos"] ||= ""
     row["english"] ||= ""
     row["german"] ||= ""
+    row["pos"] ||= ""
 
     begin
         row["created_at"] = Date.parse(row["created_at"])
@@ -86,6 +87,7 @@ csv.each do |row|
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
         row.delete "key"
+        row["pos"] = "nil" if row["pos"].empty?
         token = Token.create(row)
     end
 

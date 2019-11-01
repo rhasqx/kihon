@@ -1,38 +1,14 @@
 class TokensController < ApplicationController
-  before_action :set_pos
+  before_action :set_common, only: [:index, :show, :edit, :update, :destroy]
   before_action :set_token, only: [:show, :edit, :update, :destroy]
 
   # GET /tokens
   # GET /tokens.json
   def index
-    # filter params
-    search = params[:search] || ""
-    #pos = params[:pos] || ""
-    #begin
-    #  date = Date.strptime(params[:date] || "", "%Y-%m-%d").strftime("%Y-%m-%d")
-    #rescue
-    #  date = Date.current.strftime("%Y-%m-%d")
-    #end
-    perpage = params[:perpage].to_i
-    perpage = Kaminari.config.default_per_page if perpage < 1
-    perpage = [perpage, 500].min
-
-    @search = search
-    #@pos = pos
-    #@date = date
-    @perpage = perpage
-
-    #@poses = Token.all.map(&:pos).sort.uniq
-    #@dates = Token.all.map(&:created_at).map{|x|x.strftime "%Y-%m-%d"}.sort.uniq
-
-    @tokens = Token.all.search(search)
-    #if !pos.empty? and @poses.include?(pos)
-    #  @tokens = @tokens.where(pos: pos)
-    #end
-    #if !date.empty? and @dates.include?(date)
-    #  x = Date.strptime(date, "%Y-%m-%d")
-    #  @tokens = @tokens.where(created_at: x.midnight..x.end_of_day)
-    #end
+    @tokens = Token.all.search(@search)
+    @tokens = @tokens.where(course: @course) if !@course.empty? and @courses.include?(@course)
+    @tokens = @tokens.where(number: @number) if !@number.empty? and @numbers.include?(@number)
+    @tokens = @tokens.where(pos: @pos) if !@pos.empty? and @poses.include?(@pos)
     @tokens = @tokens.joins(:token_order).order('tokens.course, tokens.number, token_orders.weight, tokens.created_at')
 
     respond_to do |format|
@@ -108,15 +84,30 @@ class TokensController < ApplicationController
     def set_token
       @token = Token.find(params[:id])
     end
+    def set_common
+      @courses = Naturally.sort Token.all.map(&:course).sort.uniq
+      @numbers = Naturally.sort Token.all.map(&:number).sort.uniq
+      @poses = Naturally.sort Token.all.map(&:pos).sort.uniq
 
-    def set_pos
-      jp = ["名", "代", "動I", "動II", "動III", "形", "形動", "副", "連体", "接", "感", "助動", "助", "頭", "尾", "連"]
-      en = ["noun", "pronoun", "Type I verb", "Type II verb", "Type III verb", "adjective", "adjectival noun", "adverb", "attribute", "conjunction", "interjection", "auxiliary", "particle", "prefix", "suffix", "compound"]
-      @pos = [jp, en].transpose.to_h
+      @search = params[:search] || ""
+      @perpage = params[:perpage].to_i
+      @perpage = Kaminari.config.default_per_page if @perpage < 1
+      @perpage = [@perpage, 500].min
+      @course = params[:course] || ""
+      @number = params[:number] || ""
+      @pos = params[:pos] || ""
+
+      @params = {
+        :search => @search,
+        :perpage => @perpage,
+        :course => @course,
+        :number => @number,
+        :pos => @pos
+      }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def token_params
-      params.require(:token).permit(:hiragana, :katakana, :kanji, :german, :pos)
+      params.require(:token).permit(:hiragana, :katakana, :kanji, :german, :english, :pos)
     end
 end

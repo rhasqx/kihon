@@ -10,17 +10,17 @@
     </p>
 </td>
 <td class="japanese">
-    <p class="kanji"><%= link_to(token.kanji, token, :class => "kanji") if token.kanji %></p>
-    <p class="hiragana"><%= link_to(token.hiragana, token, :class => "hiragana") if token.hiragana %></p>
-    <p class="katakana"><%= link_to(token.katakana, token, :class => "katakana") if token.katakana %></p>
-    <p class="romaji"><%= link_to(token.romaji, token, :class => "romaji") %></p>
+    <p class="kanji"><%= link_to(token.kanji, token_path(token, :params => @params), :class => "kanji") if token.kanji %></p>
+    <p class="hiragana"><%= link_to(token.hiragana, token_path(token, :params => @params), :class => "hiragana") if token.hiragana %></p>
+    <p class="katakana"><%= link_to(token.katakana, token_path(token, :params => @params), :class => "katakana") if token.katakana %></p>
+    <p class="romaji"><%= link_to(token.romaji, token_path(token, :params => @params), :class => "romaji") %></p>
 </td>
 <td class="translation">
     <% # badge_de = content_tag(:span, "DE", :class => "new badge grey", "data-badge-caption" => "") %>
     <% # badge_en = content_tag(:span, "EN", :class => "new badge grey", "data-badge-caption" => "") %>
-    <p class="german"><%= link_to(token.german, token, :class => "german") unless token.german.empty? %></p>
-    <p class="english"><%= link_to(token.english, token, :class => "english") unless token.english.empty? %></p>
+    <p class="german"><%= link_to(token.german, token_path(token, :params => @params), :class => "german") unless token.german.empty? %></p>
+    <p class="english"><%= link_to(token.english, token_path(token, :params => @params), :class => "english") unless token.english.empty? %></p>
 </td>
 <td class="pos">
-    <p class="pos"><%= content_tag(:span, token.pos, :title => @pos[token.pos]) %></p>
+    <p class="pos"><%= content_tag(:span, token.pos, :title => t(token.pos)) %></p>
 </td>

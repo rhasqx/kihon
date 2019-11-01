@@ -2,6 +2,10 @@
 
 <br>
 
+<%= render 'filter', key: "course", list: @courses, current: @course %>
+<%= render 'filter', key: "number", list: @numbers, current: @number %>
+<%= render 'filter', key: "pos", list: @poses, current: @pos %>
+
 <%= paginate @tokens, views_prefix: 'kaminari_top' %>
 
 <table class="token">
