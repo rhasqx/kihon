@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.5.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -68,3 +68,4 @@ gem 'material_icons'
 gem 'prawn'
 gem 'progress_bar'
 gem 'mojinizer'
+gem 'naturally'

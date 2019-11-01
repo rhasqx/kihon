@@ -1,10 +1,26 @@
-<td class="audio audio-kanji"><%= render("audio", token: token, component: "kanji") %></td>
-<td class="kanji"><%= link_to(token.kanji, token, :class => "kanji") if token.kanji %></td>
-<td class="audio audio-hiragana"><%= render("audio", token: token, component: "hiragana") %></td>
-<td class="hiragana"><%= link_to(token.hiragana, token, :class => "hiragana") if token.hiragana %></td>
-<td class="audio audio-katakana"><%= render("audio", token: token, component: "katakana") %></td>
-<td class="katakana"><%= link_to(token.katakana, token, :class => "katakana") if token.katakana %></td>
-<td class="audio audio-romaji"><%= render("audio", token: token, component: "romaji") %></td>
-<td class="romaji"><%= link_to(token.romaji, token, :class => "romaji") %></td>
-<td class="audio audio-german"><%= render("audio", token: token, component: "german") %></td>
-<td class="german"><%= link_to(token.german, token, :class => "german") if token.german %></td>
+<td class="info">
+    <p class="course_and_number">
+        <%
+            badge_color = "grey"
+            badge_color = "red" if token.course == "JLPT"
+            badge_color = "blue" if token.course.match /A\d\.\d/
+        %>
+        <%= content_tag(:span, token.course, :class => "new badge "+badge_color, "data-badge-caption" => "") %>
+        <%= content_tag(:span, token.number, :class => "new badge grey", "data-badge-caption" => "") %>
+    </p>
+</td>
+<td class="japanese">
+    <p class="kanji"><%= link_to(token.kanji, token_path(token, :params => @params), :class => "kanji") if token.kanji %></p>
+    <p class="hiragana"><%= link_to(token.hiragana, token_path(token, :params => @params), :class => "hiragana") if token.hiragana %></p>
+    <p class="katakana"><%= link_to(token.katakana, token_path(token, :params => @params), :class => "katakana") if token.katakana %></p>
+    <p class="romaji"><%= link_to(token.romaji, token_path(token, :params => @params), :class => "romaji") %></p>
+</td>
+<td class="translation">
+    <% # badge_de = content_tag(:span, "DE", :class => "new badge grey", "data-badge-caption" => "") %>
+    <% # badge_en = content_tag(:span, "EN", :class => "new badge grey", "data-badge-caption" => "") %>
+    <p class="german"><%= link_to(token.german, token_path(token, :params => @params), :class => "german") unless token.german.empty? %></p>
+    <p class="english"><%= link_to(token.english, token_path(token, :params => @params), :class => "english") unless token.english.empty? %></p>
+</td>
+<td class="pos">
+    <p class="pos"><%= content_tag(:span, token.pos, :title => t(token.pos)) %></p>
+</td>
