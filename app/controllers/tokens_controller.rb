@@ -87,7 +87,7 @@ class TokensController < ApplicationController
     def set_common
       @courses = Naturally.sort Token.all.map(&:course).sort.uniq
       @numbers = Naturally.sort Token.all.map(&:number).sort.uniq
-      @poses = Naturally.sort Token.all.map(&:pos).sort.uniq
+      @poses = Naturally.sort TokenOrder.all.map(&:name).sort.uniq # Token.all.map(&:pos).sort.uniq
 
       @search = params[:search] || ""
       @perpage = params[:perpage].to_i
