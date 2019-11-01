@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_20_090544) do
+ActiveRecord::Schema.define(version: 2019_10_31_214752) do
+
+  create_table "token_orders", force: :cascade do |t|
+    t.string "name"
+    t.float "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tokens", force: :cascade do |t|
     t.text "hiragana"
@@ -22,8 +29,9 @@ ActiveRecord::Schema.define(version: 2019_07_20_090544) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "examen"
-    t.decimal "number"
+    t.string "number"
     t.string "course"
+    t.string "english"
   end
 
 end

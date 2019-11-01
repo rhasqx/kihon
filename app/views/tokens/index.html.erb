@@ -1,16 +1,12 @@
 <%= render 'search' %>
 
-<div class="container center">
-  <%= render 'filter_date' %>
-</div>
-
-<div class="container center">
-  <%= render 'filter_pos' %>
-</div>
-
 <br>
 
-<%= render 'paginate' %>
+<%= render 'filter', key: "course", list: @courses, current: @course %>
+<%= render 'filter', key: "number", list: @numbers, current: @number %>
+<%= render 'filter', key: "pos", list: @poses, current: @pos %>
+
+<%= paginate @tokens, views_prefix: 'kaminari_top' %>
 
 <table class="token">
   <thead>
@@ -27,7 +23,7 @@
   </tbody>
 </table>
 
-<%= render 'paginate' %>
+<%= paginate @tokens, views_prefix: 'kaminari_bottom' %>
 
 <br><br><br>
 
