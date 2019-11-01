@@ -85,14 +85,17 @@ class CardsPdf < Prawn::Document
         
         if side == :translation
           german = token.try(:german) || ""
+          english = token.try(:english) || ""
 
           german = german.encode("utf-8").force_encoding("utf-8").gsub(/☐/,"#").strip
+          english = english.encode("utf-8").force_encoding("utf-8").gsub(/☐/,"#").strip
 
           german << "\n" unless german.empty?
+          english << "\n" unless english.empty?
 
           fill_color "000000"
           options.merge!({:size => 12})
-          text_box german, options.merge({:align => :center, :valign => :center})
+          text_box german+english, options.merge({:align => :center, :valign => :center})
         else
           pos = token.try(:pos) || ""
 

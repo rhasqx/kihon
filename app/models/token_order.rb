@@ -1,0 +1,2 @@
+class TokenOrder < ApplicationRecord
+end
