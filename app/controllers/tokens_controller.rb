@@ -9,7 +9,7 @@ class TokensController < ApplicationController
     @tokens = @tokens.where(course: @course) if !@course.empty? and @courses.include?(@course)
     @tokens = @tokens.where(number: @number) if !@number.empty? and @numbers.include?(@number)
     @tokens = @tokens.where(pos: @pos) if !@pos.empty? and @poses.include?(@pos)
-    @tokens = @tokens.joins(:token_order).order('tokens.course, tokens.number, token_orders.weight, tokens.created_at')
+    @tokens = @tokens.joins(:token_order).order('tokens.course, tokens.number, token_orders.weight, tokens.category, tokens.hiragana, tokens.katakana, tokens.kanji, tokens.created_at')
 
     respond_to do |format|
       format.html do
@@ -87,7 +87,7 @@ class TokensController < ApplicationController
     def set_common
       @courses = Naturally.sort Token.all.map(&:course).sort.uniq
       @numbers = Naturally.sort Token.all.map(&:number).sort.uniq
-      @poses = Naturally.sort Token.all.map(&:pos).sort.uniq
+      @poses = TokenOrder.all.order(:weight).map(&:name)
 
       @search = params[:search] || ""
       @perpage = params[:perpage].to_i

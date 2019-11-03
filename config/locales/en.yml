@@ -47,6 +47,11 @@ en:
   views:
     pagination:
       truncate: "..."
+  nil: "none"
+  A1:
+    1: "A1.1"
+    2: "A1.2"
+  JLPT: "JLPT"
   名: "noun"
   代: "pronoun"
   動I: "Type I verb"

@@ -47,13 +47,18 @@ de:
   views:
     pagination:
       truncate: "..."
+  nil: "leer"
+  A1:
+    1: "A1.1"
+    2: "A1.2"
+  JLPT: "JLPT"
   名: "Substantiv"
   代: "Pronomen"
   動I: "Verb (Typ I)"
   動II: "Verb (Typ II)"
   動III: "Verb (Typ III)"
   形: "Adjektive"
-  形動: "substantiviertes Sdjektiv"
+  形動: "substantiviertes Adjektiv"
   副: "Adverb"
   連体: "Attribut"
   接: "Konjunktion"

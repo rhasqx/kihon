@@ -81,10 +81,15 @@ table.token {
         padding-bottom: 0;
     }
 
+    p.category,
     p.pos,
     th,
     td.info {
         @extend .grey-text;
+    }
+
+    p.category {
+        font-size: 0.7em;
     }
     
     th,
@@ -122,6 +127,8 @@ table.token {
         height: 1em;
     }
 
+    td.category,
+    th.category,
     td.pos,
     th.pos {
         display: none;

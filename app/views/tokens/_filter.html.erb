@@ -3,7 +3,7 @@
   <li class="waves-effect <%= "active" if !list.include?(current) %>"><%= link_to(t("all"), url_for(@params.merge({key => ""}))) %></li>
   <% list.each do |item| %>
     <li class="waves-effect <%= "active" if item == current %>">
-      <%= link_to(item, url_for(@params.merge({key => item}))) %>
+      <%= link_to(t(item), url_for(@params.merge({key => item})), :title => "#{item} / #{t(item)}") %>
     </li>
   <% end %>
 </ul>
