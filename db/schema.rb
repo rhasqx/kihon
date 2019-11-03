@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_31_214752) do
+ActiveRecord::Schema.define(version: 2019_11_03_155620) do
 
   create_table "token_orders", force: :cascade do |t|
     t.string "name"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_10_31_214752) do
     t.string "number"
     t.string "course"
     t.string "english"
+    t.string "category"
   end
 
 end

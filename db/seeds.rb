@@ -18,6 +18,7 @@ end
 
 #######################################
 
+=begin
 file = "JLPT-N5.csv"
 csv_text = File.read(Rails.root.join("lib", "seeds", file))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "UTF-8", col_sep: ";", liberal_parsing: true)
@@ -39,6 +40,47 @@ csv.each do |row|
     row["german"] ||= ""
     row["pos"] ||= ""
 
+    row["hiragana"] = row["kana"] if row["kana"].contains_hiragana?
+    row["katakana"] = row["kana"] if row["kana"].contains_katakana?
+    row["romaji"] = [row["hiragana"], row["katakana"], row["kana"], row["kanji"], ""].reject(&:empty?).first.romaji.gsub(/,/,", ")
+
+    temp = row
+    if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
+        row.delete "level"
+        row.delete "kana"
+        row["pos"] = "nil" if row["pos"].empty?
+        token = Token.create(row)
+    end
+
+    bar.increment!
+end
+=end
+
+#######################################
+
+file = "JLPT-N5-groups.csv"
+csv_text = File.read(Rails.root.join("lib", "seeds", file))
+csv = CSV.parse(csv_text, :headers => true, :encoding => "UTF-8", col_sep: ";", liberal_parsing: true)
+bar = ProgressBar.new(csv.size, :percentage, :counter, :bar)
+csv.each do |row|
+    row = row.to_hash
+
+    row["created_at"] = Date.current
+    row["updated_at"] = row["created_at"]
+    row["course"] = "JLPT"
+    row["number"] = row["level"]
+    
+    row["kana"] ||= ""
+    row["kanji"] ||= ""
+    row["hiragana"] ||= ""
+    row["katakana"] ||= ""
+    row["romaji"] ||= ""
+    row["english"] ||= ""
+    row["german"] ||= ""
+    row["pos"] ||= ""
+    row["category"] ||= ""
+
+    row["category"] = row["category"] unless row["category"].nil?
     row["hiragana"] = row["kana"] if row["kana"].contains_hiragana?
     row["katakana"] = row["kana"] if row["kana"].contains_katakana?
     row["romaji"] = [row["hiragana"], row["katakana"], row["kana"], row["kanji"], ""].reject(&:empty?).first.romaji.gsub(/,/,", ")
