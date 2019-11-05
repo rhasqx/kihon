@@ -1,5 +1,5 @@
+<div class="strokes-h"><% %w(n w r y m h n t s k a).each do |x| %><div id="<%= variant %>-label-<%= x %>" class="label-h"><span class="label-h"><%= x %></span></div><% end %></div>
 <!--
-<div class="strokes-h"><% %w(n w r y m h n t s k).each do |x| %><div id="<%= variant %>-label-<%= x %>" class="label-h"><span class="label-h"><%= x %></span></div><% end %></div>
 <div class="strokes-v"><% %w(a i u e o).each do |x| %><div id="<%= variant %>-label-<%= x %>" class="label-v"><span class="label-v"><%= x %></span></div><% end %></div>
 -->
 <%= render ("svg_" + variant) %>

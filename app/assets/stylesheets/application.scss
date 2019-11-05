@@ -232,7 +232,7 @@ div.print {
     line-height: 10pt;
 
     h1 {
-        color: #333;
+        color: #31353D;
         font-size: 22pt;
         line-height: 28pt;
     }
@@ -268,6 +268,19 @@ div.print {
     hr {
         display: none;
     }
+
+    div.strokes-h {
+        div.label-h {
+            display: inline-block;
+            width: 9%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.7em;
+            font-weight: bold;
+            //color: #31353D;
+            @extend .grey-text;
+        }
+    }
 } // print
 
 @media screen {
@@ -280,7 +293,15 @@ div.print {
     p.footer {
         display: none;
     }
-    br.page-break {
+    .spacer {
+        margin-top: 1.5cm;
+        margin-bottom: 1.5cm;
+        border: 1px solid red;
+    }
+    .page-break-before {
+        page-break-before: always;
+    }
+    .page-break-after {
         page-break-after: always;
     }
 }
