@@ -34,6 +34,7 @@ en:
   all: "all"
   back: "back"
   search: "search"
+  filter: "filter"
   german: "German"
   english: "English"
   japanese: "Japanese"

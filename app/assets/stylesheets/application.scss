@@ -53,16 +53,22 @@ p.footer {
     li.last { float: right; }
 }
 
-#search {
-    color: white;
-}
-
-#search:focus:not(.browser-default) {
-    color: $primary-color;
+#search,
+#search:focus,
+label[for=search],
+label[for=search] i,
+#form-search label,
+#form-search label i {
+    color: grey;
+    background-color: $primary-color;
 }
 
 #close {
-    color: grey;
+    color: $primary-color;
+}
+
+#close.active {
+    color: darken(grey, 15%);
 }
 
 .filter li a {

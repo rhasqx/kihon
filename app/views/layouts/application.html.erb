@@ -27,12 +27,44 @@
   </head>
 
   <body>
+    <nav>
+      <div class="nav-wrapper">
+        <%
+          params_reset = {}
+          params_reset = @params unless @params.nil?
+          params_reset[:search] = ""
+        %>
+        <%= form_tag tokens_path, :method => "get", :class => "search left", :id => "form-search", :style => "" do %>
+          <%= hidden_field_tag 'pos', @pos  %>
+          <%= hidden_field_tag 'course', @course  %>
+          <%= hidden_field_tag 'number', @number  %>
+          <div class="input-field">
+            <%= search_field_tag :search, params[:search], :required => false, :type => "search", :placeholder => (t("filter").titleize + "...").html_safe, :onchange => "onSearchChange()", :onkeypress => "onSearchChange()", :onclick => "onSearchChange()", :onfocus => "onSearchChange()" %>
+            <label class="label-icon" for="search"><i class="material-icons">filter_list</i></label>
+            <i class="material-icons" id="close" onClick="javascript:location.href='<%= url_for(:params => params_reset) %>'">close</i>
+          </div>
+        <% end %>
+        <ul class="right">
+          <li><%= link_to content_tag(:i, "view_list", :class => "material-icons"), tokens_path %></li>
+          <li><%= link_to content_tag(:i, "print", :class => "material-icons"), :controller => "misc", :action => "print" %></li>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
 
     <p class="footer"><%= link_to "github.com/rhasqx/kihon", "https://github.com/rhasqx/kihon" %></p>
 
     <script>
-    function play_audio(n, component) {
+    function onSearchChange()
+    {
+      var search = document.getElementById("search");
+      var close = document.getElementById("close");
+
+      search.value.length ? close.classList.add("active") : close.classList.remove("active");
+    }
+    function play_audio(n, component)
+    {
       var audio = document.getElementById("audio_" + component + "_" + n);
       var btn = document.getElementById("btn_audio_" + component + "_" + n);
     
@@ -51,6 +83,9 @@
         btn.innerHTML = "play_arrow";
       };
     }
+    (function() {
+      onSearchChange();
+    })();
     </script>
   </body>
 </html>
