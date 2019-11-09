@@ -98,7 +98,7 @@ end
 
 #######################################
 
-file = "nihonngo.csv"
+file = "vhs-heilbronn.csv"
 csv_text = File.read(Rails.root.join("lib", "seeds", file))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "UTF-8", col_sep: ";")
 bar = ProgressBar.new(csv.size, :percentage, :counter, :bar)
