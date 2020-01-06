@@ -36,18 +36,14 @@ int main(int argc, char* argv[])
 		;
 	try {
 		auto result = options.parse(argc, argv);
-		if (result.count("input"))
-		{
+		if (result.count("input")) {
 			input = result["input"].as<std::string>();
-		}
-		else
-		{
+		} else {
 			std::cerr << "Error: No input file." << std::endl << std::endl
 					  << options.help({"", "Group"}) << std::endl;
 			exit(-1);
 		}
-		if (result.count("help"))
-		{
+		if (result.count("help")) {
 			std::cout << options.help({"", "Group"}) << std::endl;
 			exit(0);
 		}
@@ -77,26 +73,24 @@ int main(int argc, char* argv[])
 	auto key = -1;
 	auto updated_at = -1;
 
-	auto replace = [](const std::string& haystack){
-		const auto str = std::regex_replace(haystack, std::regex("☐"), "\\inputplaceholder");
+	auto replace = [](const std::string& haystack) {
+		const auto str = std::regex_replace(haystack, std::regex("☐"), "\\inputplaceholder{}");
 		return str.size()
 			? str
-			: "$\\cdot$";
+			: "";
 	};
 
-	auto split = [&delim, &header, &course, &number, &created_at, &hiragana, &katakana, &kanji, &german, &pos, &key, &updated_at](std::vector<std::string>& dst, const std::string& line){
+	auto split = [&delim, &header, &course, &number, &created_at, &hiragana, &katakana, &kanji, &german, &pos, &key, &updated_at](std::vector<std::string>& dst, const std::string& line) {
 		auto start = 0U;
 		auto end = line.find(delim);
-		while (end != std::string::npos)
-		{
+		while (end != std::string::npos) {
 			dst.push_back(line.substr(start, end - start));
 			start = end + delim.length();
 			end = line.find(delim, start);
 		}
 
-		if (dst == header)
-		{
-			auto index = [](const std::vector<std::string>& haystack, const std::string& needle){
+		if (dst == header) {
+			auto index = [](const std::vector<std::string>& haystack, const std::string& needle) {
 				const auto it = std::find(haystack.begin(), haystack.end(), needle);
 				return (it == haystack.end())
 					? -1
@@ -116,34 +110,30 @@ int main(int argc, char* argv[])
 		}
 	};
 
-	std::cout << "\\newcommand{\\token}[2]{"
-			  << "\\begin{switch}{#1}" << newline;
+	std::cout << "\\newcommand{\\token}[2]{" << "%" << newline;
 
-    while (std::getline(ifs, line))
-    {
+    while (std::getline(ifs, line)) {
 		tokens.clear();
 		split(i++ == 0 ? header : tokens, line);
 
 		try {
-			if (tokens.at(key).size() <= 0)
+			if (tokens.at(key).size() <= 0) {
 				continue;
+			}
 
-			std::cout << "\\case{" << tokens.at(key)
-					  << "}{" << newline
-					  << tab << "\\begin{switch}{#2}" << newline
-					  << tab << tab << "\\case{kanji}{\\textcolor{kanji}{" << replace(tokens.at(kanji)) << "}}" << newline
-					  << tab << tab << "\\case{hiragana}{\\textcolor{hiragana}{" << replace(tokens.at(hiragana)) << "}}" << newline
-					  << tab << tab << "\\case{katakana}{\\textcolor{katakana}{" << replace(tokens.at(katakana)) << "}}" << newline
-					  << tab << tab << "\\case{romaji}{\\textcolor{romaji}{" << "todo" << "}}" << newline
-					  << tab << tab << "\\case{german}{\\textcolor{german}{" << replace(tokens.at(german)) << "}}" << newline
-					  << tab << "\\end{switch}" << newline
-					  << "}" << newline;
+			std::cout << "\\ifthenelse{\\equal{#1}{" << tokens.at(key) << "}}{" << "%" << newline
+			          << tab << "\\ifthenelse{\\equal{#2}{" << "kanji" << "}}{\\textcolor{kanji}{" << replace(tokens.at(kanji)) << "}}{}" << "%" << newline
+			          << tab << "\\ifthenelse{\\equal{#2}{" << "hiragana" << "}}{\\textcolor{hiragana}{" << replace(tokens.at(hiragana)) << "}}{}" << "%" << newline
+			          << tab << "\\ifthenelse{\\equal{#2}{" << "katakana" << "}}{\\textcolor{katakana}{" << replace(tokens.at(katakana)) << "}}{}" << "%" << newline
+			          << tab << "\\ifthenelse{\\equal{#2}{" << "romaji" << "}}{\\textcolor{romaji}{" << "todo" << "}}{}" << "%" << newline
+			          << tab << "\\ifthenelse{\\equal{#2}{" << "german" << "}}{\\textcolor{german}{" << replace(tokens.at(german)) << "}}{}" << "%" << newline
+			          << "}{}" << "%" << newline;
 		} catch(...) {
 			// nil -- just ignore if it isincomplete
 		}
     }
-	
-	std::cout << "\\end{switch}" << "}" << newline;
+
+	std::cout << "}" << "%" << newline;
 
 	return 0;
 }

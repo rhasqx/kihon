@@ -1,0 +1,9 @@
+
+find_package(Threads REQUIRED)
+
+target_link_libraries(csv2tex
+    Threads::Threads
+)
+
+install(TARGETS csv2tex RUNTIME DESTINATION "bin")
+
