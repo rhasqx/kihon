@@ -84,7 +84,7 @@ csv.each do |row|
     row["category"] = row["category"] unless row["category"].nil?
     row["hiragana"] = row["kana"] if row["kana"].contains_hiragana?
     row["katakana"] = row["kana"] if row["kana"].contains_katakana?
-    row["romaji"] = [row["hiragana"], row["katakana"], row["kana"], row["kanji"], ""].reject(&:empty?).first.romaji.gsub(/,/,", ")
+    row["romaji"] = [row["kana"], row["kanji"], row["hiragana"], row["katakana"], ""].reject(&:empty?).map{|x|x.gsub(/<rb>.*?<\/rb>/,"")}.map{|x|x.gsub(/<.*?>/,"")}.first.romaji.gsub(/,/,", ")
 
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
