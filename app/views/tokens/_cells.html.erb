@@ -10,10 +10,10 @@
     </p>
 </td>
 <td class="japanese">
-    <p class="kanji"><%= link_to(token.kanji, token_path(token, :params => @params), :class => "kanji") if token.kanji %></p>
-    <p class="hiragana"><%= link_to(token.hiragana, token_path(token, :params => @params), :class => "hiragana") if token.hiragana %></p>
-    <p class="katakana"><%= link_to(token.katakana, token_path(token, :params => @params), :class => "katakana") if token.katakana %></p>
-    <p class="romaji"><%= link_to(token.romaji, token_path(token, :params => @params), :class => "romaji") %></p>
+    <p class="kana"><%= link_to((token.kana||"").html_safe, token_path(token, :params => @params), :class => "kana") if token.kana %></p>
+    <p class="hiragana"><%= link_to((token.hiragana||"").html_safe, token_path(token, :params => @params), :class => "hiragana") if token.hiragana %></p>
+    <p class="katakana"><%= link_to((token.katakana||"").html_safe, token_path(token, :params => @params), :class => "katakana") if token.katakana %></p>
+    <p class="romaji"><%= link_to((token.romaji||"").html_safe, token_path(token, :params => @params), :class => "romaji") %></p>
 </td>
 <td class="translation">
     <% # badge_de = content_tag(:span, "DE", :class => "new badge grey", "data-badge-caption" => "") %>

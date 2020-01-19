@@ -19,12 +19,22 @@ $link-color: #8A1818 !default;
 
 @import "materialize";
 
-span.kanji,    a.kanji    { color: #0d3481; }
-span.hiragana, a.hiragana { color: #8A1818; }
-span.katakana, a.katakana { color: #086d3a; }
-span.romaji,   a.romaji   { color: #31353D; }
+/*
+#838C9C light gray
+#31353D dark gray
+#0d3481 blue
+#8A1818 red
+#086d3a green
+*/
+
+span.kana,     a.kana     { color: #31353D; }
+span.kanji,    a.kanji    { color: #31353D; }
+span.hiragana, a.hiragana { color: #31353D; }
+span.katakana, a.katakana { color: #31353D; }
+span.romaji,   a.romaji   { color: #838C9C; }
 span.german,   a.german   { color: #31353D; }
 span.english,  a.english  { color: #31353D; }
+rt                        { color: #838C9C; }
 
 .small li a {
     font-size: 0.7em;
@@ -77,6 +87,7 @@ label[for=search] i,
 
 table.token {
     a.info     { font-size: 0.8em; }
+    a.kana     { font-size: 2.2em; }
     a.kanji    { font-size: 2.2em; }
     a.hiragana { font-size: 1.8em; }
     a.katakana { font-size: 1.8em; }
@@ -108,6 +119,7 @@ table.token {
 
 table.token {
     a.info     { font-size: 0.8em; }
+    a.kana     { font-size: 3.4em; }
     a.kanji    { font-size: 3.4em; }
     a.hiragana { font-size: 2.2em; }
     a.katakana { font-size: 2.2em; }
@@ -259,6 +271,7 @@ div.print {
         padding: 0px;
     }
 
+    .kana     { font-size: 22pt; line-height: 26pt; }
     .kanji    { font-size: 22pt; line-height: 26pt; }
     .hiragana { font-size: 16pt; line-height: 20pt; }
     .katakana { font-size: 16pt; line-height: 20pt; }

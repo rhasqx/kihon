@@ -1,9 +1,9 @@
 <hr />
 <div class="token">
-    <p><%= content_tag(:span, token.kanji, class: "kanji") %></p>
-    <p><%= content_tag(:span, token.hiragana, class: "hiragana") %></p>
-    <p><%= content_tag(:span, token.katakana, class: "katakana") %></p>
-    <p><%= content_tag(:span, token.romaji, class: "romaji") %></p>
-    <p><%= content_tag(:span, token.german, class: "german") %></p>
-    <p><%= content_tag(:span, token.english, class: "english") %></p>
+    <p><%= content_tag(:span, (token.kana||"").html_safe, class: "kana") %></p>
+    <p><%= content_tag(:span, (token.hiragana||"").html_safe, class: "hiragana") %></p>
+    <p><%= content_tag(:span, (token.katakana||"").html_safe, class: "katakana") %></p>
+    <p><%= content_tag(:span, (token.romaji||"").html_safe, class: "romaji") %></p>
+    <p><%= content_tag(:span, (token.german||"").html_safe, class: "german") %></p>
+    <p><%= content_tag(:span, (token.english||"").html_safe, class: "english") %></p>
 </div>

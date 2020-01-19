@@ -8,6 +8,7 @@
 
 require "csv"
 require "progress_bar"
+require "action_view"
 
 #######################################
 
@@ -105,6 +106,7 @@ bar = ProgressBar.new(csv.size, :percentage, :counter, :bar)
 csv.each do |row|
     row = row.to_hash
     
+    row["kana"] ||= ""
     row["kanji"] ||= ""
     row["hiragana"] ||= ""
     row["katakana"] ||= ""
@@ -124,7 +126,8 @@ csv.each do |row|
         row["updated_at"] = row["created_at"]
     end
 
-    row["romaji"] = [row["hiragana"], row["katakana"], row["kanji"], ""].reject(&:empty?).first.romaji.gsub(/,/,", ")
+    row["romaji"] = [row["kana"], row["kanji"], row["hiragana"], row["katakana"], ""].reject(&:empty?).map{|x|x.gsub(/<rb>.*?<\/rb>/,"")}.map{|x|x.gsub(/<.*?>/,"")}.first.romaji.gsub(/,/,", ")
+
 
     temp = row
     if temp.reject{|k,v| k == "created_at" || k == "updated_at" || v.nil?}.values.size > 0
