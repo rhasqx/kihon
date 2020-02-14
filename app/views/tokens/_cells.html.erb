@@ -1,3 +1,4 @@
+<% br = "<br>".html_safe %>
 <td class="info">
     <p class="course_and_number">
         <%
@@ -10,16 +11,18 @@
     </p>
 </td>
 <td class="japanese">
-    <p class="kana"><%= link_to((token.kana||"").html_safe, token_path(token, :params => @params), :class => "kana") if token.kana %></p>
-    <p class="hiragana"><%= link_to((token.hiragana||"").html_safe, token_path(token, :params => @params), :class => "hiragana") if token.hiragana %></p>
-    <p class="katakana"><%= link_to((token.katakana||"").html_safe, token_path(token, :params => @params), :class => "katakana") if token.katakana %></p>
-    <p class="romaji"><%= link_to((token.romaji||"").html_safe, token_path(token, :params => @params), :class => "romaji") %></p>
+    <p>
+        <%= content_tag(:span, token.kana.html_safe, :class => "kana")+br if token.kana and not token.kana.empty? %>
+        <%= content_tag(:span, token.hiragana.html_safe, :class => "hiragana")+br if token.hiragana and not token.hiragana.empty? %>
+        <%= content_tag(:span, token.katakana.html_safe, :class => "katakana")+br if token.katakana and not token.katakana.empty? %>
+        <%= content_tag(:span, token.romaji.html_safe, :class => "romaji")+br if token.romaji and not token.romaji.empty? %>
+    </p>
 </td>
 <td class="translation">
     <% # badge_de = content_tag(:span, "DE", :class => "new badge grey", "data-badge-caption" => "") %>
     <% # badge_en = content_tag(:span, "EN", :class => "new badge grey", "data-badge-caption" => "") %>
-    <p class="german"><%= link_to(token.german, token_path(token, :params => @params), :class => "german") unless token.german.empty? %></p>
-    <p class="english"><%= link_to(token.english, token_path(token, :params => @params), :class => "english") unless token.english.empty? %></p>
+    <%= content_tag(:p, content_tag(:span, token.german.html_safe, :class => "german")) if token.german and not token.german.empty? %>
+    <%= content_tag(:p, content_tag(:span, token.english.html_safe, :class => "english")) if token.english and not token.english.empty? %>
 </td>
 <td class="pos">
     <p class="pos"><%= content_tag(:span, token.pos, :title => t(token.pos)) %></p>

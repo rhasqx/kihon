@@ -27,14 +27,14 @@ $link-color: #8A1818 !default;
 #086d3a green
 */
 
-span.kana,     a.kana     { color: #31353D; }
-span.kanji,    a.kanji    { color: #31353D; }
-span.hiragana, a.hiragana { color: #31353D; }
-span.katakana, a.katakana { color: #31353D; }
-span.romaji,   a.romaji   { color: #838C9C; }
-span.german,   a.german   { color: #31353D; }
-span.english,  a.english  { color: #31353D; }
-rt                        { color: #838C9C; }
+.kana,     { color: #31353D; }
+.kanji,    { color: #31353D; }
+.hiragana, { color: #31353D; }
+.katakana, { color: #31353D; }
+.romaji,   { color: #838C9C; }
+.german,   { color: #31353D; }
+.english,  { color: #31353D; }
+rt         { color: #838C9C; }
 
 .small li a {
     font-size: 0.7em;
@@ -86,12 +86,12 @@ label[for=search] i,
 }
 
 table.token {
-    a.info     { font-size: 0.8em; }
-    a.kana     { font-size: 2.2em; }
-    a.kanji    { font-size: 2.2em; }
-    a.hiragana { font-size: 1.8em; }
-    a.katakana { font-size: 1.8em; }
-    a.romaji   { font-size: 11px;  }
+    span.info     { font-size: 0.8em; }
+    span.kana     { font-size: 2.2em; }
+    span.kanji    { font-size: 2.2em; }
+    span.hiragana { font-size: 1.8em; }
+    span.katakana { font-size: 1.8em; }
+    span.romaji   { font-size: 11px;  }
     
     td {
         padding-top: 0;
@@ -118,12 +118,12 @@ table.token {
 @media #{$small-and-down} {
 
 table.token {
-    a.info     { font-size: 0.8em; }
-    a.kana     { font-size: 3.4em; }
-    a.kanji    { font-size: 3.4em; }
-    a.hiragana { font-size: 2.2em; }
-    a.katakana { font-size: 2.2em; }
-    a.romaji   { font-size: 0.8em; }
+    span.info     { font-size: 0.8em; }
+    span.kana     { font-size: 3.4em; }
+    span.kanji    { font-size: 3.4em; }
+    span.hiragana { font-size: 2.2em; }
+    span.katakana { font-size: 2.2em; }
+    span.romaji   { font-size: 0.8em; }
     
     thead {
         display: none;
@@ -262,7 +262,7 @@ div.print {
 
     div.token {
         page-break-inside: avoid !important;
-        max-width: 25%;
+        max-width: 100%;
     }
 
     p {
@@ -271,13 +271,13 @@ div.print {
         padding: 0px;
     }
 
-    .kana     { font-size: 22pt; line-height: 26pt; }
-    .kanji    { font-size: 22pt; line-height: 26pt; }
-    .hiragana { font-size: 16pt; line-height: 20pt; }
-    .katakana { font-size: 16pt; line-height: 20pt; }
-    .romaji   { font-size:  8pt; line-height: 10pt; }
-    .german   { font-size: 10pt; line-height: 14pt; }
-    .english  { font-size: 10pt; line-height: 14pt; }
+    .kana     { font-size: 18pt; line-height: 20pt; }
+    //.kanji    { font-size: 22pt; line-height: 26pt; }
+    //.hiragana { font-size: 16pt; line-height: 20pt; }
+    //.katakana { font-size: 16pt; line-height: 20pt; }
+    .romaji   { font-size:  6pt; line-height: 8pt; }
+    .german   { font-size: 10pt; line-height: 12pt; }
+    .english  { font-size: 10pt; line-height: 12pt; }
 
     div.token {
         display: inline-block;
