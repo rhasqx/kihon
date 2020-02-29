@@ -136,7 +136,7 @@ GEM
       highline (>= 1.6, < 3)
       options (~> 2.3.0)
     public_suffix (4.0.1)
-    puma (3.12.2)
+    puma (3.12.4)
     rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -225,7 +225,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara (>= 2.15)
+  capybara (>= 2.18)
   chromedriver-helper
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -238,7 +238,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   prawn
   progress_bar
-  puma (~> 3.12)
+  puma (~> 3.12.3)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
